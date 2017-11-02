@@ -80,8 +80,8 @@
 					</div>
 
                     <!-- Modal -->
-                    //for each loop for displaying flight information on sperate modal
-                    @foreach($totalflight as $key => $value)
+                    <!-- for each loop for displaying flight information on sperate modal
+                    @foreach($totalflight as $key => $value) -->
 
                     <div id="flightInfo{{$key}}" class="modal fade" role="dialog">
                         <div class="modal-dialog" id="flightInfoModal">
@@ -94,8 +94,17 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="journey-details">
-                                        <span class="inline bold">Mangalore<i style="margin:0px 10px 0px 10px;" class="fa fa-arrow-right"></i>Banglore</span>
-                                        <span class="inline">Thu, 2 Nov | 06h 10m | 1 Stop(s)<h5>{{$key['FareDetails']['TotalFare']}}</h5></span>
+                                        <span class="inline bold">{{$value['FlightSegments'][0]['IntDepartureAirportName']}}<i style="margin:0px 10px 0px 10px;" class="fa fa-arrow-right"></i>{{$value['FlightSegments'][0]['IntArrivalAirportName']}}</span>
+                                        <span class="inline">Thu, 2 Nov | $value['FlightSegments'][0]['Duration'] | @if($value['FlightSegments'][0]['IntNumStops']==null)
+                                            Non Stop
+                                        @else
+                                            {{$value['FlightSegments'][0]['IntNumStops']}}
+                                        @endif
+                                        </span>
+                                        <div class="price-section">
+                                            <span>Rs.34354</span>
+                                            <button class="btn pavan_button">Book</button>
+                                        </div>
                                     </div>
                                     <div class="flighttabs">
                                         <ul class="nav nav-tabs">
@@ -208,7 +217,7 @@
                     </div>
 
                     @endforeach
-                    //end of for each loop
+                <!--     //end of for each loop -->
 				</div>
 			</div>
 		</div>

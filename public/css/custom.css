@@ -94,7 +94,6 @@
 	height: auto;
 }
 .inline{
-	display: block;
 	padding: 10px;
 }
 .bold{
@@ -136,4 +135,15 @@
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: rgb(230, 226, 221);
+}
+.price-section{
+	display: block;
+	float: right;
+}
+.price-section span{
+	font-size: 30px;
+	font-weight: 500px;
+}
+.price-section button{
+	margin-top: 10px;
 }
