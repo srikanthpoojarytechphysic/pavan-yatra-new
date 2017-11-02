@@ -95,14 +95,18 @@
                                 <div class="modal-body">
                                     <div class="journey-details">
                                         <span class="inline bold">{{$value['FlightSegments'][0]['IntDepartureAirportName']}}<i style="margin:0px 10px 0px 10px;" class="fa fa-arrow-right"></i>{{$value['FlightSegments'][0]['IntArrivalAirportName']}}</span>
-                                        <span class="inline">Thu, 2 Nov | $value['FlightSegments'][0]['Duration'] | @if($value['FlightSegments'][0]['IntNumStops']==null)
+                                        <span class="inline">Thu, 2 Nov |
+
+                                            {{$value['FlightSegments'][0]['Duration']}}
+                                            | 
+                                        @if($value['FlightSegments'][0]['IntNumStops']==null)
                                             Non Stop
                                         @else
                                             {{$value['FlightSegments'][0]['IntNumStops']}}
                                         @endif
                                         </span>
                                         <div class="price-section">
-                                            <span>Rs.34354</span>
+                                            <span>Rs.{{$value['FareDetails']['TotalFare']}}</span>
                                             <button class="btn pavan_button">Book</button>
                                         </div>
                                     </div>
@@ -120,25 +124,32 @@
                                                     <div id="DIV_1">
                                                         <ul id="UL_2">
                                                             <li id="LI_3">
-                                                                <i id="I_4"></i> <span id="SPAN_5"> <strong id="STRONG_6">6E - 877</strong><br id="BR_7" /> <small id="SMALL_8">Operated by Indigo</small></span>
+                                                                <i id="I_4"></i> <span id="SPAN_5"> <strong id="STRONG_6">{{$value['FlightSegments'][0]['OperatingAirlineCode']}} - {{$value['FlightSegments'][0]['OperatingAirlineFlightNumber']}}</strong><br id="BR_7" /> <small id="SMALL_8">Operated by {{$value['FlightSegments'][0]['AirLineName']}}</small></span>
                                                             </li>
                                                             <li id="LI_9">
-                                                                <span id="SPAN_10">Mangalore (IXE)</span><br id="BR_11" /> <strong id="STRONG_12">Thu, 2 Nov, 21:50</strong><br id="BR_13" /> <span id="SPAN_14">Bajpe</span> <span id="SPAN_15">-</span>
+                                                                <span id="SPAN_10">{{$value['FlightSegments'][0]['IntDepartureAirportName']}} ({{$value['RequestDetails']['Source']}})</span><br id="BR_11" /> <strong id="STRONG_12">Thu, 2 Nov, 21:50</strong><br id="BR_13" /> <span id="SPAN_14">Bajpe</span> <span id="SPAN_15">-</span>
                                                             </li>
                                                             <li id="LI_16">
                                                                 <i class="fa fa-area-chart"></i>
                                                                 <time id="TIME_18">
-                                                                    01h 00m
-                                                                </time> <span id="SPAN_19">|</span> <span id="SPAN_20">Non Stop</span><span id="SPAN_21"></span> <span id="SPAN_22">|</span> <span id="SPAN_23">Free Meals</span>
+                                                                      {{$value['FlightSegments'][0]['Duration']}}
+                                                                </time> <span id="SPAN_19">|</span> 
+                                                            <span id="SPAN_20">
+                                                                @if($value['FlightSegments'][0]['IntNumStops']==null)
+                                                                    Non Stop
+                                                                @else
+                                                                    {{$value['FlightSegments'][0]['IntNumStops']}}
+                                                                @endif
+                                                            </span><span id="SPAN_21"></span> <span id="SPAN_22">|</span> <span id="SPAN_23">Free Meals</span>
                                                                 <div id="DIV_24">
                                                                     <span id="SPAN_25"></span><i class="fa fa-clock"></i><span id="SPAN_27"></span>
                                                                 </div>
                                                                 <h4 id="H4_28">
-                                                                    <span id="SPAN_29">Economy Class</span> <span id="SPAN_30"> <span id="SPAN_31">|</span> <span id="SPAN_32">Refundable</span></span> <span id="SPAN_33"> <span id="SPAN_34">|</span> <span id="SPAN_35">Non Refundable</span></span> <span id="SPAN_36"> <span id="SPAN_37">|</span><i class="fa fa-arrows-v"></i></span>
+                                                                    <span id="SPAN_29">Economy Class</span> <span id="SPAN_30"> <span id="SPAN_31">|</span> <span id="SPAN_32">Refundable</span></span> <span id="SPAN_33"> <span id="SPAN_34">|</span> <span id="SPAN_35">{{$value['FlightSegments'][0]['BookingClassFare']['Rule']}}</span></span> <span id="SPAN_36"> <span id="SPAN_37">|</span><i class="fa fa-arrows-v"></i></span>
                                                                 </h4>
                                                             </li>
                                                             <li id="LI_39">
-                                                                <span id="SPAN_40">Bengaluru (BLR)</span><br id="BR_41" /> <strong id="STRONG_42">Thu, 2 Nov, 22:50</strong><br id="BR_43" /> <span id="SPAN_44">Bengaluru</span> <span id="SPAN_45">-</span>
+                                                                <span id="SPAN_40">{{$value['FlightSegments'][0]['IntArrivalAirportName']}} ({{$value['RequestDetails']['Destination']}})</span><br id="BR_41" /> <strong id="STRONG_42">Thu, 2 Nov, 22:50</strong><br id="BR_43" /> <span id="SPAN_44">Bengaluru</span> <span id="SPAN_45">-</span>
                                                             </li>
                                                         </ul>
                                                         <div id="DIV_46">
