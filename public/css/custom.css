@@ -1,0 +1,139 @@
+.selectize-control.single .selectize-input, .selectize-control.single .selectize-input input {
+	border:none;
+	background:none;
+	box-shadow: none;
+}
+.selectize-input.items.has-options.full.has-items{
+	border:none;
+	background:none;
+	box-shadow: none;	
+}
+.main-search-input-item .chosen-container .chosen-drop{
+	z-index: 222;
+}
+.ticket_list{
+	margin-top: 20px;
+	display: block;
+	background:#eeeeee;
+}
+.ticket_route_text{
+	display: inline;
+	font-family: corbel;
+}
+.text_center{
+	text-align: center;
+	padding: 30px;
+	font-family: corbel;
+}
+.modify_search{
+	float: right;
+	padding: 30px;
+	font-family: corbel;
+}
+.flight_count{
+	padding: 30px;
+	display: block;
+	font-family: corbel;
+}
+.airline_img{
+	height: 38px !important;
+	padding-left: 20px;
+	display: inline !important;
+
+}
+.airline_code{	
+    margin-top: 6px;
+    display: block;
+    margin-left: 15px;
+    padding: 3px;
+    font-size: 10px;
+}
+.airline_name{
+	display: inline;
+	font-size: 15px;
+	margin-left: 7px;
+}
+.bot{
+	background: #eee;
+	color:black;
+}
+.bot a{
+	float: right;
+	margin-right:10px;
+	text-decoration: none;
+	color: #f91942;
+	cursor: pointer;
+}
+.bot i{
+	padding: 5px;
+	float: right;
+}
+.spacer{
+	background: white;
+	color: grey;
+}
+.pink-color{
+	background: white;
+	color:black;
+}
+.pavan_button{
+	background: #f91942 !important;
+	color:white !important;
+}
+.center{
+	display: block;
+	font-size: 10px;
+	position: absolute;
+	margin-left: 7px;
+}
+#flightInfoModal{
+	margin-top:70px;
+	width: 80%;
+}
+#flightInfoModal .modal-body{
+	height: auto;
+}
+.inline{
+	display: block;
+	padding: 10px;
+}
+.bold{
+	font-weight: bold;
+}
+.display_block{
+	display: block;
+	height: 40px;
+	margin-bottom: 20px;
+}
+.display_block span.label.label-default{
+	position:relative;
+	top: 15px;
+}
+.flight_img{
+	height: 40px;
+}
+.flight_list_type{
+	list-style-type: none;
+	padding-left: 0px;
+}
+.flight_list_type li{
+	list-style-type: none;
+}
+.airline-profile{
+	position: absolute;
+	margin-left: 20px;
+}
+.fare_table{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgb(230, 226, 221);
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: rgb(230, 226, 221);
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: rgb(230, 226, 221);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(230, 226, 221);
+}
