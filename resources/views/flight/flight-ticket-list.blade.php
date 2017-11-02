@@ -39,6 +39,48 @@
 						    </thead>
 						    <tbody>
 						    @foreach($totalflight as $key => $value)
+
+                                @foreach($value['FlightSegments'] as $k => $val)
+
+                            @if($k < 1)
+
+                                <tr class="pink-color">
+                                    <td style="padding-top: 10px;">
+                                        <img class="img-responsive airline_img" src="{{URL::asset('images/indigo.png')}}">
+                                        <span class="airline_name">
+                                            {{$value['FlightSegments'][0]['AirLineName']}}
+                                        </span>
+                                        <span class="airline_code">
+                                            {{$value['FlightSegments'][0]['OperatingAirlineCode']}}-{{$value['FlightSegments'][0]['OperatingAirlineFlightNumber']}}
+                                        </span>
+                                    </td>
+                                <td style="padding-top: 30px;">
+                                    {{substr($value['FlightSegments'][0]['DepartureDateTimeZone'],10)}}
+                                </td>
+                                <td style="padding-top: 30px;">
+                                    {{substr($value['FlightSegments'][0]['ArrivalDateTimeZone'],10)}}
+                                </td>
+                                <td style="padding-top: 30px;">
+                                    {{$value['FlightSegments'][0]['Duration']}}
+                                    @if($value['FlightSegments'][0]['IntNumStops']==null)
+                                        <span class="center">Non Stop</span>
+                                    @else
+                                        <span class="center">!stop</span>
+                                    @endif
+                                </td>
+                                <td>
+                                    <button class="btn btn-default pavan_button">
+                                        <strong>Rs.{{$value['FareDetails']['TotalFare']}}</strong>
+                                    </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                  <td colspan="2" class="bot">hekko</td>
+                                  <td colspan="3" class="bot"><i class="fa fa-plane"></i><a data-toggle="modal" data-target="#flightInfo{{$key}}">Flight Details</a></td>
+                              </tr>
+                              <tr><td colspan="5" class="spacer"></td></tr>
+
+
 						      <tr class="pink-color">
 						        <td style="padding-top: 10px;">
 						        	<img class="img-responsive airline_img" src="{{URL::asset('images/indigo.png')}}">
@@ -74,7 +116,12 @@
                                   <td colspan="3" class="bot"><i class="fa fa-plane"></i><a data-toggle="modal" data-target="#flightInfo{{$key}}">Flight Details</a></td>
                               </tr>
 						      <tr><td colspan="5" class="spacer"></td></tr>
+
+                        @endif
+                        
 						    @endforeach
+
+                        @endforeach
 						    </tbody>
 						</table>
 					</div>
@@ -95,18 +142,14 @@
                                 <div class="modal-body">
                                     <div class="journey-details">
                                         <span class="inline bold">{{$value['FlightSegments'][0]['IntDepartureAirportName']}}<i style="margin:0px 10px 0px 10px;" class="fa fa-arrow-right"></i>{{$value['FlightSegments'][0]['IntArrivalAirportName']}}</span>
-                                        <span class="inline">Thu, 2 Nov |
-
-                                            {{$value['FlightSegments'][0]['Duration']}}
-                                            | 
-                                        @if($value['FlightSegments'][0]['IntNumStops']==null)
+                                        <span class="inline">Thu, 2 Nov | $value['FlightSegments'][0]['Duration'] | @if($value['FlightSegments'][0]['IntNumStops']==null)
                                             Non Stop
                                         @else
                                             {{$value['FlightSegments'][0]['IntNumStops']}}
                                         @endif
                                         </span>
                                         <div class="price-section">
-                                            <span>Rs.{{$value['FareDetails']['TotalFare']}}</span>
+                                            <span>Rs.34354</span>
                                             <button class="btn pavan_button">Book</button>
                                         </div>
                                     </div>
@@ -145,7 +188,7 @@
                                                                     <span id="SPAN_25"></span><i class="fa fa-clock"></i><span id="SPAN_27"></span>
                                                                 </div>
                                                                 <h4 id="H4_28">
-                                                                    <span id="SPAN_29">Economy Class</span> <span id="SPAN_30"> <span id="SPAN_31">|</span> <span id="SPAN_32">Refundable</span></span> <span id="SPAN_33"> <span id="SPAN_34">|</span> <span id="SPAN_35">{{$value['FlightSegments'][0]['BookingClassFare']['Rule']}}</span></span> <span id="SPAN_36"> <span id="SPAN_37">|</span><i class="fa fa-arrows-v"></i></span>
+                                                                    <span id="SPAN_29">Economy Class</span> <span id="SPAN_30"> <span id="SPAN_31">|</span> <span id="SPAN_32">{{$value['FlightSegments'][0]['BookingClassFare']['Rule']}}</span></span> <span id="SPAN_33"> <span id="SPAN_34">|</span> <span id="SPAN_35"></span></span> <span id="SPAN_36"><span id="SPAN_37">|</span><i class="fa fa-arrows-v"></i></span>
                                                                 </h4>
                                                             </li>
                                                             <li id="LI_39">
