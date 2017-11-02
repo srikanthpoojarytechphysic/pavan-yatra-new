@@ -141,9 +141,11 @@
 	float: right;
 }
 .price-section span{
-	font-size: 30px;
-	font-weight: 500px;
+	font-size: 20px;
+	font-weight: 500;
+	display: block;
 }
 .price-section button{
 	margin-top: 10px;
+	margin:10px;
 }
