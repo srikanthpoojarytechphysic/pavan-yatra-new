@@ -58,8 +58,8 @@
 			                            <td style="padding-top: 30px;">
 			                                {{substr($val['ArrivalDateTimeZone'],10)}}
 																			<h4>{{$k}}</h4>
-																			@foreach($value['FlightSegments'] as $v)
-																			<h3>{{substr($val['ArrivalDateTimeZone'],10)}}</h3>
+																			@foreach($value['FlightSegments'] as $l => $v)
+																				<h3>{{substr($v['ArrivalDateTimeZone'],10)}}</h3>
 																			@endforeach
 			                            </td>
 		                            <td style="padding-top: 30px;">
