@@ -52,12 +52,28 @@
 		                                    {{$val['OperatingAirlineCode']}}-{{$val['OperatingAirlineFlightNumber']}}
 		                                </span>
 		                            </td>
-		                            <td style="padding-top: 30px;">
-		                                {{substr($value['FlightSegments'][0]['DepartureDateTimeZone'],10)}}
-		                            </td>
-		                            <td style="padding-top: 30px;">
-		                                {{substr($val['ArrivalDateTimeZone'],10)}}
-		                            </td>
+																@if($k==0)
+			                            <td style="padding-top: 30px;">
+			                                {{substr($val['DepartureDateTimeZone'],10)}}
+			                            </td>
+			                            <td style="padding-top: 30px;">
+			                                {{substr($val['ArrivalDateTimeZone'],10)}}
+			                            </td>
+																@elseif($k==1)
+																	<td style="padding-top: 30px;">
+																			{{substr($val['DepartureDateTimeZone'],10)}}
+																	</td>
+																	<td style="padding-top: 30px;">
+																			{{substr($val['ArrivalDateTimeZone'],10)}}
+																	</td>
+																@elseif($k==2)
+																	<td style="padding-top: 30px;">
+																			{{substr($value['FlightSegments'][2]['DepartureDateTimeZone'],10)}}
+																	</td>
+																	<td style="padding-top: 30px;">
+																			{{substr($value['FlightSegments'][2]['ArrivalDateTimeZone'],10)}}
+																	</td>
+																@endif
 		                            <td style="padding-top: 30px;">
 		                                {{$val['Duration']}}
 		                                @if($val['IntNumStops']==null)
@@ -78,7 +94,7 @@
 		                        </tr>
 		                        <tr>
 		                            <td colspan="5" class="spacer"></td>
-		                        </tr>											
+		                        </tr>
 
 						         @endforeach
 
