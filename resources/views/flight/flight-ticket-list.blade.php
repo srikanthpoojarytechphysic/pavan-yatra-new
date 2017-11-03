@@ -52,28 +52,16 @@
 		                                    {{$val['OperatingAirlineCode']}}-{{$val['OperatingAirlineFlightNumber']}}
 		                                </span>
 		                            </td>
-																@if($k==0)
 			                            <td style="padding-top: 30px;">
 			                                {{substr($val['DepartureDateTimeZone'],10)}}
 			                            </td>
 			                            <td style="padding-top: 30px;">
 			                                {{substr($val['ArrivalDateTimeZone'],10)}}
+																			<h4>{{$k}}</h4>
+																			@foreach($value['FlightSegments'] as $v)
+																			<h3>{{substr($val['ArrivalDateTimeZone'],10)}}</h3>
+																			@endforeach
 			                            </td>
-																@elseif($k==1)
-																	<td style="padding-top: 30px;">
-																			{{substr($val['DepartureDateTimeZone'],10)}}
-																	</td>
-																	<td style="padding-top: 30px;">
-																			{{substr($val['ArrivalDateTimeZone'],10)}}
-																	</td>
-																@elseif($k==2)
-																	<td style="padding-top: 30px;">
-																			{{substr($value['FlightSegments'][2]['DepartureDateTimeZone'],10)}}
-																	</td>
-																	<td style="padding-top: 30px;">
-																			{{substr($value['FlightSegments'][2]['ArrivalDateTimeZone'],10)}}
-																	</td>
-																@endif
 		                            <td style="padding-top: 30px;">
 		                                {{$val['Duration']}}
 		                                @if($val['IntNumStops']==null)
