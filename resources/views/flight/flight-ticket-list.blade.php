@@ -41,7 +41,7 @@
 						    @foreach($totalflight as $key => $value)
 
 		                @foreach($value['FlightSegments'] as $k => $val)
-
+												@if($loop->first)
 		                        <tr class="pink-color">
 		                            <td style="padding-top: 10px;">
 		                                <img class="img-responsive airline_img" src="{{URL::asset('images/indigo.png')}}">
@@ -49,26 +49,46 @@
 		                                    {{$val['AirLineName']}} <h5>{{$key}}</h5>
 		                                </span>
 		                                <span class="airline_code">
-		                                    {{$val['OperatingAirlineCode']}}-{{$val['OperatingAirlineFlightNumber']}}
+																			@foreach($value['FlightSegments'] as $r => $s)
+																				@if($loop->count==1)
+																						{{$value['FlightSegments'][0]['OperatingAirlineCode']}}-{{$value['FlightSegments'][0]['OperatingAirlineFlightNumber']}}
+																						@break
+																				@elseif($loop->count==2)
+																						{{$value['FlightSegments'][0]['OperatingAirlineCode']}}-{{$value['FlightSegments'][0]['OperatingAirlineFlightNumber']}}/{{$value['FlightSegments'][1]['OperatingAirlineFlightNumber']}}
+																						@break
+																				@elseif($loop->count==3)
+																						{{$value['FlightSegments'][0]['OperatingAirlineCode']}}-{{$value['FlightSegments'][0]['OperatingAirlineFlightNumber']}}/{{$value['FlightSegments'][1]['OperatingAirlineFlightNumber']}}/{{$value['FlightSegments'][2]['OperatingAirlineFlightNumber']}}
+																						@break
+																				@endif
+																			@endforeach
 		                                </span>
 		                            </td>
 			                            <td style="padding-top: 30px;">
 			                                {{substr($val['DepartureDateTimeZone'],10)}}
 			                            </td>
 			                            <td style="padding-top: 30px;">
-			                                {{substr($val['ArrivalDateTimeZone'],10)}}
-																			<h4>{{$k}}</h4>
 																			@foreach($value['FlightSegments'] as $l => $v)
-																				<h3>{{substr($v['ArrivalDateTimeZone'],10)}}</h3>
+																				@if($loop->last)
+																					{{substr($v['ArrivalDateTimeZone'],10)}}
+																				@endif
 																			@endforeach
 			                            </td>
-		                            <td style="padding-top: 30px;">
+		                            <td style="padding-top: 30px;text-align:center;">
 		                                {{$val['Duration']}}
-		                                @if($val['IntNumStops']==null)
-		                                    <span class="center">Non Stop</span>
-		                                @else
-		                                    <span class="center">!stop</span>
-		                                @endif
+																		@foreach($value['FlightSegments'] as $r => $s)
+																			@if($loop->count==1)
+			                                    <span class="center">Non Stop</span>
+																					@break
+																			@elseif($loop->count==2)
+			                                    <span class="center">1 stop via {{$s['IntArrivalAirportName']}}</span>
+																					@break
+
+																			@elseif($loop->count==3)
+																					<span class="center">2 stop via {{$value['FlightSegments'][0]['IntArrivalAirportName']}}</span>
+																					<span class="center">{{$value['FlightSegments'][1]['IntArrivalAirportName']}}</span>
+																					@break
+																			@endif
+																		@endforeach
 		                            </td>
 		                            <td>
 		                                <button class="btn btn-default pavan_button">
@@ -83,6 +103,7 @@
 		                        <tr>
 		                            <td colspan="5" class="spacer"></td>
 		                        </tr>
+												@endif
 
 						         @endforeach
 
