@@ -40,7 +40,7 @@ class flightController extends Controller
     		echo Psr7\str($e->getResponse());
 
     		exit();
-			
+
 		}
 
 		return view('flight.flight-search-page',['response' => json_decode($response->getBody())]);
@@ -69,7 +69,7 @@ class flightController extends Controller
  //    		'travelClass' => 'E',
  //    		'userType' => 5,
  //    		'returnDate' => '04-11-2017'
-    		
+
  //    	];
 
  //    	// dd($query_params);
@@ -87,13 +87,13 @@ class flightController extends Controller
  //    		echo Psr7\str($e->getResponse());
 
  //    		exit();
-			
+
 	// 	}
 
 		// $res = json_decode($response->getBody(),true);
 
 		// $totalflight = $res['DomesticOnwardFlights'];
-// 
+//
 		// dd($totalflight);
 
 	$res = 'file:///C:/Users/SRIKLAPWC/Desktop/api/response.json';
@@ -104,8 +104,10 @@ class flightController extends Controller
 
 	$totalflight = $total['DomesticOnwardFlights'];
 
+	dd($totalflight[34]);
+
 		foreach ($totalflight as $key => $value) {
-			
+
 			echo "<br>";
 			foreach ($value['FlightSegments'] as $k => $val) {
 				if($k == 0)
@@ -113,6 +115,17 @@ class flightController extends Controller
 					echo "<br>";
 					var_dump($val['OperatingAirlineFlightNumber']);
 					echo "<br>".$k;
+					foreach ($value['FlightSegments'] as $l => $m) {
+
+							if(loop()->last)
+							{
+								echo "<br>".$l;
+								var_dump($m['ArrivalDateTimeZone']);
+								echo "<br>".$l;
+							}
+					}
+					echo "<br>".$k;
+
 
 				}
 				// else if($k == 1)
@@ -122,7 +135,7 @@ class flightController extends Controller
 				// 	echo "<br>";
 
 				// 	var_dump($val['OperatingAirlineFlightNumber']);
-				// 	echo "<br>".$k;	
+				// 	echo "<br>".$k;
 				// }
 				// else if($k == 2)
 				// {
@@ -131,10 +144,10 @@ class flightController extends Controller
 				// 	echo "<br>";
 
 				// 	var_dump($val['OperatingAirlineFlightNumber']);
-				// 	echo "<br>".$k;	
+				// 	echo "<br>".$k;
 				// }
 
-			}	
+			}
 		}
 
 		exit;
@@ -182,7 +195,7 @@ class flightController extends Controller
     		'travelClass' => $request->input('air-class'),
     		'userType' => 5,
     		'returnDate' => $get_date
-    		
+
     	];
 
   //   	// dd($query_params['userType]);

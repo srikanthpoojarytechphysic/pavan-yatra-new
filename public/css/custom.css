@@ -6,7 +6,7 @@
 .selectize-input.items.has-options.full.has-items{
 	border:none;
 	background:none;
-	box-shadow: none;	
+	box-shadow: none;
 }
 .main-search-input-item .chosen-container .chosen-drop{
 	z-index: 222;
@@ -41,7 +41,7 @@
 	display: inline !important;
 
 }
-.airline_code{	
+.airline_code{
     margin-top: 6px;
     display: block;
     margin-left: 15px;
@@ -83,7 +83,6 @@
 .center{
 	display: block;
 	font-size: 10px;
-	position: absolute;
 	margin-left: 7px;
 }
 #flightInfoModal{
