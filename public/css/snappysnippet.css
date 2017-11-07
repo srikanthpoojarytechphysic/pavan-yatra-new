@@ -86,7 +86,6 @@
     text-align: left;
     text-decoration: none solid rgb(51, 51, 51);
     text-rendering: optimizeLegibility;
-    width: 84.6389px;
     column-rule-color: rgb(51, 51, 51);
     perspective-origin: 42.3194px 12.8889px;
     transform-origin: 42.3194px 12.8889px;
@@ -141,10 +140,10 @@
     color: rgb(51, 51, 51);
     display: table-cell;
     height: 55.7778px;
+    width: 150px;
     text-decoration: none solid rgb(51, 51, 51);
     text-rendering: optimizeLegibility;
     vertical-align: top;
-    width: 174.444px;
     column-rule-color: rgb(51, 51, 51);
     perspective-origin: 102.222px 32.8889px;
     transform-origin: 102.222px 32.8889px;
@@ -475,7 +474,6 @@
     text-rendering: optimizeLegibility;
     text-transform: capitalize;
     top: 0px;
-    width: 237.444px;
     column-rule-color: rgb(51, 51, 51);
     perspective-origin: 136.222px 12.1111px;
     transform-origin: 136.222px 12.1111px;
@@ -715,4 +713,3 @@
     margin: 0px 5px;
     outline: rgb(51, 51, 51) none 0px;
 }/*#SPAN_50*/
-

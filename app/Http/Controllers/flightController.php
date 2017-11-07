@@ -24,7 +24,7 @@ class flightController extends Controller
 		$headers = ['ConsumerKey' => '694AAB059FCA4A401220610E8602F10C',
 		        	'ConsumerSecret' => '1ED23A714D0386CE96EB16977416C7F2',
 		        	'Content-Type' =>'application/json',
-		        	'Accept-Encoding' => 'gzip'
+		        	'Accept-Encoding' => 'gzip,deflate'
 		];
 
 		$client = new Client([
@@ -47,114 +47,55 @@ class flightController extends Controller
 	}
 	public function search_flights_s(Request $request)
 	{
-	// 	$headers = ['ConsumerKey' => '694AAB059FCA4A401220610E8602F10C',
- //        			'ConsumerSecret' => '1ED23A714D0386CE96EB16977416C7F2',
- //        			'Content-Type' =>'application/json',
- //        			'decode_content' => 'gzip',
- //    	];
+		$headers = ['ConsumerKey' => '694AAB059FCA4A401220610E8602F10C',
+        			'ConsumerSecret' => '1ED23A714D0386CE96EB16977416C7F2',
+        			'Content-Type' =>'application/json',
+        			'decode_content' => 'gzip,deflate',
+    	];
 
-	// 	$client = new Client([
-	// 		'headers' => $headers
-	// 	]);
+		$client = new Client([
+			'headers' => $headers
+		]);
 
- //    	$query_params =[
- //    		'source' => 'IXE',
- //    		'destination' => 'BLR',
- //    		'journeyDate' => '04-11-2017',
- //    		'tripType' => 1,
- //    		'flightType' => 1,
- //    		'adults' => 1,
- //    		'children' =>0,
- //    		'infants' => 0,
- //    		'travelClass' => 'E',
- //    		'userType' => 5,
- //    		'returnDate' => '04-11-2017'
+    	$query_params =[
+    		'source' => 'IXE',
+    		'destination' => 'BLR',
+    		'journeyDate' => '11-11-2017',
+    		'tripType' => 2,
+    		'flightType' => 1,
+    		'adults' => 1,
+    		'children' =>0,
+    		'infants' => 0,
+    		'travelClass' => 'E',
+    		'userType' => 5,
+    		'returnDate' => '14-11-2017'
 
- //    	];
+    	];
 
- //    	// dd($query_params);
+    	// dd($query_params);
 
-	// 	try{
-	// 		$response = $client->get('http://webapi.i2space.co.in/Flights/AvailableFlights',[
+		try{
+			$response = $client->get('http://webapi.i2space.co.in/Flights/AvailableFlights',[
 
-	// 			'query' => $query_params
+				'query' => $query_params
 
-	// 		]);
+			]);
 
-	// 	}
-	// 	catch(ClientException $e){
+		}
+		catch(ClientException $e){
 
- //    		echo Psr7\str($e->getResponse());
+    		echo Psr7\str($e->getResponse());
 
- //    		exit();
+    		exit();
 
-	// 	}
-
-		// $res = json_decode($response->getBody(),true);
-
-		// $totalflight = $res['DomesticOnwardFlights'];
-//
-		// dd($totalflight);
-
-	$res = 'file:///C:/Users/SRIKLAPWC/Desktop/api/response.json';
-
-	$jsondata = file_get_contents($res);
-
-	$total =json_decode($jsondata,true);
-
-	$totalflight = $total['DomesticOnwardFlights'];
-
-	dd($totalflight[34]);
-
-		foreach ($totalflight as $key => $value) {
-
-			echo "<br>";
-			foreach ($value['FlightSegments'] as $k => $val) {
-				if($k == 0)
-				{
-					echo "<br>";
-					var_dump($val['OperatingAirlineFlightNumber']);
-					echo "<br>".$k;
-					foreach ($value['FlightSegments'] as $l => $m) {
-
-							if(loop()->last)
-							{
-								echo "<br>".$l;
-								var_dump($m['ArrivalDateTimeZone']);
-								echo "<br>".$l;
-							}
-					}
-					echo "<br>".$k;
-
-
-				}
-				// else if($k == 1)
-				// {
-				// 	echo "<br>";
-				// 	echo "2 stops via".$val['DepartureAirportCode'];
-				// 	echo "<br>";
-
-				// 	var_dump($val['OperatingAirlineFlightNumber']);
-				// 	echo "<br>".$k;
-				// }
-				// else if($k == 2)
-				// {
-				// 	echo "<br>";
-				// 	echo "3 stops via".$val['DepartureAirportCode'];
-				// 	echo "<br>";
-
-				// 	var_dump($val['OperatingAirlineFlightNumber']);
-				// 	echo "<br>".$k;
-				// }
-
-			}
 		}
 
-		exit;
+		$res = json_decode($response->getBody(),true);
 
-		// dd($totalflight[6]['FlightSegments'][1]);
+		$totalflight = $res['DomesticOnwardFlights'];
 
-		$count = count($totalflight);
+		$returnflight = $res['DomesticReturnFlights'];
+
 	}
 	//function for searching available flights on applied filters
 
@@ -165,14 +106,15 @@ class flightController extends Controller
     public function search_flights(Request $request)
 	{
 
-		// $headers = ['ConsumerKey' => '694AAB059FCA4A401220610E8602F10C',
-  //       			'ConsumerSecret' => '1ED23A714D0386CE96EB16977416C7F2',
-  //       			'Content-Type' =>'application/json'
-  //   	];
+		$headers = ['ConsumerKey' => '694AAB059FCA4A401220610E8602F10C',
+        			'ConsumerSecret' => '1ED23A714D0386CE96EB16977416C7F2',
+        			'Content-Type' =>'application/json',
+							'Accept-Encoding' => 'gzip,deflate'
+    	];
 
-		// $client = new Client([
-		// 	'headers' => $headers
-		// ]);
+		$client = new Client([
+			'headers' => $headers
+		]);
 
 		if($request->has('return-date'))
 		{
@@ -201,40 +143,49 @@ class flightController extends Controller
   //   	// dd($query_params['userType]);
 
 
-		// try{
-		// 	$response = $client->get('http://webapi.i2space.co.in/Flights/AvailableFlights',[
+		try{
+			$response = $client->get('http://webapi.i2space.co.in/Flights/AvailableFlights',[
 
-		// 		'query' => $query_params
+				'query' => $query_params
 
-		// 	]);
+			]);
 
-		// }
-		// catch(ClientException $e){
+		}
+		catch(ClientException $e){
 
-  //   		echo Psr7\str($e->getResponse());
-
-  //   		exit();
-
-		// }
-
-		// $res = json_decode($response->getBody(),true);
-
-		// $totalflight = $res['DomesticOnwardFlights'];
+    		echo Psr7\str($e->getResponse());
+    		exit();
 
 
-		$journey_info = ['date' => $query_params['journeyDate'],'source' => $query_params['source'],'destination' => $query_params['destination']];
+		}
 
-		// return view('flight.flight-ticket-list',['totalflight' => $totalflight,'journey_info' => $journey_info]);
+		$test_var = 'BLR-BENGALURU';
 
-	$res = 'file:///C:/Users/SRIKLAPWC/Desktop/api/response.json';
+		$journey_info = ['date' => $query_params['journeyDate'],'source' => $query_params['source'],'destination' => substr($query_params['destination'],4),'tripType' => $query_params['tripType']];
 
-	$jsondata = file_get_contents($res);
+		$res = json_decode($response->getBody(),true);
 
-	$total =json_decode($jsondata,true);
+		$totalflight = $res['DomesticOnwardFlights'];
 
-	$totalflight = $total['DomesticOnwardFlights'];
+		$returnflight = $res['DomesticReturnFlights'];
 
-	return view('flight.flight-ticket-list',['totalflight' => $totalflight,'journey_info' => $journey_info]);
+		// $roundtripflights = $res['']
+
+		return view('flight.flight-ticket-list',['returnflight' => $returnflight,'totalflight' => $totalflight,'journey_info' => $journey_info,'test_var' => substr($test_var,4)]);
+	//
+	// $journey_info = ['date' => $query_params['journeyDate'],'source' => $query_params['source'],'destination' => substr($query_params['destination'],4),'tripType' => $query_params['tripType']];
+	//
+	// $res = 'file:///C:/Users/SRIKLAPWC/Desktop/api/response.json';
+	//
+	// $jsondata = file_get_contents($res);
+	//
+	// $total =json_decode($jsondata,true);
+	//
+	// $totalflight = $total['DomesticOnwardFlights'];
+	//
+	// $test_var = 'BLR-BENGALURU';
+	//
+	// return view('flight.flight-ticket-list',['totalflight' => $totalflight,'journey_info' => $journey_info,'test_var' => substr($test_var,4)]);
 
 	}
 }

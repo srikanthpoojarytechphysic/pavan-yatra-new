@@ -61,8 +61,8 @@
                         </a>
                         </li>
                     </ul>
-                    
-                </div>  
+
+                </div>
                       <div class="tab-content">
                         <div id="flight" class="tab-pane fade active in">
                             <h3>Flight Booking</h3>
@@ -71,16 +71,16 @@
                         {{ csrf_field() }}
                            <div class="main-search-input">
                             <div class="main-search-input-item">
-                                <select id="flight-type" name="trip-type" data-placeholder="" class="chosen-select">                  
+                                <select id="flight-type" name="trip-type" data-placeholder="" class="chosen-select">
                                     <option></option>
                                     <option value="1">One Way</option>
-                                    <option value="2">Round Trip</option>                                                     
+                                    <option value="2">Round Trip</option>
                                 </select>
                             </div>
                             <div class="main-search-input-item">
-                                <select name="air-class" id='purpose' data-placeholder="Cabin Class" class="chosen-select">                 
+                                <select name="air-class" id='purpose' data-placeholder="Cabin Class" class="chosen-select">
                                     <option></option>
-                                    <option value="B">Business</option>                                                       
+                                    <option value="B">Business</option>
                                     <option value="E">Economy</option>
                                     <option value="ER">Premium Economy</option>
                                     <option value="B">First</option>
@@ -89,19 +89,19 @@
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-user"></i></a>
                                 <input type="text" placeholder="No of Adults" name="adults" value=""/>
-                                
+
                             </div>
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-user"></i></a>
                                 <input type="text" placeholder="No of Childrens" name="children" value=""/>
-                                
+
                             </div>
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-user"></i></a>
                                 <input type="text" placeholder="No of infants" name="infants" value=""/>
-                                
+
                             </div>
-                                                    
+
                           </div>
                           <div class="main-search-input">
                             <div class="main-search-input-item">
@@ -116,25 +116,25 @@
                                     @foreach($response as $items)
                                         <option value="{{$items->AirportCode}}">{{$items->City}}<em>    </em>{{$items->AirportCode}}</option>
                                     @endforeach
-                                </select>     
+                                </select>
                             </div>
                             <div id="depart-date" class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" name="depart-date" onfocus="(this.type='date')" class="datepicker" placeholder="Depart Date" name="return-date" value=""/>                                                         
+                                <input type="text" name="depart-date" onfocus="(this.type='date')" class="datepicker" placeholder="Depart Date" name="return-date" value=""/>
                             </div>
 
                             <div id="flight-return" class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" name="return-date" onfocus="(this.type='date')" class="datepicker" placeholder="Return Date" value=""/>                                                         
+                                <input type="text" name="return-date" onfocus="(this.type='date')" class="datepicker" placeholder="Return Date" value=""/>
                             </div>
 
-                            
+
                             <button class="button flightloader" type="submit">Search</button>
                           </div>
                         </div>
-                </form> 
-                    </div>                  
-                                                
+                </form>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -279,7 +279,7 @@
                             <img src="/images/l1.jpg" alt="">
 
                             <div class="listing-badge now-open">Most Popular</div>
-                            
+
                             <div class="listing-item-content">
                                 <span class="tag">Group Tours</span>
                                 <h3>DUBAI DELIGHT</h3>
@@ -316,7 +316,7 @@
                         </div>
                     </a>
                 </div>
-                <!-- Listing Item / End -->     
+                <!-- Listing Item / End -->
 
                 <!-- Listing Item -->
                 <div class="carousel-item">
@@ -405,7 +405,7 @@
                 </div>
                 <!-- Listing Item / End -->
                 </div>
-                
+
             </div>
 
         </div>
