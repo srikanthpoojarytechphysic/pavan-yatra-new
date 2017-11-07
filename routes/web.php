@@ -32,7 +32,7 @@ Route::get('/tours',[
 Route::get('/flights',[
 	'uses' => 'flightController@flights',
 	'as' =>'flights'
-]);	
+]);
 
 Route::get('flights/search',[
 	'uses' => 'flightController@search_flights',
@@ -47,3 +47,18 @@ Route::get('/ss',function(){
 	return view('flight.flight-ticket-list');
 });
 //-------END-OF-FLIGHT-ROUTES------------//
+
+
+//-----------HOTEL-ROUTES----------------//
+
+Route::get('/hotels',[
+	'uses' => 'hotelController@hotel_search',
+	'as' => 'search.hotel'
+]);
+
+Route::get('/hot',function(){
+	return view('hotels.hotels-search-result-list');
+});
+
+
+//----------END-OF-HOTEL-ROUTES----------//

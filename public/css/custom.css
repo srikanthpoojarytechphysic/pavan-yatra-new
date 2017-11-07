@@ -152,3 +152,7 @@
 	margin-top: 10px;
 	margin:10px;
 }
+#hotel .chosen-single{
+	width:200px;
+	position: relative;
+}

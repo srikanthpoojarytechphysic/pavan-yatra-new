@@ -713,3 +713,3103 @@
     margin: 0px 5px;
     outline: rgb(51, 51, 51) none 0px;
 }/*#SPAN_50*/
+
+#hotel_searchDIV_1 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 202px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 1066.8px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 533.4px 101px;
+    transform-origin: 533.4px 101px;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 3px 3px 3px 3px;
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 10px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 0px 0px 240px;
+    transition: all 0.2s linear 0s;
+}/*#hotel_searchDIV_1*/
+
+#hotel_searchASIDE_2 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 200px;
+    left: 0px;
+    position: absolute;
+    right: 824.8px;
+    text-align: center;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 240px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 120px 100px;
+    transform-origin: 120px 100px;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(241, 241, 241) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    border-radius: 3px 0 0 3px;
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    overflow: hidden;
+}/*#hotel_searchASIDE_2*/
+
+#hotel_searchDIV_3 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: table;
+    float: left;
+    height: 200px;
+    left: 0px;
+    min-height: 100%;
+    position: relative;
+    right: 0px;
+    text-align: center;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 240px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 120px 100px;
+    transform-origin: 120px 100px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_3*/
+
+#hotel_searchIMG_4 {
+    bottom: -100px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    display: block;
+    height: 200px;
+    left: 120px;
+    max-height: 100%;
+    position: absolute;
+    right: -120.238px;
+    text-align: center;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 100px;
+    vertical-align: middle;
+    width: 240.238px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 120.113px 100px;
+    transform: matrix(1, 0, 0, 1, -120, -100);
+    transform-origin: 120.113px 100px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    border-radius: 3px 0 0 3px;
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchIMG_4*/
+
+#hotel_searchA_5 {
+    bottom: 129px;
+    box-sizing: border-box;
+    color: rgb(0, 114, 187);
+    cursor: pointer;
+    display: block;
+    height: 66px;
+    left: 154px;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    text-decoration: none solid rgb(0, 114, 187);
+    text-rendering: optimizeLegibility;
+    top: 5px;
+    width: 81px;
+    column-rule-color: rgb(0, 114, 187);
+    perspective-origin: 40.5px 33px;
+    transform-origin: 40.5px 33px;
+    caret-color: rgb(0, 114, 187);
+    border: 0px none rgb(0, 114, 187);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(0, 114, 187) none 0px;
+    transition: all 0.3s ease-in-out 0s;
+}/*#hotel_searchA_5*/
+
+#hotel_searchIMG_6 {
+    box-sizing: border-box;
+    color: rgb(0, 114, 187);
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 66px;
+    text-align: center;
+    text-decoration: none solid rgb(0, 114, 187);
+    text-rendering: optimizeLegibility;
+    width: 81px;
+    column-rule-color: rgb(0, 114, 187);
+    perspective-origin: 40.5px 33px;
+    transform-origin: 40.5px 33px;
+    caret-color: rgb(0, 114, 187);
+    border: 0px none rgb(0, 114, 187);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(0, 114, 187) none 0px;
+}/*#hotel_searchIMG_6*/
+
+#hotel_searchA_7 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    height: 26.8px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-rendering: optimizeLegibility;
+    top: 173.2px;
+    width: 240px;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 120px 13.4px;
+    transform-origin: 120px 13.4px;
+    caret-color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    border-radius: 3px 3px 3px 3px;
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 5px 10px;
+    transition: all 0.2s linear 0s;
+}/*#hotel_searchA_7*/
+
+#hotel_searchDIV_8 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 200px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 824.8px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 412.4px 100px;
+    transform-origin: 412.4px 100px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 7px 10px;
+}/*#hotel_searchDIV_8*/
+
+#hotel_searchDIV_9 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 111.2px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 571.4px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 285.7px 55.6px;
+    transform-origin: 285.7px 55.6px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 10px 0px 0px;
+}/*#hotel_searchDIV_9*/
+
+#hotel_searchH2_10 {
+    box-sizing: border-box;
+    float: left;
+    height: 19.2px;
+    text-rendering: optimizeLegibility;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 561.4px;
+    perspective-origin: 280.7px 9.6px;
+    transform-origin: 280.7px 9.6px;
+    font: normal normal 400 normal 16px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    overflow: hidden;
+}/*#hotel_searchH2_10*/
+
+#hotel_searchA_11 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    white-space: nowrap;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 16px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    transition: all 0.3s ease-in-out 0s;
+}/*#hotel_searchA_11*/
+
+#hotel_searchA_11:after {
+    bottom: -1px;
+    color: rgb(51, 51, 51);
+    content: '""';
+    cursor: pointer;
+    display: block;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    right: 425.825px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 19.2px;
+    visibility: hidden;
+    white-space: nowrap;
+    width: 135.575px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 67.7875px 0.5px;
+    transform: matrix(0, 0, 0, 1, 0, 0);
+    transform-origin: 67.7875px 0.5px;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(234, 35, 48) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 16px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    transition: all 0.3s ease-in-out 0s;
+}/*#hotel_searchA_11:after*/
+
+#hotel_searchUL_12 {
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    float: left;
+    height: 14.4px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    width: 561.4px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 280.7px 7.2px;
+    transform-origin: 280.7px 7.2px;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 5px 0px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+    padding: 0px;
+}/*#hotel_searchUL_12*/
+
+#hotel_searchLI_13 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    display: block;
+    float: left;
+    height: 14.4px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 138.55px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 69.275px 7.2px;
+    transform-origin: 69.275px 7.2px;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+    padding: 0px 0px 0px 22px;
+}/*#hotel_searchLI_13*/
+
+#hotel_searchLI_13:before {
+    background-position: -96px -16px;
+    bottom: -0.8px;
+    color: rgb(131, 130, 130);
+    display: block;
+    height: 16px;
+    left: 0px;
+    position: absolute;
+    right: 122.55px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 7.2px;
+    width: 16px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 8px 8px;
+    transform-origin: 8px 8px;
+    caret-color: rgb(131, 130, 130);
+    background: rgba(0, 0, 0, 0) url("https://css.yatra.com/content/globalcdn/bongo-cdn/images/common/common-sprite-rebrand.png?version=20160909519889") no-repeat scroll -96px -16px / 160px 64px padding-box border-box;
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: -8px 0px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+}/*#hotel_searchLI_13:before*/
+
+#hotel_searchP_14 {
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    float: left;
+    height: 14.4px;
+    text-align: left;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    width: 116.55px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 58.275px 7.2px;
+    transform-origin: 58.275px 7.2px;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(131, 130, 130) none 0px;
+}/*#hotel_searchP_14*/
+
+#hotel_searchSPAN_15 {
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    display: block;
+    float: left;
+    height: 14.4px;
+    text-align: left;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    width: 73.1125px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 36.55px 7.2px;
+    transform-origin: 36.55px 7.2px;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(131, 130, 130) none 0px;
+}/*#hotel_searchSPAN_15*/
+
+#hotel_searchLI_16 {
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    float: left;
+    height: 14.4px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    width: 34.3px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 17.15px 7.2px;
+    transform-origin: 17.15px 7.2px;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+}/*#hotel_searchLI_16*/
+
+#hotel_searchA_17 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(78, 165, 223);
+    cursor: pointer;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-align: left;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    column-rule-color: rgb(78, 165, 223);
+    caret-color: rgb(78, 165, 223);
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(78, 165, 223) none 0px;
+    transition: all 0.3s ease-in-out 0s;
+}/*#hotel_searchA_17*/
+
+#hotel_searchA_17:after {
+    bottom: -1px;
+    color: rgb(78, 165, 223);
+    content: '""';
+    cursor: pointer;
+    display: block;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    right: 10.5625px;
+    text-align: left;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    top: 14.4px;
+    visibility: hidden;
+    width: 23.7375px;
+    column-rule-color: rgb(78, 165, 223);
+    perspective-origin: 11.8625px 0.5px;
+    transform: matrix(0, 0, 0, 1, 0, 0);
+    transform-origin: 11.8625px 0.5px;
+    caret-color: rgb(78, 165, 223);
+    background: rgb(234, 35, 48) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(78, 165, 223) none 0px;
+    transition: all 0.3s ease-in-out 0s;
+}/*#hotel_searchA_17:after*/
+
+#hotel_searchUL_18 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 13.6px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 561.4px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 280.7px 6.8px;
+    transform-origin: 280.7px 6.8px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 8px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px;
+}/*#hotel_searchUL_18*/
+
+#hotel_searchLI_19 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    float: left;
+    height: 13px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 78px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 39px 6.5px;
+    transform-origin: 39px 6.5px;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(131, 130, 130) none 0px;
+    padding: 0px 8px 0px 0px;
+}/*#hotel_searchLI_19*/
+
+#hotel_searchP_20 {
+    background-position: 0px 1px;
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    float: left;
+    height: 13px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-align: left;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-indent: -9999px;
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    vertical-align: middle;
+    width: 70px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 35px 6.5px;
+    transform-origin: 35px 6.5px;
+    caret-color: rgb(131, 130, 130);
+    background: rgba(0, 0, 0, 0) url("https://css.yatra.com/content/globalcdn/bongo-cdn/images/hotel/ico-rating-md-rebrand.png") repeat-x scroll 0px 1px / auto padding-box border-box;
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(131, 130, 130) none 0px;
+}/*#hotel_searchP_20*/
+
+#hotel_searchP_20:before {
+    background-position: 0px -13px;
+    bottom: 0px;
+    color: rgb(131, 130, 130);
+    content: '"' '"';
+    display: block;
+    height: 13px;
+    left: 0px;
+    position: absolute;
+    right: 28px;
+    text-align: left;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-indent: -9999px;
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 42px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 21px 6.5px;
+    transform-origin: 21px 6.5px;
+    caret-color: rgb(131, 130, 130);
+    background: rgba(0, 0, 0, 0) url("https://css.yatra.com/content/globalcdn/bongo-cdn/images/hotel/ico-rating-md-rebrand.png") repeat-x scroll 0px -13px / auto padding-box border-box;
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(131, 130, 130) none 0px;
+}/*#hotel_searchP_20:before*/
+
+#hotel_searchLI_21 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    display: block;
+    float: left;
+    height: 13.6px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 100.85px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 50.425px 6.8px;
+    transform-origin: 50.425px 6.8px;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(131, 130, 130) none 0px;
+    padding: 0px 8px 0px 28px;
+}/*#hotel_searchLI_21*/
+
+#hotel_searchLI_21:before {
+    background-position: -44px 0px;
+    bottom: -4.2px;
+    color: rgb(131, 130, 130);
+    content: '""';
+    display: block;
+    height: 22px;
+    left: 0px;
+    position: absolute;
+    right: 78.85px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 6.8px;
+    width: 22px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 11px 11px;
+    transform-origin: 11px 11px;
+    caret-color: rgb(131, 130, 130);
+    background: rgba(0, 0, 0, 0) url("https://css.yatra.com/content/globalcdn/bongo-cdn/images/hotel/hotel.png?version=20160909519889") no-repeat scroll -44px 0px / 220px 176px padding-box border-box;
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: -11px 0px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+    transition: all 0.2s linear 0s;
+}/*#hotel_searchLI_21:before*/
+
+#hotel_searchSPAN_22 {
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    text-align: left;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(131, 130, 130);
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(131, 130, 130) none 0px;
+}/*#hotel_searchSPAN_22*/
+
+#hotel_searchSPAN_23 {
+    box-sizing: border-box;
+    color: rgb(107, 189, 15);
+    text-align: left;
+    text-decoration: none solid rgb(107, 189, 15);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(107, 189, 15);
+    caret-color: rgb(107, 189, 15);
+    border: 0px none rgb(107, 189, 15);
+    font: normal normal 700 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(107, 189, 15) none 0px;
+}/*#hotel_searchSPAN_23*/
+
+#hotel_searchLI_24 {
+    box-sizing: border-box;
+    color: rgb(255, 91, 0);
+    float: right;
+    height: 13.6px;
+    text-decoration: none solid rgb(255, 91, 0);
+    text-rendering: optimizeLegibility;
+    width: 69.7875px;
+    column-rule-color: rgb(255, 91, 0);
+    perspective-origin: 34.8875px 6.8px;
+    transform-origin: 34.8875px 6.8px;
+    caret-color: rgb(255, 91, 0);
+    border: 0px none rgb(255, 91, 0);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(255, 91, 0) none 0px;
+    padding: 0px 8px 0px 0px;
+}/*#hotel_searchLI_24*/
+
+#hotel_searchUL_25 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 26px;
+    min-height: 26px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 561.4px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 280.7px 13px;
+    transform-origin: 280.7px 13px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 15px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px;
+}/*#hotel_searchUL_25*/
+
+#hotel_searchLI_26 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    display: block;
+    float: left;
+    height: 13.6px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 112.475px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 56.2375px 6.8px;
+    transform-origin: 56.2375px 6.8px;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px 8px 10px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+    padding: 0px 0px 0px 28px;
+}/*#hotel_searchLI_26*/
+
+#hotel_searchLI_26:before {
+    background-position: -66px 0px;
+    bottom: -4.2px;
+    color: rgb(131, 130, 130);
+    content: '""';
+    display: block;
+    height: 22px;
+    left: 0px;
+    opacity: 0.44;
+    position: absolute;
+    right: 90.475px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 6.8px;
+    width: 22px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 11px 11px;
+    transform-origin: 11px 11px;
+    caret-color: rgb(131, 130, 130);
+    background: rgba(0, 0, 0, 0) url("https://css.yatra.com/content/globalcdn/bongo-cdn/images/hotel/hotel.png?version=20160909519889") no-repeat scroll -66px 0px / 220px 176px padding-box border-box;
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: -11px 0px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+    transition: all 0.2s linear 0s;
+}/*#hotel_searchLI_26:before*/
+
+#hotel_searchLI_27 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    display: block;
+    float: left;
+    height: 13.6px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 98.8px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 49.4px 6.8px;
+    transform-origin: 49.4px 6.8px;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px 8px 10px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+    padding: 0px 0px 0px 28px;
+}/*#hotel_searchLI_27*/
+
+#hotel_searchLI_27:before {
+    background-position: -110px 0px;
+    bottom: -4.2px;
+    color: rgb(131, 130, 130);
+    content: '""';
+    display: block;
+    height: 22px;
+    left: 0px;
+    opacity: 0.44;
+    position: absolute;
+    right: 76.8px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 6.8px;
+    width: 22px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 11px 11px;
+    transform-origin: 11px 11px;
+    caret-color: rgb(131, 130, 130);
+    background: rgba(0, 0, 0, 0) url("https://css.yatra.com/content/globalcdn/bongo-cdn/images/hotel/hotel.png?version=20160909519889") no-repeat scroll -110px 0px / 220px 176px padding-box border-box;
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: -11px 0px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+    transition: all 0.2s linear 0s;
+}/*#hotel_searchLI_27:before*/
+
+#hotel_searchLI_28 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    display: block;
+    float: left;
+    height: 13.6px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 75.05px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 37.525px 6.8px;
+    transform-origin: 37.525px 6.8px;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px 8px 10px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+    padding: 0px 0px 0px 28px;
+}/*#hotel_searchLI_28*/
+
+#hotel_searchLI_28:before {
+    background-position: -88px 0px;
+    bottom: -4.2px;
+    color: rgb(131, 130, 130);
+    content: '""';
+    display: block;
+    height: 22px;
+    left: 0px;
+    opacity: 0.44;
+    position: absolute;
+    right: 53.05px;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 6.8px;
+    width: 22px;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 11px 11px;
+    transform-origin: 11px 11px;
+    caret-color: rgb(131, 130, 130);
+    background: rgba(0, 0, 0, 0) url("https://css.yatra.com/content/globalcdn/bongo-cdn/images/hotel/hotel.png?version=20160909519889") no-repeat scroll -88px 0px / 220px 176px padding-box border-box;
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: -11px 0px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+    transition: all 0.2s linear 0s;
+}/*#hotel_searchLI_28:before*/
+
+#hotel_searchLI_29 {
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    display: none;
+    float: left;
+    height: auto;
+    position: relative;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    width: auto;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px 8px 10px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+}/*#hotel_searchLI_29*/
+
+#hotel_searchA_30 {
+    box-sizing: border-box;
+    color: rgb(78, 165, 223);
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(78, 165, 223);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(78, 165, 223);
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(78, 165, 223) none 0px;
+    transition: all 0.3s ease-in-out 0s;
+}/*#hotel_searchA_30*/
+
+#hotel_searchA_30:after {
+    bottom: -1px;
+    color: rgb(78, 165, 223);
+    content: '""';
+    cursor: pointer;
+    display: block;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    text-align: left;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    visibility: hidden;
+    width: 100%;
+    column-rule-color: rgb(78, 165, 223);
+    caret-color: rgb(78, 165, 223);
+    background: rgb(234, 35, 48) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(78, 165, 223) none 0px;
+    transition: all 0.3s ease-in-out 0s;
+}/*#hotel_searchA_30:after*/
+
+#hotel_searchDIV_31 {
+    bottom: 100%;
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    display: none;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    text-align: left;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    width: auto;
+    z-index: 99;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px 0px 15px;
+    outline: rgb(131, 130, 130) none 0px;
+}/*#hotel_searchDIV_31*/
+
+#hotel_searchDIV_32 {
+    box-shadow: rgb(205, 206, 207) 0px 0px 5px 1px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: auto;
+    min-width: 35px;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    width: 300px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(205, 206, 207);
+    border-radius: 4px 4px 4px 4px;
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 5px;
+}/*#hotel_searchDIV_32*/
+
+#hotel_searchDIV_32:after {
+    color: rgb(51, 51, 51);
+    content: '""';
+    display: block;
+    position: absolute;
+    right: 16px;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 2;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border-top: 10px solid rgb(255, 255, 255);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 0px none rgb(51, 51, 51);
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_32:after*/
+
+#hotel_searchDIV_32:before {
+    color: rgb(51, 51, 51);
+    content: '""';
+    display: block;
+    position: absolute;
+    right: 15px;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 1;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border-top: 11px solid rgb(205, 206, 207);
+    border-right: 11px solid rgba(0, 0, 0, 0);
+    border-bottom: 0px none rgb(51, 51, 51);
+    border-left: 11px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_32:before*/
+
+#hotel_searchUL_33 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: auto;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px;
+}/*#hotel_searchUL_33*/
+
+#hotel_searchLI_34, #hotel_searchLI_35, #hotel_searchLI_37 {
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    display: none;
+    float: left;
+    height: auto;
+    position: relative;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    width: auto;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 5px 8px 10px 5px;
+    outline: rgb(131, 130, 130) none 0px;
+    padding: 0px 5px 0px 22px;
+}/*#hotel_searchLI_34, #hotel_searchLI_35, #hotel_searchLI_37*/
+
+#hotel_searchLI_34:before, #hotel_searchLI_35:before, #hotel_searchLI_37:before {
+    background-position: -80px 0px;
+    color: rgb(131, 130, 130);
+    content: '""';
+    display: block;
+    height: 16px;
+    left: 0px;
+    position: absolute;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 50%;
+    white-space: nowrap;
+    width: 16px;
+    column-rule-color: rgb(131, 130, 130);
+    caret-color: rgb(131, 130, 130);
+    background: rgba(0, 0, 0, 0) url("https://css.yatra.com/content/globalcdn/bongo-cdn/images/common/common-sprite-rebrand.png?version=20160909519889") no-repeat scroll -80px 0px / 160px 64px padding-box border-box;
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: -8px 0px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+}/*#hotel_searchLI_34:before, #hotel_searchLI_35:before, #hotel_searchLI_37:before*/
+
+#hotel_searchLI_36, #hotel_searchLI_38 {
+    box-sizing: border-box;
+    color: rgb(131, 130, 130);
+    display: none;
+    float: left;
+    height: auto;
+    position: relative;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    width: auto;
+    column-rule-color: rgb(131, 130, 130);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(131, 130, 130);
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 5px 8px 10px 5px;
+    outline: rgb(131, 130, 130) none 0px;
+    padding: 0px 5px 0px 22px;
+}/*#hotel_searchLI_36, #hotel_searchLI_38*/
+
+#hotel_searchLI_36:before, #hotel_searchLI_38:before {
+    background-position: -80px 0px;
+    color: rgb(131, 130, 130);
+    content: '""';
+    display: block;
+    height: 16px;
+    left: 0px;
+    position: absolute;
+    text-decoration: none solid rgb(131, 130, 130);
+    text-rendering: optimizeLegibility;
+    top: 50%;
+    white-space: nowrap;
+    width: 16px;
+    column-rule-color: rgb(131, 130, 130);
+    caret-color: rgb(131, 130, 130);
+    background: rgba(0, 0, 0, 0) url("https://css.yatra.com/content/globalcdn/bongo-cdn/images/common/common-sprite-rebrand.png?version=20160909519889") no-repeat scroll -80px 0px / 160px 64px padding-box border-box;
+    border: 0px none rgb(131, 130, 130);
+    font: normal normal 400 normal 11px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: -8px 0px 0px;
+    outline: rgb(131, 130, 130) none 0px;
+}/*#hotel_searchLI_36:before, #hotel_searchLI_38:before*/
+
+#hotel_searchUL_39 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 561.4px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 280.7px 0px;
+    transform-origin: 280.7px 0px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 10px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px;
+}/*#hotel_searchUL_39*/
+
+#hotel_searchDIV_40 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: none;
+    float: right;
+    height: auto;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: auto;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_40*/
+
+#hotel_searchUL_41 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 80px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px;
+}/*#hotel_searchUL_41*/
+
+#hotel_searchLI_42 {
+    box-sizing: border-box;
+    color: rgb(78, 165, 223);
+    display: block;
+    float: left;
+    height: auto;
+    position: relative;
+    text-align: right;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(78, 165, 223);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(78, 165, 223);
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 9.996px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(78, 165, 223) none 0px;
+}/*#hotel_searchLI_42*/
+
+#hotel_searchDIV_43 {
+    bottom: 100%;
+    box-sizing: border-box;
+    color: rgb(78, 165, 223);
+    float: right;
+    height: auto;
+    max-width: 140px;
+    min-width: 80px;
+    position: relative;
+    right: 0px;
+    text-align: center;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    width: auto;
+    z-index: 99;
+    column-rule-color: rgb(78, 165, 223);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(78, 165, 223);
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 9.996px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 5px 0px 2px;
+    outline: rgb(78, 165, 223) none 0px;
+}/*#hotel_searchDIV_43*/
+
+#hotel_searchDIV_44 {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    height: auto;
+    min-width: 35px;
+    position: relative;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: auto;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(255, 255, 255);
+    background: rgb(102, 102, 102) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 2px 2px 2px 2px;
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 2px 6px;
+}/*#hotel_searchDIV_44*/
+
+#hotel_searchDIV_44:after {
+    color: rgb(255, 255, 255);
+    content: '""';
+    display: none;
+    position: absolute;
+    right: 16px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 2;
+    column-rule-color: rgb(255, 255, 255);
+    caret-color: rgb(255, 255, 255);
+    border-top: 10px solid rgb(102, 102, 102);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 0px none rgb(255, 255, 255);
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(255, 255, 255) none 0px;
+}/*#hotel_searchDIV_44:after*/
+
+#hotel_searchDIV_44:before {
+    color: rgb(255, 255, 255);
+    content: '""';
+    display: block;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 1;
+    column-rule-color: rgb(255, 255, 255);
+    caret-color: rgb(255, 255, 255);
+    border-top: 8px solid rgb(102, 102, 102);
+    border-right: 8px solid rgba(0, 0, 0, 0);
+    border-bottom: 0px none rgb(255, 255, 255);
+    border-left: 8px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(255, 255, 255) none 0px;
+}/*#hotel_searchDIV_44:before*/
+
+#hotel_searchLI_45 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: auto;
+    position: relative;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 5px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchLI_45*/
+
+#hotel_searchDIV_46, #hotel_searchDIV_86 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: none;
+    float: left;
+    height: auto;
+    position: relative;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_46, #hotel_searchDIV_86*/
+
+#hotel_searchDEL_47 {
+    box-sizing: border-box;
+    color: rgb(153, 153, 153);
+    text-align: right;
+    text-decoration: line-through solid rgb(153, 153, 153);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(153, 153, 153);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(153, 153, 153);
+    border: 0px none rgb(153, 153, 153);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(153, 153, 153) none 0px;
+}/*#hotel_searchDEL_47*/
+
+#hotel_searchSPAN_48 {
+    box-sizing: border-box;
+    color: rgb(153, 153, 153);
+    text-align: right;
+    text-decoration: none solid rgb(153, 153, 153);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(153, 153, 153);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(153, 153, 153);
+    border: 0px none rgb(153, 153, 153);
+    font: normal normal 400 normal 12px / normal WebRupee;
+    list-style: none outside none;
+    outline: rgb(153, 153, 153) none 0px;
+}/*#hotel_searchSPAN_48*/
+
+#hotel_searchDIV_49, #hotel_searchDIV_89 {
+    bottom: 100%;
+    box-sizing: border-box;
+    color: rgb(153, 153, 153);
+    display: none;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    text-align: right;
+    text-decoration: none solid rgb(153, 153, 153);
+    text-rendering: optimizeLegibility;
+    width: auto;
+    z-index: 99;
+    column-rule-color: rgb(153, 153, 153);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(153, 153, 153);
+    border: 0px none rgb(153, 153, 153);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px 0px 15px;
+    outline: rgb(153, 153, 153) none 0px;
+}/*#hotel_searchDIV_49, #hotel_searchDIV_89*/
+
+#hotel_searchDIV_50, #hotel_searchDIV_90 {
+    box-shadow: rgb(205, 206, 207) 0px 0px 5px 1px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: auto;
+    min-width: 35px;
+    position: relative;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    width: auto;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(205, 206, 207);
+    border-radius: 4px 4px 4px 4px;
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 5px;
+}/*#hotel_searchDIV_50, #hotel_searchDIV_90*/
+
+#hotel_searchDIV_50:after, #hotel_searchDIV_90:after {
+    color: rgb(51, 51, 51);
+    content: '""';
+    display: block;
+    position: absolute;
+    right: 16px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 2;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border-top: 10px solid rgb(255, 255, 255);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 0px none rgb(51, 51, 51);
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_50:after, #hotel_searchDIV_90:after*/
+
+#hotel_searchDIV_50:before, #hotel_searchDIV_90:before {
+    color: rgb(51, 51, 51);
+    content: '""';
+    display: block;
+    position: absolute;
+    right: 15px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 1;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border-top: 11px solid rgb(205, 206, 207);
+    border-right: 11px solid rgba(0, 0, 0, 0);
+    border-bottom: 0px none rgb(51, 51, 51);
+    border-left: 11px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_50:before, #hotel_searchDIV_90:before*/
+
+#hotel_searchSPAN_51, #hotel_searchSPAN_91 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 12px / normal WebRupee;
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchSPAN_51, #hotel_searchSPAN_91*/
+
+#hotel_searchSPAN_52, #hotel_searchSPAN_53 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 21.994px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchSPAN_52, #hotel_searchSPAN_53*/
+
+#hotel_searchSPAN_54 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 21.994px / normal WebRupee;
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchSPAN_54*/
+
+#hotel_searchSPAN_55 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 700 normal 21.994px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchSPAN_55*/
+
+#hotel_searchDIV_56, #hotel_searchDIV_96 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: none;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 100%;
+    width: auto;
+    z-index: 99;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 15px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_56, #hotel_searchDIV_96*/
+
+#hotel_searchDIV_57, #hotel_searchDIV_97 {
+    box-shadow: rgb(205, 206, 207) 0px 0px 5px 1px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: auto;
+    min-width: 35px;
+    position: relative;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 275px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(205, 206, 207);
+    border-radius: 4px 4px 4px 4px;
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 5px;
+}/*#hotel_searchDIV_57, #hotel_searchDIV_97*/
+
+#hotel_searchDIV_57:after, #hotel_searchDIV_97:after {
+    color: rgb(51, 51, 51);
+    content: '""';
+    display: block;
+    position: absolute;
+    right: 15px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: -10px;
+    z-index: 2;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border-top: 0px none rgb(51, 51, 51);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 10px solid rgb(255, 255, 255);
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_57:after, #hotel_searchDIV_97:after*/
+
+#hotel_searchDIV_57:before, #hotel_searchDIV_97:before {
+    color: rgb(51, 51, 51);
+    content: '""';
+    display: block;
+    position: absolute;
+    right: 15px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: -11px;
+    z-index: 1;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border-top: 0px none rgb(51, 51, 51);
+    border-right: 11px solid rgba(0, 0, 0, 0);
+    border-bottom: 11px solid rgb(205, 206, 207);
+    border-left: 11px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_57:before, #hotel_searchDIV_97:before*/
+
+#hotel_searchUL_58, #hotel_searchUL_98 {
+    box-sizing: border-box;
+    color: rgb(102, 102, 102);
+    float: left;
+    height: auto;
+    text-align: right;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(102, 102, 102);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(102, 102, 102);
+    border: 0px none rgb(102, 102, 102);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(102, 102, 102) none 0px;
+    padding: 0px;
+}/*#hotel_searchUL_58, #hotel_searchUL_98*/
+
+#hotel_searchLI_59, #hotel_searchLI_64, #hotel_searchLI_70, #hotel_searchLI_99, #hotel_searchLI_104, #hotel_searchLI_110 {
+    box-sizing: border-box;
+    color: rgb(102, 102, 102);
+    float: left;
+    height: auto;
+    text-align: right;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(102, 102, 102);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(102, 102, 102);
+    border: 0px none rgb(102, 102, 102);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(102, 102, 102) none 0px;
+}/*#hotel_searchLI_59, #hotel_searchLI_64, #hotel_searchLI_70, #hotel_searchLI_99, #hotel_searchLI_104, #hotel_searchLI_110*/
+
+#hotel_searchDIV_60, #hotel_searchDIV_65, #hotel_searchDIV_100, #hotel_searchDIV_105 {
+    box-sizing: border-box;
+    color: rgb(102, 102, 102);
+    float: left;
+    height: auto;
+    text-align: right;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(102, 102, 102);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(102, 102, 102);
+    border-top: 0px none rgb(102, 102, 102);
+    border-right: 0px none rgb(102, 102, 102);
+    border-bottom: 1px solid rgb(242, 242, 242);
+    border-left: 0px none rgb(102, 102, 102);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(102, 102, 102) none 0px;
+    padding: 7px 5px;
+}/*#hotel_searchDIV_60, #hotel_searchDIV_65, #hotel_searchDIV_100, #hotel_searchDIV_105*/
+
+#hotel_searchSPAN_61, #hotel_searchSPAN_66, #hotel_searchSPAN_101, #hotel_searchSPAN_106 {
+    box-sizing: border-box;
+    color: rgb(102, 102, 102);
+    display: block;
+    float: left;
+    text-align: left;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-rendering: optimizeLegibility;
+    text-transform: capitalize;
+    width: 50%;
+    column-rule-color: rgb(102, 102, 102);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(102, 102, 102);
+    border: 0px none rgb(102, 102, 102);
+    font: normal normal 400 normal 11.148px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(102, 102, 102) none 0px;
+    padding: 0px 10px 0px 0px;
+}/*#hotel_searchSPAN_61, #hotel_searchSPAN_66, #hotel_searchSPAN_101, #hotel_searchSPAN_106*/
+
+#hotel_searchSPAN_62, #hotel_searchSPAN_68, #hotel_searchSPAN_102, #hotel_searchSPAN_108 {
+    box-sizing: border-box;
+    color: rgb(102, 102, 102);
+    display: block;
+    float: left;
+    text-align: right;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-rendering: optimizeLegibility;
+    width: 50%;
+    column-rule-color: rgb(102, 102, 102);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(102, 102, 102);
+    border: 0px none rgb(102, 102, 102);
+    font: normal normal 400 normal 11.148px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(102, 102, 102) none 0px;
+    padding: 0px 0px 0px 10px;
+}/*#hotel_searchSPAN_62, #hotel_searchSPAN_68, #hotel_searchSPAN_102, #hotel_searchSPAN_108*/
+
+#hotel_searchSPAN_63, #hotel_searchSPAN_69, #hotel_searchSPAN_103, #hotel_searchSPAN_109 {
+    box-sizing: border-box;
+    color: rgb(102, 102, 102);
+    text-align: right;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(102, 102, 102);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(102, 102, 102);
+    border: 0px none rgb(102, 102, 102);
+    font: normal normal 400 normal 11.148px / normal WebRupee;
+    list-style: none outside none;
+    outline: rgb(102, 102, 102) none 0px;
+}/*#hotel_searchSPAN_63, #hotel_searchSPAN_69, #hotel_searchSPAN_103, #hotel_searchSPAN_109*/
+
+#hotel_searchSPAN_67, #hotel_searchSPAN_107 {
+    box-sizing: border-box;
+    color: rgb(102, 102, 102);
+    text-align: left;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-rendering: optimizeLegibility;
+    text-transform: capitalize;
+    column-rule-color: rgb(102, 102, 102);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(102, 102, 102);
+    border: 0px none rgb(102, 102, 102);
+    font: normal normal 400 normal 11.148px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(102, 102, 102) none 0px;
+}/*#hotel_searchSPAN_67, #hotel_searchSPAN_107*/
+
+#hotel_searchDIV_71, #hotel_searchDIV_111 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: auto;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(242, 242, 242) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-top: 0px none rgb(51, 51, 51);
+    border-right: 0px none rgb(51, 51, 51);
+    border-bottom: 1px solid rgb(242, 242, 242);
+    border-left: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 12px / normal LatoReg;
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 7px 5px;
+}/*#hotel_searchDIV_71, #hotel_searchDIV_111*/
+
+#hotel_searchSPAN_72, #hotel_searchSPAN_112 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    float: left;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 50%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 11.148px / normal LatoReg;
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 10px 0px 0px;
+}/*#hotel_searchSPAN_72, #hotel_searchSPAN_112*/
+
+#hotel_searchSPAN_73, #hotel_searchSPAN_113 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    float: left;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 50%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 11.148px / normal LatoReg;
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 0px 0px 10px;
+}/*#hotel_searchSPAN_73, #hotel_searchSPAN_113*/
+
+#hotel_searchSPAN_74, #hotel_searchSPAN_114 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 11.148px / normal WebRupee;
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchSPAN_74, #hotel_searchSPAN_114*/
+
+#hotel_searchLI_75, #hotel_searchLI_115 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    display: none;
+    height: auto;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: auto;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 21.994px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchLI_75, #hotel_searchLI_115*/
+
+#hotel_searchLI_76 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    float: left;
+    height: auto;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 4px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchLI_76*/
+
+#hotel_searchP_77 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: auto;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchP_77*/
+
+#hotel_searchSPAN_78 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    float: right;
+    position: relative;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    background: rgba(0, 0, 0, 0) linear-gradient(rgb(252, 205, 3) 1%, rgb(251, 162, 2) 100%) repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    border-radius: 4px 4px 4px 4px;
+    font: normal normal 400 normal 9.996px / 9.996px LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 5px 0px 0px;
+}/*#hotel_searchSPAN_78*/
+
+#hotel_searchSPAN_78:before {
+    color: rgb(51, 51, 51);
+    content: '"eCash"';
+    display: inline-block;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-top: 1px solid rgb(228, 228, 228);
+    border-right: 0px none rgb(51, 51, 51);
+    border-bottom: 1px solid rgb(228, 228, 228);
+    border-left: 1px solid rgb(228, 228, 228);
+    border-radius: 4px 0 0 4px;
+    font: normal normal 400 normal 9.996px / 9.996px LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 2px 5px 4px;
+}/*#hotel_searchSPAN_78:before*/
+
+#hotel_searchI_79 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 9.996px / 9.996px WebRupee;
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchI_79*/
+
+#hotel_searchDIV_80 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 125.6px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 233.387px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 116.688px 62.8px;
+    transform-origin: 116.688px 62.8px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 0px 0px 10px;
+}/*#hotel_searchDIV_80*/
+
+#hotel_searchUL_81 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 80px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 223.387px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 111.688px 40px;
+    transform-origin: 111.688px 40px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px;
+}/*#hotel_searchUL_81*/
+
+#hotel_searchLI_82 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(78, 165, 223);
+    display: block;
+    float: left;
+    height: 25px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-align: right;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 223.387px;
+    column-rule-color: rgb(78, 165, 223);
+    perspective-origin: 111.688px 12.5px;
+    transform-origin: 111.688px 12.5px;
+    caret-color: rgb(78, 165, 223);
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 9.996px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(78, 165, 223) none 0px;
+}/*#hotel_searchLI_82*/
+
+#hotel_searchDIV_83 {
+    bottom: 25px;
+    box-sizing: border-box;
+    color: rgb(78, 165, 223);
+    float: right;
+    height: 18px;
+    left: 0px;
+    max-width: 140px;
+    min-width: 80px;
+    position: relative;
+    right: 0px;
+    text-align: center;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    top: -25px;
+    width: 80.475px;
+    z-index: 99;
+    column-rule-color: rgb(78, 165, 223);
+    perspective-origin: 40.2375px 9px;
+    transform-origin: 40.2375px 9px;
+    caret-color: rgb(78, 165, 223);
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 9.996px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 5px 0px 2px;
+    outline: rgb(78, 165, 223) none 0px;
+}/*#hotel_searchDIV_83*/
+
+#hotel_searchDIV_84 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    height: 18px;
+    left: 0px;
+    min-width: 35px;
+    position: relative;
+    right: 0px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    top: 0px;
+    white-space: nowrap;
+    width: 80.475px;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 40.2375px 9px;
+    transform-origin: 40.2375px 9px;
+    caret-color: rgb(255, 255, 255);
+    background: rgb(102, 102, 102) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 2px 2px 2px 2px;
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 2px 6px;
+}/*#hotel_searchDIV_84*/
+
+#hotel_searchDIV_84:after {
+    color: rgb(255, 255, 255);
+    content: '""';
+    display: none;
+    position: absolute;
+    right: 16px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 2;
+    column-rule-color: rgb(255, 255, 255);
+    caret-color: rgb(255, 255, 255);
+    border-top: 10px solid rgb(102, 102, 102);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 0px none rgb(255, 255, 255);
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(255, 255, 255) none 0px;
+}/*#hotel_searchDIV_84:after*/
+
+#hotel_searchDIV_84:before {
+    bottom: -8px;
+    color: rgb(255, 255, 255);
+    content: '""';
+    display: block;
+    height: 0px;
+    left: 47.475px;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    top: 16px;
+    white-space: nowrap;
+    width: 0px;
+    z-index: 1;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 8px 4px;
+    transform-origin: 8px 4px;
+    caret-color: rgb(255, 255, 255);
+    border-top: 8px solid rgb(102, 102, 102);
+    border-right: 8px solid rgba(0, 0, 0, 0);
+    border-bottom: 0px none rgb(255, 255, 255);
+    border-left: 8px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(255, 255, 255) none 0px;
+}/*#hotel_searchDIV_84:before*/
+
+#hotel_searchLI_85 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 26.4px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 223.387px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 111.688px 13.2px;
+    transform-origin: 111.688px 13.2px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 5px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchLI_85*/
+
+#hotel_searchDEL_87 {
+    box-sizing: border-box;
+    color: rgb(153, 153, 153);
+    text-align: right;
+    text-decoration: line-through solid rgb(153, 153, 153);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(153, 153, 153);
+    caret-color: rgb(153, 153, 153);
+    border: 0px none rgb(153, 153, 153);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(153, 153, 153) none 0px;
+}/*#hotel_searchDEL_87*/
+
+#hotel_searchSPAN_88 {
+    box-sizing: border-box;
+    color: rgb(153, 153, 153);
+    text-align: right;
+    text-decoration: none solid rgb(153, 153, 153);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(153, 153, 153);
+    caret-color: rgb(153, 153, 153);
+    border: 0px none rgb(153, 153, 153);
+    font: normal normal 400 normal 12px / normal WebRupee;
+    list-style: none outside none;
+    outline: rgb(153, 153, 153) none 0px;
+}/*#hotel_searchSPAN_88*/
+
+#hotel_searchSPAN_92, #hotel_searchSPAN_93 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 21.994px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchSPAN_92, #hotel_searchSPAN_93*/
+
+#hotel_searchSPAN_94 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 21.994px / normal WebRupee;
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchSPAN_94*/
+
+#hotel_searchSPAN_95 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 700 normal 21.994px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchSPAN_95*/
+
+#hotel_searchLI_116 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    float: left;
+    height: 17.6px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 223.387px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 111.688px 8.8px;
+    transform-origin: 111.688px 8.8px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 4px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchLI_116*/
+
+#hotel_searchP_117 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 17.6px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 223.387px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 111.688px 8.8px;
+    transform-origin: 111.688px 8.8px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchP_117*/
+
+#hotel_searchSPAN_118 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    float: right;
+    height: 17.6px;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    width: 78.3px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 39.15px 8.8px;
+    transform-origin: 39.15px 8.8px;
+    caret-color: rgb(51, 51, 51);
+    background: rgba(0, 0, 0, 0) linear-gradient(rgb(252, 205, 3) 1%, rgb(251, 162, 2) 100%) repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    border-radius: 4px 4px 4px 4px;
+    font: normal normal 400 normal 9.996px / 9.996px LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 5px 0px 0px;
+}/*#hotel_searchSPAN_118*/
+
+#hotel_searchSPAN_118:before {
+    color: rgb(51, 51, 51);
+    content: '"eCash"';
+    display: inline-block;
+    height: 9.6px;
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    width: 27.05px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 19.025px 8.8px;
+    transform-origin: 19.025px 8.8px;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-top: 1px solid rgb(228, 228, 228);
+    border-right: 0px none rgb(51, 51, 51);
+    border-bottom: 1px solid rgb(228, 228, 228);
+    border-left: 1px solid rgb(228, 228, 228);
+    border-radius: 4px 0 0 4px;
+    font: normal normal 400 normal 9.996px / 9.996px LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px 5px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 2px 5px 4px;
+}/*#hotel_searchSPAN_118:before*/
+
+#hotel_searchI_119 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    text-align: right;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 9.996px / 9.996px WebRupee;
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchI_119*/
+
+#hotel_searchDIV_120 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: 35.6px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 223.387px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 111.688px 17.8px;
+    transform-origin: 111.688px 17.8px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 10px 0px 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_120*/
+
+#hotel_searchSPAN_121 {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 35.6px;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    width: 117.162px;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 58.575px 17.8px;
+    transform-origin: 58.575px 17.8px;
+    caret-color: rgb(255, 255, 255);
+    background: rgb(243, 79, 79) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(243, 79, 79);
+    border-radius: 3px 3px 3px 3px;
+    font: normal normal 400 normal 14.994px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 8px 12px;
+    transition: all 0.2s linear 0s;
+}/*#hotel_searchSPAN_121*/
+
+#hotel_searchDIV_122 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 804.8px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 402.4px 0px;
+    transform-origin: 402.4px 0px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_122*/
+
+#hotel_searchDIV_123 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 25.4px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 174.6px;
+    width: 824.8px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 412.4px 12.7px;
+    transform-origin: 412.4px 12.7px;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(232, 232, 232) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    border-radius: 0 0 3px 0;
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 10px 0px 0px;
+}/*#hotel_searchDIV_123*/
+
+#hotel_searchDIV_124 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 25.4px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    width: 814.8px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 407.4px 12.7px;
+    transform-origin: 407.4px 12.7px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 120px 0px 0px;
+}/*#hotel_searchDIV_124*/
+
+#hotel_searchDIV_124:after {
+    clear: both;
+    color: rgb(51, 51, 51);
+    content: '""';
+    display: table;
+    height: 0px;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    width: 0px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_124:after*/
+
+#hotel_searchUL_125 {
+    bottom: 0px;
+    box-sizing: border-box;
+    float: left;
+    height: 25.4px;
+    left: 0px;
+    max-width: 100%;
+    position: relative;
+    right: 0px;
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    white-space: nowrap;
+    width: 380.3px;
+    perspective-origin: 190.15px 12.7px;
+    transform-origin: 190.15px 12.7px;
+    border-top: 1px solid rgb(228, 228, 228);
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    padding: 5px 50px;
+}/*#hotel_searchUL_125*/
+
+#hotel_searchUL_125:after {
+    bottom: 5.4px;
+    content: '""';
+    display: block;
+    height: 0px;
+    left: 40px;
+    position: absolute;
+    right: 334.3px;
+    text-rendering: optimizeLegibility;
+    top: 6px;
+    white-space: nowrap;
+    width: 0px;
+    perspective-origin: 3px 6.5px;
+    transform-origin: 3px 6.5px;
+    border-top: 6px solid rgba(0, 0, 0, 0);
+    border-bottom: 7px solid rgba(0, 0, 0, 0);
+    border-left: 6px solid rgb(243, 71, 71);
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+}/*#hotel_searchUL_125:after*/
+
+#hotel_searchUL_125:before {
+    bottom: 5.4px;
+    color: rgb(255, 255, 255);
+    content: '"DEAL"';
+    display: block;
+    height: 12px;
+    left: 10px;
+    position: absolute;
+    right: 340.3px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-rendering: optimizeLegibility;
+    top: 6px;
+    white-space: nowrap;
+    width: 26px;
+    column-rule-color: rgb(255, 255, 255);
+    perspective-origin: 15px 6.5px;
+    transform-origin: 15px 6.5px;
+    caret-color: rgb(255, 255, 255);
+    background: rgb(243, 71, 71) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 0px 2px 1px;
+}/*#hotel_searchUL_125:before*/
+
+#hotel_searchLI_126 {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 14.4px;
+    max-width: 100%;
+    text-rendering: optimizeLegibility;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 280.3px;
+    perspective-origin: 140.15px 7.2px;
+    transform-origin: 140.15px 7.2px;
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+}/*#hotel_searchLI_126*/
+
+#hotel_searchP_127 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 14.4px;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 280.3px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 140.15px 7.2px;
+    transform-origin: 140.15px 7.2px;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    overflow: hidden;
+}/*#hotel_searchP_127*/
+
+#hotel_searchSPAN_128, #hotel_searchSPAN_129 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchSPAN_128, #hotel_searchSPAN_129*/
+
+#hotel_searchLI_130 {
+    bottom: 6px;
+    box-sizing: border-box;
+    display: block;
+    height: 14.4px;
+    left: 337.188px;
+    position: absolute;
+    right: 5px;
+    text-rendering: optimizeLegibility;
+    top: 4px;
+    vertical-align: top;
+    width: 38.1125px;
+    perspective-origin: 19.05px 7.2px;
+    transform-origin: 19.05px 7.2px;
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+}/*#hotel_searchLI_130*/
+
+#hotel_searchA_131 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(78, 165, 223);
+    cursor: pointer;
+    left: 0px;
+    position: relative;
+    right: 0px;
+    text-align: left;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    top: 0px;
+    column-rule-color: rgb(78, 165, 223);
+    caret-color: rgb(78, 165, 223);
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(78, 165, 223) none 0px;
+    transition: all 0.3s ease-in-out 0s;
+}/*#hotel_searchA_131*/
+
+#hotel_searchA_131:after {
+    bottom: -1px;
+    color: rgb(78, 165, 223);
+    content: '""';
+    cursor: pointer;
+    display: block;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    right: 0.0125px;
+    text-align: left;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    top: 14.4px;
+    visibility: hidden;
+    width: 38.1px;
+    column-rule-color: rgb(78, 165, 223);
+    perspective-origin: 19.05px 0.5px;
+    transform: matrix(0, 0, 0, 1, 0, 0);
+    transform-origin: 19.05px 0.5px;
+    caret-color: rgb(78, 165, 223);
+    background: rgb(234, 35, 48) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(78, 165, 223) none 0px;
+    transition: all 0.3s ease-in-out 0s;
+}/*#hotel_searchA_131:after*/
+
+#hotel_searchDIV_132, #hotel_searchDIV_147 {
+    bottom: 100%;
+    box-sizing: border-box;
+    display: none;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    width: auto;
+    z-index: 99;
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px 0px 15px;
+}/*#hotel_searchDIV_132, #hotel_searchDIV_147*/
+
+#hotel_searchDIV_133, #hotel_searchDIV_148 {
+    box-shadow: rgb(205, 206, 207) 0px 0px 5px 1px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: auto;
+    min-width: 35px;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 350px;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgb(205, 206, 207);
+    border-radius: 4px 4px 4px 4px;
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 5px;
+}/*#hotel_searchDIV_133, #hotel_searchDIV_148*/
+
+#hotel_searchDIV_133:after, #hotel_searchDIV_148:after {
+    color: rgb(51, 51, 51);
+    content: '""';
+    display: block;
+    position: absolute;
+    right: 16px;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 100%;
+    z-index: 2;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border-top: 10px solid rgb(255, 255, 255);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 0px none rgb(51, 51, 51);
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_133:after, #hotel_searchDIV_148:after*/
+
+#hotel_searchDIV_133:before, #hotel_searchDIV_148:before {
+    color: rgb(51, 51, 51);
+    content: '""';
+    display: block;
+    position: absolute;
+    right: 15px;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    top: 100%;
+    z-index: 1;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border-top: 11px solid rgb(205, 206, 207);
+    border-right: 11px solid rgba(0, 0, 0, 0);
+    border-bottom: 0px none rgb(51, 51, 51);
+    border-left: 11px solid rgba(0, 0, 0, 0);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_133:before, #hotel_searchDIV_148:before*/
+
+#hotel_searchUL_134, #hotel_searchUL_149 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    float: left;
+    height: auto;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px;
+}/*#hotel_searchUL_134, #hotel_searchUL_149*/
+
+#hotel_searchLI_135, #hotel_searchLI_150 {
+    box-sizing: border-box;
+    color: rgb(102, 102, 102);
+    display: block;
+    height: auto;
+    position: relative;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-rendering: optimizeLegibility;
+    width: auto;
+    column-rule-color: rgb(102, 102, 102);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(102, 102, 102);
+    border: 0px none rgb(102, 102, 102);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 3px;
+    outline: rgb(102, 102, 102) none 0px;
+    padding: 0px 0px 0px 22px;
+}/*#hotel_searchLI_135, #hotel_searchLI_150*/
+
+#hotel_searchLI_135:before, #hotel_searchLI_150:before {
+    background-position: -80px 0px;
+    color: rgb(102, 102, 102);
+    content: '""';
+    display: block;
+    height: 16px;
+    left: 0px;
+    position: absolute;
+    text-decoration: none solid rgb(102, 102, 102);
+    text-rendering: optimizeLegibility;
+    width: 16px;
+    column-rule-color: rgb(102, 102, 102);
+    caret-color: rgb(102, 102, 102);
+    background: rgba(0, 0, 0, 0) url("https://css.yatra.com/content/globalcdn/bongo-cdn/images/common/common-sprite-rebrand.png?version=20160909519889") no-repeat scroll -80px 0px / 160px 64px padding-box border-box;
+    border: 0px none rgb(102, 102, 102);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(102, 102, 102) none 0px;
+}/*#hotel_searchLI_135:before, #hotel_searchLI_150:before*/
+
+#hotel_searchP_136, #hotel_searchP_151 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: auto;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: auto;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchP_136, #hotel_searchP_151*/
+
+#hotel_searchDIV_137 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: none;
+    float: left;
+    height: auto;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_137*/
+
+#hotel_searchDIV_138 {
+    bottom: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: auto;
+    left: 0px;
+    position: absolute;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    background: rgb(232, 232, 232) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    border-radius: 0 0 3px 0;
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 10px 0px 0px;
+}/*#hotel_searchDIV_138*/
+
+#hotel_searchDIV_139 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: auto;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    width: auto;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 0px 120px 0px 0px;
+}/*#hotel_searchDIV_139*/
+
+#hotel_searchDIV_139:after {
+    clear: both;
+    color: rgb(51, 51, 51);
+    content: '""';
+    display: table;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    column-rule-color: rgb(51, 51, 51);
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 14px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchDIV_139:after*/
+
+#hotel_searchUL_140 {
+    box-sizing: border-box;
+    float: left;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    width: auto;
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    border-top: 1px solid rgb(228, 228, 228);
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    padding: 5px 50px;
+}/*#hotel_searchUL_140*/
+
+#hotel_searchUL_140:after {
+    content: '""';
+    display: block;
+    height: 0px;
+    left: 40px;
+    position: absolute;
+    text-rendering: optimizeLegibility;
+    top: 6px;
+    white-space: nowrap;
+    width: 0px;
+    border-top: 6px solid rgba(0, 0, 0, 0);
+    border-bottom: 7px solid rgba(0, 0, 0, 0);
+    border-left: 6px solid rgb(243, 71, 71);
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+}/*#hotel_searchUL_140:after*/
+
+#hotel_searchUL_140:before {
+    color: rgb(255, 255, 255);
+    content: '"DEAL"';
+    display: block;
+    left: 10px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-rendering: optimizeLegibility;
+    top: 6px;
+    white-space: nowrap;
+    width: 26px;
+    column-rule-color: rgb(255, 255, 255);
+    caret-color: rgb(255, 255, 255);
+    background: rgb(243, 71, 71) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 0px 2px 1px;
+}/*#hotel_searchUL_140:before*/
+
+#hotel_searchLI_141 {
+    box-sizing: border-box;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    text-rendering: optimizeLegibility;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+}/*#hotel_searchLI_141*/
+
+#hotel_searchP_142 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: auto;
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: auto;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    margin: 0px;
+    outline: rgb(51, 51, 51) none 0px;
+    overflow: hidden;
+}/*#hotel_searchP_142*/
+
+#hotel_searchSPAN_143, #hotel_searchSPAN_144 {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    text-align: left;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    column-rule-color: rgb(51, 51, 51);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(51, 51, 51);
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#hotel_searchSPAN_143, #hotel_searchSPAN_144*/
+
+#hotel_searchLI_145 {
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    position: absolute;
+    right: 5px;
+    text-rendering: optimizeLegibility;
+    top: 4px;
+    vertical-align: top;
+    width: auto;
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    font: normal normal 400 normal 10px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+}/*#hotel_searchLI_145*/
+
+#hotel_searchA_146 {
+    box-sizing: border-box;
+    color: rgb(78, 165, 223);
+    cursor: pointer;
+    position: relative;
+    text-align: left;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    column-rule-color: rgb(78, 165, 223);
+    perspective-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    caret-color: rgb(78, 165, 223);
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(78, 165, 223) none 0px;
+    transition: all 0.3s ease-in-out 0s;
+}/*#hotel_searchA_146*/
+
+#hotel_searchA_146:after {
+    bottom: -1px;
+    color: rgb(78, 165, 223);
+    content: '""';
+    cursor: pointer;
+    display: block;
+    height: 1px;
+    left: 0px;
+    position: absolute;
+    text-align: left;
+    text-decoration: none solid rgb(78, 165, 223);
+    text-rendering: optimizeLegibility;
+    visibility: hidden;
+    width: 100%;
+    column-rule-color: rgb(78, 165, 223);
+    caret-color: rgb(78, 165, 223);
+    background: rgb(234, 35, 48) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(78, 165, 223);
+    font: normal normal 400 normal 12px / normal LatoReg, "Arial, Helvetica, sans-serif";
+    list-style: none outside none;
+    outline: rgb(78, 165, 223) none 0px;
+    transition: all 0.3s ease-in-out 0s;
+}/*#hotel_searchA_146:after*/
