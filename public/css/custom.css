@@ -156,3 +156,41 @@
 	width:200px;
 	position: relative;
 }
+
+/*INCREMENTAL CHOOSE SELCCT BOX CSS*/
+
+.popover-markup .popover{
+  width:150%;
+}
+
+.popover-markup label{
+  padding:0px;
+}
+
+.container{
+    margin:0px auto;
+}
+
+/*END OF INCEREMENTAL SELECT BOX CSS*/
+
+.child_age{
+	position: relative;
+	top:20px;
+}
+.children_select{
+	position: relative;
+	display: none;
+	margin-bottom:5px;
+}
+a.btn.btn-default{
+	display: block;
+	position:relative ;
+	z-index: 9999999;
+	top:20px;
+
+}
+.hotel_booking_info{
+	height: 300px;
+	background:#f9f9f9;
+	margin:20px;
+}

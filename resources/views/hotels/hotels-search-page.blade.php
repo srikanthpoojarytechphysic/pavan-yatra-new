@@ -66,40 +66,64 @@
                       <div class="tab-content">
                         <div id="hotel" class="tab-pane fade active in">
                             <h3>Hotel Booking</h3>
-                          <div class="main-search-input">
-                            <div class="main-search-input-item location">
-                                <i class="fa fa-map-marker"></i></a>
-                                <select name="hotel" id="hotel" data-placeholder="Departure" class="chosen-select" style="padding-left:20px;width:200px;">
-                                  @foreach($response as $items)
-                                      <option value="{{$items->CityId}}">{{$items->CityName}}</option>
-                                  @endforeach
-                                </select>
-                            </div>
-                            <div class="main-search-input-item location date1">
-                                <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Check-in Date" value=""/>
-                            </div>
-                            <div class="main-search-input-item location date1">
-                                <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Check-out Date" value=""/>
-                            </div>
-                            <div class="main-search-input-item location">
-                                <a href="#"><i class="fa fa-user"></i></a>
-                                <input type="text" placeholder="No of Adults" value=""/>
-                            </div>
-                            <div class="main-search-input-item location">
-                                <a href="#"><i class="fa fa-user"></i></a>
-                                <input type="text" placeholder="No of Children" value=""/>
-                            </div>
-                            <button class="button" href="#.">Search</button>
-                          </div>
-                        </div>
-                          </div>
+                              <form method="GET" action="{{Route('search.hotels')}}" role="form">
+                                       {{ csrf_field() }}
+                                       <div class="main-search-input">
+                                <div class="main-search-input-item location">
+                                    <i class="fa fa-map-marker"></i></a>
+                                    <select name="hotel" id="hotel" data-placeholder="Departure" class="chosen-select" style="padding-left:20px;width:200px;">
+                                      @foreach($response as $items)
+                                          <option value="{{$items->CityId}}">{{$items->CityName}}</option>
+                                      @endforeach
+                                    </select>
+                                </div>
+                                <div class="main-search-input-item location date1">
+                                    <a href="#"><i class="fa fa-calendar"></i></a>
+                                    <input type="text"  name="check-in-date" onfocus="(this.type='date')" class="datepicker" placeholder="Check-in Date" value=""/>
+                                </div>
+                                <div class="main-search-input-item location date1">
+                                    <a href="#"><i class="fa fa-calendar"></i></a>
+                                    <input type="text" name="check-out-date" onfocus="(this.type='date')" class="datepicker" placeholder="Check-out Date" value=""/>
+                                </div>
+                                <div class="main-search-input-item location">
+                                    <a href="#"><i class="fa fa-user"></i></a>
+                                    <input type="text" name="adults" placeholder="No of Adults" value=""/>
 
+                                </div>
+                                <div class="main-search-input-item location col-md-3">
+                                    <div class="input-group number-spinner">
+                                				<span class="input-group-btn">
+                                					<a class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                				</span>
+                                				<input type="text" name="no_of_children" class="form-control text-center" value="0">
+                                				<span class="input-group-btn">
+                                					<a class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                				</span>
+    			                          </div>
+                                    <div class="children_select">
+                                      <select class="child_age1" name="child_age1">
+                                         <option value="1">1</option>
+                                         <option value="2">2</option>
+                                         <option value="3">3</option>
+                                         <option value="4">4</option>
+                                         <option value="5">5</option>
+                                         <option value="6">6</option>
+                                         <option value="7">7</option>
+                                         <option value="8">8</option>
+                                         <option value="9">9</option>
+                                         <option value="10">10</option>
+                                         <option value="11">11</option>
+                                       </select>
+                                    </div>
+                                </div>
+                                <button  type="submit" class="button">Search</button>
+                              </div>
+                              </form>
+                        </div>
+                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 

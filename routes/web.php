@@ -52,9 +52,15 @@ Route::get('/ss',function(){
 //-----------HOTEL-ROUTES----------------//
 
 Route::get('/hotels',[
-	'uses' => 'hotelController@hotel_search',
+	'uses' => 'hotelController@hotels',
 	'as' => 'search.hotel'
 ]);
+
+Route::get('/hotels/search',[
+	'uses' => 'hotelController@hotels_search',
+	'as' => 'search.hotels'
+]);
+
 
 Route::get('/hot',function(){
 	return view('hotels.hotels-search-result-list');
