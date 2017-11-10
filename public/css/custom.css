@@ -194,3 +194,9 @@ a.btn.btn-default{
 	background:#f9f9f9;
 	margin:20px;
 }
+.choose_room{
+	display: grid;
+}
+.choose_room a{
+	padding:10px;
+}

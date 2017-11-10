@@ -112,56 +112,34 @@
 				<!-- Listing Item -->
 				<div class="col-lg-12 col-md-12">
 					<div class="listing-item-container list-layout">
-						<a href="listings-single-page.html" class="listing-item">
+						<a href="{{route('single.hotel_details',['query' => substr((url()->full()),84),'hotelid' => $items['HotelId'],'provider' => $items['Provider'],'roomcount' => 1])}}" class="listing-item">
 
 							<!-- Image -->
 							<div class="listing-item-image">
-								<img src="{{$items['HotelImages'][0]['Imagepath']}}" alt="">
-								<span class="tag">Eat & Drink</span>
+								<img src="{{$items['HotelImages'][0]['Imagepath']}}" alt="{{$items['HotelName']}}">
+								<span class="tag">Food</span>
 							</div>
 
 							<!-- Content -->
 							<div class="listing-item-content">
-								<div class="listing-badge now-open">Now Open</div>
+								<div class="listing-badge now-open">Rs.{{$items['RoomDetails'][0]['RoomTotal']}}</div>
 
 								<div class="listing-item-inner">
 									<h3>{{$items['HotelName']}}</h3>
 									<span>{{$items['HotelAddress']}}</span>
-									<div class="star-rating" data-rating="3.5">
-										<div class="rating-counter">(12 reviews)</div>
+									<div class="star-rating" data-rating="{{$items['StarRating']}}">
 									</div>
 								</div>
-
-								<span class="like-icon"></span>
 							</div>
 						</a>
+						<div class="choose_room">
+							<a href="{{route('single.hotel_details',['query' => substr((url()->full()),84),'hotelid' => $items['HotelId'],'provider' => $items['Provider'],'roomcount' => 1])}}" class="btn pavan_button">Choose Room</a>
+						</div>
 					</div>
 				</div>
 				<!-- Listing Item / End -->
-
-
-
 			</div>
 			@endforeach
-			<!-- Pagination -->
-			<div class="clearfix"></div>
-			<div class="row">
-				<div class="col-md-12">
-					<!-- Pagination -->
-					<div class="pagination-container margin-top-20 margin-bottom-40">
-						<nav class="pagination">
-							<ul>
-								<li><a href="#" class="current-page">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#"><i class="sl sl-icon-arrow-right"></i></a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-			<!-- Pagination / End -->
-
 		</div>
 	</div>
 </div>

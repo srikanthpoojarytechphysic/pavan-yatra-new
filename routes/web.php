@@ -60,10 +60,15 @@ Route::get('/hotels/search',[
 	'uses' => 'hotelController@hotels_search',
 	'as' => 'search.hotels'
 ]);
+Route::get('/hotels/details/{query}/{hotelid}/{provider}/{roomcount}',[
 
+	'uses' => 'hotelController@hotel_single_details',
+	'as' => 'single.hotel_details'
+]);
 
-Route::get('/hot',function(){
-	return view('hotels.hotels-search-result-list');
+Route::get('/hot',function(Request $request){
+	// return view('hotels.hotels-search-result-list');
+	dd(Session('request_details'));
 });
 
 

@@ -89,6 +89,8 @@ class hotelController extends Controller
         'user' => ''
       ];
 
+      $request->Session()->put('request_details',$query_params);
+
       try{
         $response = $client->get('http://webapi.i2space.co.in/Hotels/AvailableHotels',[
           'query' => $query_params
@@ -96,11 +98,8 @@ class hotelController extends Controller
 
       }
       catch(ClientException $e){
-
           echo Psr7\str($e->getResponse());
-
           exit();
-
       }
 
       // dd(json_decode($response->getBody(),true));
@@ -110,5 +109,23 @@ class hotelController extends Controller
 
       return view('hotels.hotels-search-result-list',['hotel_details' => $hotel_details]);
 
+    }
+    public function hotel_single_details(Request $request,$hotelid,$provider,$roomcount,$query)
+    {
+        $headers = ['ConsumerKey' => '694AAB059FCA4A401220610E8602F10C',
+                  'ConsumerSecret' => '1ED23A714D0386CE96EB16977416C7F2',
+                  'Content-Type' =>'application/json',
+                  'Accept-Encoding' => 'gzip,deflate'
+        ];
+
+        $client = new Client([
+          'headers' => $headers
+        ]);
+
+        $get_request_items = $request->Session()->get('request_details');
+
+        $value = $get_request_items['destinationId'];
+
+        dd($value);
     }
 }
