@@ -19,6 +19,8 @@
 ================================================== -->
 <link rel="stylesheet" href="{{URL::asset('css/style4963.css?ver=1.1')}}">
 <link rel="stylesheet" href="{{URL::asset('css/custom.css')}}">
+<link rel="stylesheet" href="{{URL::asset('css/plugins/timedropper.css')}}">
+<link rel="stylesheet" href="{{URL::asset('css/plugins/datedropper.css')}}">
 <link rel="stylesheet" href="{{URL::asset('css/snappy.css')}}">
 <link rel="stylesheet" href="{{URL::asset('css/selectize.css')}}">
 <link rel="stylesheet" href="{{URL::asset('css/colors/main.css" id="colors')}}">
@@ -62,8 +64,8 @@
       {
         $("#flight-return").hide();
       }
-    });       
-       
+    });
+
 });
   </script>
 
@@ -80,10 +82,10 @@
     <!-- Header -->
     <div id="header">
         <div class="container">
-            
+
             <!-- Left Side Content -->
             <div class="left-side">
-                
+
                 <!-- Logo -->
                 <div id="logo">
                     <a href="/"><img src="{{URL::asset('images/logo.jpg')}}" alt=""></a>
@@ -98,7 +100,7 @@
                 <nav id="navigation" class="style-1">
                     <ul id="responsive">
 
-                        <li><a class="current" href="/">Home</a>                            
+                        <li><a class="current" href="/">Home</a>
                         </li>
 
                         <li><a href="#">Booking</a>
@@ -113,7 +115,7 @@
                             </ul>
                         </li>
                         <li><a href="#.">Recharge</a></li>
-                    
+
                         <li><a href="#">About us</a>
                             <ul>
                                 <li><a href="#.">About us</a></li>
@@ -124,12 +126,12 @@
                                 <li><a href="#.">User agreement</a></li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                 </nav>
                 <div class="clearfix"></div>
                 <!-- Main Navigation / End -->
-                
+
             </div>
             <!-- Left Side Content / End -->
 
@@ -188,7 +190,7 @@
                                         <label for="remember-me">Remember Me</label>
                                     </div>
                                 </div>
-                                
+
                             </form>
                         </div>
 
@@ -196,14 +198,14 @@
                         <div class="tab-content" id="tab2" style="display: none;">
 
                             <form method="post" class="register">
-                                
+
                             <p class="form-row form-row-wide">
                                 <label for="username2">Username:
                                     <i class="im im-icon-Male"></i>
                                     <input type="text" class="input-text" name="username" id="username2" value="" />
                                 </label>
                             </p>
-                                
+
                             <p class="form-row form-row-wide">
                                 <label for="email2">Email Address:
                                     <i class="im im-icon-Mail"></i>
@@ -226,7 +228,7 @@
                             </p>
 
                             <input type="submit" class="button border fw margin-top-10" name="register" value="Register" />
-    
+
                             </form>
                         </div>
 
@@ -263,18 +265,18 @@
                     <li><a href="#">Booking</a></li>
                     <li><a href="#.">Recharge</a></li>
                     <li><a href="#.">About us</a></li>
-                                
+
                 </ul>
 
                 <ul class="footer-links">
                     <li><a href="#.">Contact</a></li>
-                                <li><a href="#.">Faqs</a></li>
-                                <li><a href="#.">T&C</a></li>
-                                <li><a href="#.">Privacy policy</a></li>
-                                <li><a href="#.">User agreement</a></li>
+                    <li><a href="#.">Faqs</a></li>
+                    <li><a href="#">TnC</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">User agreement</a></li>
                 </ul>
                 <div class="clearfix"></div>
-            </div>      
+            </div>
 
             <div class="col-md-3  col-sm-12">
                 <h4>Contact Us</h4>
@@ -294,7 +296,7 @@
             </div>
 
         </div>
-        
+
         <!-- Copyright -->
         <div class="row">
             <div class="col-md-12">
@@ -322,6 +324,8 @@
 <script defer type="text/javascript" src="/js/selectize.min.js"></script>
 
 <script defer type="text/javascript" src="/scripts/custom.js"></script>
+<script defer type="text/javascript" src="/scripts/timedropper.js"></script>
+<script defer type="text/javascript" src="/scripts/datedropper.js"></script>
 <script defer type="text/javascript" src="/js/custom.js"></script>
 </body>
 </html>
