@@ -326,6 +326,7 @@
 <script defer type="text/javascript" src="/scripts/custom.js"></script>
 <script defer type="text/javascript" src="/scripts/timedropper.js"></script>
 <script defer type="text/javascript" src="/scripts/datedropper.js"></script>
+<script defer type="text/javascript" src="/scripts/maps.js"></script>
 <script defer type="text/javascript" src="/js/custom.js"></script>
 </body>
 </html>
