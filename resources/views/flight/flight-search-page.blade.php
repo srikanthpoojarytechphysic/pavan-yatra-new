@@ -106,15 +106,15 @@
                           <div class="main-search-input">
                             <div class="main-search-input-item">
                                 <select name="departure" id="departure" data-placeholder="Departure" class="chosen-select" style="padding-left: 20px;width:200px;">
-                                    @foreach($response as $items)
-                                        <option value="{{$items->AirportCode}}">{{$items->City}}<em>    </em>{{$items->AirportCode}}</option>
+                                    @foreach($response as $key => $items)
+                                        <option value="{{$items->AirportCode}}-{{$key}}">{{$items->City}}<em>    </em>{{$items->AirportCode}}</option>
                                     @endforeach
                                 </select>
                             </div>
                             <div class="main-search-input-item">
                                <select name="destination" id="destination" data-placeholder="Destination" class="chosen-select" style="padding-left: 20px;width:200px;">
-                                    @foreach($response as $items)
-                                        <option value="{{$items->AirportCode}}">{{$items->City}}<em>    </em>{{$items->AirportCode}}</option>
+                                    @foreach($response as $key => $items)
+                                        <option value="{{$items->AirportCode}}-{{$key}}">{{$items->City}}<em>    </em>{{$items->AirportCode}}</option>
                                     @endforeach
                                 </select>
                             </div>
