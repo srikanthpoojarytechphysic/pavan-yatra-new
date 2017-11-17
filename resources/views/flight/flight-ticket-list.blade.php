@@ -99,9 +99,9 @@
 		                            <td>
 																	@foreach($totalflight as $y => $value)
 																		@if($key == $y)
-			                                <button class="btn btn-default pavan_button">
+			                                <a href="{{route('flight_checkout',['id' => $key])}}" class="btn pavan_button">
 			                                    <strong>Rs.{{$value['FareDetails']['TotalFare'] }}</strong>
-			                                </button>
+			                                </a>
 																		@endif
 																	@endforeach
 		                            </td>
@@ -130,7 +130,7 @@
 
 										@if($loop->first)
 
-                          <div id="flightInfo{{$key}}" class="modal fade" role="dialog">
+                          <div id="flightInfo{{$key}}" class="modal fade" role="dialog" style="z-index:6666699;">
                                 <div class="modal-dialog" id="flightInfoModal">
 
                                     <!-- Modal content-->
