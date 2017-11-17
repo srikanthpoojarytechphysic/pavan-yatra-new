@@ -126,12 +126,11 @@
             <h5>Booking Information</h5>
           </div>
           <!-- for adults name boxes -->
-          @if(Session('passengers')['adults'])
-          <h1>{{Session('passengers')['adults']}}</h1>
+          @for($i=0;$i < (Session('passengers')['adults']);$i++)
           <div class="col-lg-12 col-sm-12 col-xs-12">
             <div class="col-md-4">
               <div style="position:absolute;width:100px;">
-                <select style="font-size:21px;padding:0px;" name="person-type">
+                <select style="font-size:21px;padding:0px;" name="person-type-adults{{$i}}">
                   <option>
                     Mr.
                   </option>
@@ -141,51 +140,56 @@
                 </select>
               </div>
   						<div style="position:relative;left:100px;padding-right:100px;">
-  							<input name="name" type="text" id="first-name" placeholder="First Name" required="required" class="error">
+  							<input name="first-name-adult-{{$i}}" type="text" id="first-name" placeholder="First Name" required="required" class="error">
   						</div>
   					</div>
             <div class="col-md-4">
   						<div>
-  							<input name="name" type="text" id="last-name" placeholder="Last Name" required="required" class="error">
+  							<input name="last-name-adult-{{$i}}" type="text" id="last-name" placeholder="Last Name" required="required" class="error">
   						</div>
   					</div>
-            <span style="font-size:25px;">Adult 1</span>
+            <span style="font-size:25px;">Adult {{$i}}</span>
+            <span class="hor_line"></span>
           </div>
-          @endif
+          @endfor
           <!-- for children name boxes -->
-          <div class="col-lg-12 col-sm-12 col-xs-12">
-            <div class="col-md-4">
-              <div style="position:absolute;width:100px;">
-                <select style="font-size:21px;padding: 0px;" name="person-type">
-                  <option>
-                    Master.
-                  </option>
-                  <option>
-                    Miss.
-                  </option>
-                </select>
-              </div>
-             <div style="position:relative;left:100px;padding-right:100px;">
-               <input name="name" type="text" id="first-name" placeholder="First Name" required="required" class="error">
+          @if(Session('passengers')['children'])
+            @for($i=0;$i < Session('passengers')['children'];$i++)
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+              <div class="col-md-4">
+                <div style="position:absolute;width:100px;">
+                  <select style="font-size:21px;padding: 0px;" name="person-type-children{{$i}}">
+                    <option>
+                      Master.
+                    </option>
+                    <option>
+                      Miss.
+                    </option>
+                  </select>
+                </div>
+               <div style="position:relative;left:100px;padding-right:100px;">
+                 <input name="first-name-children-{{$i}}" type="text" id="first-name" placeholder="First Name" required="required" class="error">
+               </div>
              </div>
-           </div>
-            <div class="col-md-4">
-             <div>
-               <input name="name" type="text" id="last-name" placeholder="Last Name" required="required" class="error">
+              <div class="col-md-4">
+               <div>
+                 <input name="last-name-children-{{$i}}" type="text" id="last-name" placeholder="Last Name" required="required" class="error">
+               </div>
              </div>
-           </div>
-            <span style="font-size:25px;">child
+              <span style="font-size:25px;">child 1</span>
+              <span class="hor_line"></span>
+            </div>
+            @endfor
+          @endif
 
 
-
-
-               1</span>
-          </div>
           <!-- for infants name boxes -->
-          <div class="col-lg-12 col-sm-12 col-xs-12">
+          @if(Session('passengers')['infants'])
+            @for($i=0;$i < Session('passengers')['infants'];$i++)
+            <div class="col-lg-12 col-sm-12 col-xs-12">
             <div class="col-md-4 col-sm-12 col-xs-12">
               <div style="position:absolute;width:100px;">
-                <select style="font-size:21px;padding: 0px;" name="person-type">
+                <select style="font-size:21px;padding: 0px;" name="person-type-infant{{$i}}">
                   <option>
                     Master.
                   </option>
@@ -195,17 +199,30 @@
                 </select>
               </div>
              <div style="position:relative;left:100px;padding-right:100px;">
-               <input name="name" type="text" id="first-name" placeholder="First Name" required="required" class="error">
+               <input name="first-name-infant-{{$i}}" type="text" id="first-name" placeholder="First Name" required="required" class="error">
              </div>
            </div>
             <div class="col-md-4 col-sm-12 col-xs-12">
              <div>
-               <input name="name" type="text" id="last-name" placeholder="Last Name" required="required" class="error">
+               <input name="last-name-infant-{{$i}}" type="text" id="last-name" placeholder="Last Name" required="required" class="error">
              </div>
            </div>
             <span style="font-size:25px;">infants 1</span>
           </div>
+            @endfor
+          @endif
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="container">
+    <div class="col-lg-12">
+      <div class="ticket_single_block">
+        <center style="padding:20px;">
+          <button class="btn pavan_button">Proceed to payment</button>
+        </center>
       </div>
     </div>
   </div>
