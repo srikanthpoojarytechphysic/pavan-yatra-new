@@ -69,9 +69,21 @@
       <h4 style="margin-top:55px;">Fare Details</h4>
       <div class="fare_block">
         <ul class="list-group">
-          <li class="list-group-item">Adult {{$passengers['adults']}}<span>RS.{{$faredetails['ChargeableFares']['ActualBaseFare']}}</span></li>
+          <li class="list-group-item">Adult {{$passengers['adults']}}<span>RS.{{$faredetails['FareBreakUp']['FareAry'][0]['IntBaseFare']}}</span></li>
+          @if($passengers['children'])
+           <li class="list-group-item">
+             Children {{$passengers['children']}}
+             <span>RS.{{$faredetails['FareBreakUp']['FareAry'][1]['IntBaseFare']}}</span>
+           </li>
+          @endif
+          @if($passengers['infants'])
+          <li class="list-group-item">
+            Infants {{$passengers['infants']}}
+            <span>RS.{{$faredetails['FareBreakUp']['FareAry'][2]['IntBaseFare']}}</span>
+          </li>
+          @endif
           <li class="list-group-item">Tax<span>{{$faredetails['ChargeableFares']['Tax']}}</span></li>
-          <li class="list-group-item">Total Fare<span style="font-size:27px;"><strong>Rs.{{$faredetails['TotalFare']}}</strong></span></li>
+          <li style="height:100px;" class="list-group-item">Total Fare<span style="font-size:27px;"><strong>Rs.{{$faredetails['TotalFare']}}</strong></span></li>
         </ul>
         <center>
           <a href="#" class="" data-toggle="modal" data-target="#myModal">View Fare Rules</a>
@@ -105,6 +117,7 @@
     <!-- END OF FARE DETAILS MODAL -->
   </div>
 </div>
+<form method="get" role="form" action="{{route('flight_checkout_payment',['id' => substr(url()->full(),38)])}}">
 <div class="row">
   <div class="container">
     <div class="col-lg-12 col-sm-12 col-xs-12">
@@ -113,7 +126,7 @@
           <h1>Contact Details</h1>
 					<div class="col-md-4 col-sm-12 col-xs-12">
 						<div>
-							<input name="name" type="text" id="name" placeholder="Mobile Number" required="required" class="error">
+							<input name="mobile" type="text" id="name" placeholder="Mobile Number" required="required" class="error">
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-12 col-xs-12">
@@ -126,18 +139,19 @@
             <h5>Booking Information</h5>
           </div>
           <!-- for adults name boxes -->
-          @for($i=0;$i < (Session('passengers')['adults']);$i++)
+          @for($i=1;$i <= (Session('passengers')['adults']);$i++)
           <div class="col-lg-12 col-sm-12 col-xs-12">
             <div class="col-md-4">
               <div style="position:absolute;width:100px;">
                 <select style="font-size:21px;padding:0px;" name="person-type-adults{{$i}}">
-                  <option>
+                  <option value="M">
                     Mr.
                   </option>
-                  <option>
+                  <option value="F">
                     Ms.
                   </option>
                 </select>
+                <input type="hidden" value="" id="optionadult" />
               </div>
   						<div style="position:relative;left:100px;padding-right:100px;">
   							<input name="first-name-adult-{{$i}}" type="text" id="first-name" placeholder="First Name" required="required" class="error">
@@ -148,24 +162,33 @@
   							<input name="last-name-adult-{{$i}}" type="text" id="last-name" placeholder="Last Name" required="required" class="error">
   						</div>
   					</div>
+            <div class="col-md-4 main-search-input-item location date1">
+             <div>
+               <input type="date" name="adult-age-{{$i}}" id="dob-adult" placeholder="age" required="required" class="datepicker" style="font-size:16px;">
+
+               <!-- <input name="adult-age-{{$i}}" type="text" id="last-name" placeholder="Age" required="required" class="error"> -->
+             </div>
+           </div>
             <span style="font-size:25px;">Adult {{$i}}</span>
             <span class="hor_line"></span>
           </div>
           @endfor
           <!-- for children name boxes -->
           @if(Session('passengers')['children'])
-            @for($i=0;$i < Session('passengers')['children'];$i++)
+            @for($i=1;$i <= Session('passengers')['children'];$i++)
             <div class="col-lg-12 col-sm-12 col-xs-12">
               <div class="col-md-4">
                 <div style="position:absolute;width:100px;">
                   <select style="font-size:21px;padding: 0px;" name="person-type-children{{$i}}">
-                    <option>
-                      Master.
+                    <option value="M">
+                      Mr.
                     </option>
-                    <option>
-                      Miss.
+                    <option value="F">
+                      Ms.
                     </option>
                   </select>
+                  <input type="hidden" value="" id="optionchildren" />
+
                 </div>
                <div style="position:relative;left:100px;padding-right:100px;">
                  <input name="first-name-children-{{$i}}" type="text" id="first-name" placeholder="First Name" required="required" class="error">
@@ -176,7 +199,14 @@
                  <input name="last-name-children-{{$i}}" type="text" id="last-name" placeholder="Last Name" required="required" class="error">
                </div>
              </div>
-              <span style="font-size:25px;">child 1</span>
+             <div class="col-md-4">
+               <div>
+                 <input type="date" style="font-size:16px;" name="children-age-{{$i}}" id="dob-children" placeholder="age" required="required" class="datepicker">
+
+                 <!-- <input name="children-age-{{$i}}" type="text" id="last-name" placeholder="age" required="required" class="error"> -->
+               </div>
+             </div>
+              <span style="font-size:25px;">child {{$i}}</span>
               <span class="hor_line"></span>
             </div>
             @endfor
@@ -185,18 +215,19 @@
 
           <!-- for infants name boxes -->
           @if(Session('passengers')['infants'])
-            @for($i=0;$i < Session('passengers')['infants'];$i++)
+            @for($i=1;$i <= Session('passengers')['infants'];$i++)
             <div class="col-lg-12 col-sm-12 col-xs-12">
             <div class="col-md-4 col-sm-12 col-xs-12">
               <div style="position:absolute;width:100px;">
                 <select style="font-size:21px;padding: 0px;" name="person-type-infant{{$i}}">
-                  <option>
+                  <option value="M">
                     Master.
                   </option>
-                  <option>
+                  <option value="F">
                     Miss.
                   </option>
                 </select>
+                <input type="hidden" value="" id="optionadult" />
               </div>
              <div style="position:relative;left:100px;padding-right:100px;">
                <input name="first-name-infant-{{$i}}" type="text" id="first-name" placeholder="First Name" required="required" class="error">
@@ -205,6 +236,12 @@
             <div class="col-md-4 col-sm-12 col-xs-12">
              <div>
                <input name="last-name-infant-{{$i}}" type="text" id="last-name" placeholder="Last Name" required="required" class="error">
+             </div>
+           </div>
+           <div class="col-md-4">
+             <div>
+               <input type="date"  style="font-size:16px;" name="infant-age-{{$i}}" id="dob-infant" placeholder="age" required="required" class="datepicker">
+               <!-- <input name="infant-age-{{$i}}" type="text" id="last-name" placeholder="age" required="required" class="error"> -->
              </div>
            </div>
             <span style="font-size:25px;">infants 1</span>
@@ -221,10 +258,46 @@
     <div class="col-lg-12">
       <div class="ticket_single_block">
         <center style="padding:20px;">
-          <button class="btn pavan_button">Proceed to payment</button>
+          <button class="btn pavan_button" type="submit">Proceed to payment</button>
         </center>
       </div>
     </div>
   </div>
 </div>
+</form>
+@endsection
+@section('scripts')
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#dob-infant").change(function(){
+        var mdate = $("#dob-infant").val().toString();
+        var yearThen = parseInt(mdate.substring(0,4), 10);
+        var monthThen = parseInt(mdate.substring(5,7), 10);
+        var dayThen = parseInt(mdate.substring(8,10), 10);
+
+        var today = new Date();
+        var birthday = new Date(yearThen, monthThen-1, dayThen);
+
+        var differenceInMilisecond = today.valueOf() - birthday.valueOf();
+
+        var year_age = Math.floor(differenceInMilisecond / 31536000000);
+        var day_age = Math.floor((differenceInMilisecond % 31536000000) / 86400000);
+
+        if ((today.getMonth() == birthday.getMonth()) && (today.getDate() == birthday.getDate())) {
+            alert("Happy B'day!!!");
+        }
+
+        var month_age = Math.floor(day_age/30);
+
+        day_age = day_age % 30;
+
+        if (isNaN(year_age) || isNaN(month_age) || isNaN(day_age)) {
+            $("#exact_age").text("Invalid birthday - Please try again!");
+        }
+        else {
+            console.log("You are<br/><span id=\"age\">" + year_age + " years " + month_age + " months " + day_age + " days</span> old");
+        }
+    });
+});
+</script>
 @endsection

@@ -369,7 +369,7 @@
 																		@endforeach
 		                            </td>
 		                            <td>
-																	@foreach(returnflight as $y => $value)
+																	@foreach($returnflight as $y => $value)
 																		@if($key == $y)
 			                                <button class="btn btn-default pavan_button">
 			                                    <strong>Rs.{{$value['FareDetails']['TotalFare'] }}</strong>
