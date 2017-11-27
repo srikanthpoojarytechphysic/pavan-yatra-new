@@ -31,7 +31,7 @@
 					@else
 					col-lg-6
 					@endif">
-						<table class="table">
+						<table class="table type_1">
 						    <thead>
 						      <tr>
 						        <th style="padding-left:50px;">Airline</th>
@@ -48,7 +48,7 @@
 												@if($loop->first)
 		                        <tr class="pink-color">
 		                            <td style="padding-top: 10px;width:200px;">
-		                                <img class="img-responsive airline_img" src="{{URL::asset('images/indigo.png')}}">
+		                                <img class="img-responsive airline_img" src="/images/{{$value['FlightSegments'][0]['ImageFileName']}}.png">
 		                                <span class="airline_name">
 		                                    {{$val['AirLineName']}} <h5>{{$key}}</h5>
 		                                </span>
@@ -67,10 +67,10 @@
 																			@endforeach
 		                                </span>
 		                            </td>
-			                            <td style="padding-top: 30px;">
+			                            <td style="padding-top: 30px;" class="depart">
 			                                {{substr($val['DepartureDateTimeZone'],10)}}
 			                            </td>
-			                            <td style="padding-top: 30px;">
+			                            <td style="padding-top: 30px;" class="arrive">
 																			@foreach($value['FlightSegments'] as $l => $v)
 																				@if($loop->last)
 																					{{substr($v['ArrivalDateTimeZone'],10)}}
@@ -80,18 +80,18 @@
 		                            <td style="padding-top: 30px;text-align:center;">
 																		@foreach($value['FlightSegments'] as $r => $s)
 																			@if($loop->count==1)
-																				{{$val['Duration']}}
-			                                    <span class="center">Non Stop</span>
+																				<span class="duration">{{$val['Duration']}}</span>
+			                                    <span class="center stop_1">Non Stop</span>
 																					@break
 																			@elseif($loop->count==2)
-																				{{$value['FlightSegments'][1]['AccumulatedDuration']}}
-			                                    <span class="center">1 stop via {{$s['IntArrivalAirportName']}}</span>
+																				<span class="duration">{{$value['FlightSegments'][1]['AccumulatedDuration']}}</span>
+			                                    <span class="center stop_1">1 stop via {{$s['IntArrivalAirportName']}}</span>
 																					@break
 
 																			@elseif($loop->count==3)
-																				{{$value['FlightSegments'][2]['AccumulatedDuration']}}
-																					<span class="center">2 stop via {{$value['FlightSegments'][0]['IntArrivalAirportName']}}</span>
-																					<span class="center">{{$value['FlightSegments'][1]['IntArrivalAirportName']}}</span>
+																				<span class="duration">{{$value['FlightSegments'][2]['AccumulatedDuration']}}</span>
+																					<span class="center stop_1">2 stop via {{$value['FlightSegments'][0]['IntArrivalAirportName']}}</span>
+																					<span class="center stop_sec">{{$value['FlightSegments'][1]['IntArrivalAirportName']}}</span>
 																					@break
 																			@endif
 																		@endforeach
@@ -99,9 +99,15 @@
 		                            <td>
 																	@foreach($totalflight as $y => $value)
 																		@if($key == $y)
-			                                <a href="{{route('flight_checkout',['id' => $key])}}" class="btn pavan_button">
-			                                    <strong>Rs.{{$value['FareDetails']['TotalFare'] }}</strong>
-			                                </a>
+																			@if($journey_info['tripType'] == 1 )
+																				<a href="{{route('flight_checkout',['id' => $key])}}" class="btn pavan_button" id="flight_type_1" data-key="{{$key}}">
+																					<strong>Rs.{{$value['FareDetails']['TotalFare'] }}</strong>
+
+																			@else
+																				<a href="#" class="btn pavan_button flight_type_1" data-key="{{$key}}" data-price="{{$value['FareDetails']['TotalFare']}}">
+				                                    <strong>Rs.{{$value['FareDetails']['TotalFare'] }}</strong>
+				                                </a>
+																			@endif
 																		@endif
 																	@endforeach
 		                            </td>
@@ -303,7 +309,7 @@
                 <!--     //end of for each loop -->
 					@if($journey_info['tripType'] == 2 )
 					<div class="col-lg-6">
-						<table class="table">
+						<table class="table type_2">
 						    <thead>
 						      <tr>
 						        <th style="padding-left:50px;">Airline</th>
@@ -320,7 +326,8 @@
 												@if($loop->first)
 		                        <tr class="pink-color">
 		                            <td style="padding-top: 10px;width:200px;">
-		                                <img class="img-responsive airline_img" src="{{URL::asset('images/indigo.png')}}">
+																	<img class="img-responsive airline_img" src="/images/{{$value['FlightSegments'][0]['ImageFileName']}}.png">
+
 		                                <span class="airline_name">
 		                                    {{$val['AirLineName']}} <h5>{{$key}}</h5>
 		                                </span>
@@ -339,10 +346,10 @@
 																			@endforeach
 		                                </span>
 		                            </td>
-			                            <td style="padding-top: 30px;">
+			                            <td style="padding-top: 30px;" class="depart">
 			                                {{substr($val['DepartureDateTimeZone'],10)}}
 			                            </td>
-			                            <td style="padding-top: 30px;">
+			                            <td style="padding-top: 30px;" class="arrive">
 																			@foreach($value['FlightSegments'] as $l => $v)
 																				@if($loop->last)
 																					{{substr($v['ArrivalDateTimeZone'],10)}}
@@ -352,18 +359,18 @@
 		                            <td style="padding-top: 30px;text-align:center;">
 																		@foreach($value['FlightSegments'] as $r => $s)
 																			@if($loop->count==1)
-																				{{$val['Duration']}}
-			                                    <span class="center">Non Stop</span>
+																				<span class="duration">{{$val['Duration']}}</span>
+			                                    <span class="center stop_2">Non Stop</span>
 																					@break
 																			@elseif($loop->count==2)
-																				{{$value['FlightSegments'][1]['AccumulatedDuration']}}
-			                                    <span class="center">1 stop via {{$s['IntArrivalAirportName']}}</span>
+																				<span class="duration">{{$value['FlightSegments'][1]['AccumulatedDuration']}}</span>
+			                                    <span class="center stop_2">1 stop via {{$s['IntArrivalAirportName']}}</span>
 																					@break
 
 																			@elseif($loop->count==3)
-																				{{$value['FlightSegments'][2]['AccumulatedDuration']}}
-																					<span class="center">2 stop via {{$value['FlightSegments'][0]['IntArrivalAirportName']}}</span>
-																					<span class="center">{{$value['FlightSegments'][1]['IntArrivalAirportName']}}</span>
+																				<span class="duration">{{$value['FlightSegments'][2]['AccumulatedDuration']}}</span>
+																					<span class="center stop_2">2 stop via {{$value['FlightSegments'][0]['IntArrivalAirportName']}}</span>
+																					<span class="center stop_sec_2">{{$value['FlightSegments'][1]['IntArrivalAirportName']}}</span>
 																					@break
 																			@endif
 																		@endforeach
@@ -371,9 +378,9 @@
 		                            <td>
 																	@foreach($returnflight as $y => $value)
 																		@if($key == $y)
-			                                <button class="btn btn-default pavan_button">
-			                                    <strong>Rs.{{$value['FareDetails']['TotalFare'] }}</strong>
-			                                </button>
+																		<a href="#" class="btn pavan_button flight_type_2" data-key="{{$key}}" data-price="{{$value['FareDetails']['TotalFare']}}">
+																				<strong>Rs.{{$value['FareDetails']['TotalFare'] }}</strong>
+																		</a>
 																		@endif
 																	@endforeach
 		                            </td>
@@ -574,6 +581,55 @@
                 @endforeach
                 <!--     //end of for each loop -->
 							@endif
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-lg-12">
+			<div class="sticky_flight">
+				<div class="col_divider">
+					<div class="col-md-2">
+						<img class="img-responsive airline_img" src="/images/{{$value['FlightSegments'][0]['ImageFileName']}}.png">
+							<span class="airline_name_type_1">
+								Jet Airways
+							</span>
+							<span class="airline_code_type_1" style="left: 22px;top: 5px;position: relative;display:block;">
+								4564
+							</span>
+					</div>
+					<div class="col-md-2">
+						<span class="air_time_type_1"></span><em>  </em><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						<span class="air_time_type_2"></span>
+					</div>
+					<div class="col-md-2" style="border-right: 1px solid;height: 75px;">
+						<span class="duration_type_1"></span><br />
+						<span class="stop_type_1"></span>
+					</div>
+				</div>
+				<div class="col_divider_2">
+					<div class="col-md-2">
+						<img class="img-responsive airline_img" src="/images/{{$value['FlightSegments'][0]['ImageFileName']}}.png">
+							<span class="airline_name_type_2">
+							</span>
+							<span class="airline_code_type_2" style="left: 22px;top: 5px;position: relative;display:block;">
+							</span>
+					</div>
+					<div class="col-md-2">
+						<span class="air_time_type_sec_1"></span><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						<span class="air_time_type_sec_2"></span>
+					</div>
+					<div class="col-md-2" style="
+					height: inherit;">
+					<span class="duration_type_2"></span><br />
+					<span class="stop_type_2"></span>
+						<span  class="label price_data_type" style="position: relative;left: 105px;top:-27px;background:#f91942;font-size:20px;"></span>
+					</div>
+
+
+					<center>
+						<a href="#" class="btn pavan_button book_flight" style="position:relative;top:-68px;display:grid;">Book Now</a>
+					</center>
 				</div>
 			</div>
 		</div>
