@@ -158,7 +158,7 @@ class flightController extends Controller
 
 
 		}
-		//storing request parameters and source and destination in session for reference
+		// storing request parameters and source and destination in session for reference
 		$request->Session()->put('passengers' , $query_params);
 		$request->Session()->put('search_details' ,['source' => $request->input('departure'),'destination' => $request->input('destination')]);
 
@@ -173,31 +173,39 @@ class flightController extends Controller
 		$returnflight = $res['DomesticReturnFlights'];
 
 		$request->Session()->put('flightdetails',$totalflight);
-
-		// dd($totalflight[0]['FlightSegments'][0]['BaggageAllowed']);
-
-		// $roundtripflights = $res['']
+		$request->Session()->put('returnflight',$returnflight);
 
 		return view('flight.flight-ticket-list',['returnflight' => $returnflight,'totalflight' => $totalflight,'journey_info' => $journey_info,'test_var' => substr($test_var,4)]);
-	//
+  //
 	// $journey_info = ['date' => $query_params['journeyDate'],'source' => $query_params['source'],'destination' => substr($query_params['destination'],4),'tripType' => $query_params['tripType']];
-	//
+  //
 	// $res = 'file:///C:/Users/SRIKLAPWC/Desktop/api/response.json';
-	//
+  //
 	// $jsondata = file_get_contents($res);
-	//
+  //
 	// $total =json_decode($jsondata,true);
-	//
+  //
 	// $totalflight = $total['DomesticOnwardFlights'];
-	//
+	// $returnflight = $total['DomesticReturnFlights'];
+  //
 	// $test_var = 'BLR-BENGALURU';
-	//
-	// return view('flight.flight-ticket-list',['totalflight' => $totalflight,'journey_info' => $journey_info,'test_var' => substr($test_var,4)]);
+  //
+	// return view('flight.flight-ticket-list',['returnflight' => $returnflight,'totalflight' => $totalflight,'journey_info' => $journey_info,'test_var' => substr($test_var,4)]);
 
 	}
-	public function flight_checkout($id,Request $request)
+	public function flight_checkout($id,$return_id,Request $request)
 	{
+
 		$value = Session('flightdetails');
+
+		$return = Session('returnflight');
+
+		$airport_data = Session('airport_data');
+
+		$search_details = Session('search_details');
+
+		$passengers = Session('passengers');
+
 
 		$headers = ['ConsumerKey' => '694AAB059FCA4A401220610E8602F10C',
         			'ConsumerSecret' => '1ED23A714D0386CE96EB16977416C7F2',
@@ -217,19 +225,44 @@ class flightController extends Controller
 			'classCode' => $value[$id]['FlightSegments'][0]['BookingClassFare']['ClassType'],
 			'service' => 1,
 			'provider' => $value[$id]['Provider'],
-			'tripType' =>1,
+			'tripType' =>$passengers['tripType'],
 			'couponFare' =>'',
 			'userType' => 5,
 			'user' => ''
 		];
+		if(Session()->exists('returnflight'))
+		{
+			$query_params_return_flight =[
+				'Key' => $return[$id]['OriginDestinationoptionId']['Key'],
+				'airlineId' => $return[$id]['FlightSegments'][0]['OperatingAirlineCode'],
+				'flightId' => $return[$id]['FlightSegments'][0]['OperatingAirlineFlightNumber'],
+				'classCode' => $return[$id]['FlightSegments'][0]['BookingClassFare']['ClassType'],
+				'service' => 1,
+				'provider' => $return[$id]['Provider'],
+				'tripType' =>$passengers['tripType'],
+				'couponFare' =>'',
+				'userType' => 5,
+				'user' => ''
+			];
 
-
+		}
+		//try blovk
 		try{
+
 			$response = $client->get('http://webapi.i2space.co.in/Flights/GetFareRule',[
 
 				'query' => $query_params
 
 			]);
+
+			if($query_params['tripType'] == 2)
+			{
+				$return = $client->get('http://webapi.i2space.co.in/Flights/GetFareRule',[
+
+					'query' => $query_params_return_flight
+
+				]);
+			}
 
 		}
 		catch(ClientException $e){
@@ -242,17 +275,13 @@ class flightController extends Controller
 
 		$farerule = json_decode($response->getBody(),true);
 
+		$farerule_1 = json_decode($return->getBody(),true);
+
 		$request->Session()->put('farerule',$farerule);
 
 		$totalflight = $value[$id]['FlightSegments'];
 
-		$airport_data = Session('airport_data');
-
-		$search_details = Session('search_details');
-
-		$passengers = Session('passengers');
-
-		// dd($passengers);
+		// dd($passengers['tripType']);
 
 		$json_dat = [
 			"Provider" => $value[$id]['Provider'],
@@ -335,7 +364,7 @@ class flightController extends Controller
 
 		// dd($faredetails);
 
-		return view('flight.flight-single',['totalflight' => $totalflight, 'farerule' => $farerule,'passengers' => Session('passengers'),'faredetails' => $faredetails]);
+		return view('flight.flight-single',['totalflight' => $totalflight, 'farerule' => $farerule,'farerule_1' => $farerule_1, 'passengers' => Session('passengers'),'faredetails' => $faredetails]);
 	}
 	public function flight_checkout_payment(Request $request)
 	{
@@ -447,9 +476,7 @@ class flightController extends Controller
 			"Rule" => $farerule,
 		 	"Key" => $value[$id]['OriginDestinationoptionId']['Key'],
 			"FlightId" => "",
-			"OnwardFlightSegments" => [
-				$value[$id]['FlightSegments'][0]
-			],
+			"OnwardFlightSegments" => $value[$id]['FlightSegments'],
 			"ReturnFlightSegments" => null,
 			"FareDetails" => $value[$id]['FareDetails'],
 			"BookingDate" => "16-11-2017",

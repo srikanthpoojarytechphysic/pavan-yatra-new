@@ -100,7 +100,7 @@
 																	@foreach($totalflight as $y => $value)
 																		@if($key == $y)
 																			@if($journey_info['tripType'] == 1 )
-																				<a href="{{route('flight_checkout',['id' => $key])}}" class="btn pavan_button" id="flight_type_1" data-key="{{$key}}">
+																				<a href="{{route('flight_checkout',['id' => $key,'return_id' => 'null'])}}" class="btn pavan_button" id="flight_type_1" data-key="{{$key}}">
 																					<strong>Rs.{{$value['FareDetails']['TotalFare'] }}</strong>
 
 																			@else
