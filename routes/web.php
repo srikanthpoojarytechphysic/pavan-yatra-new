@@ -12,10 +12,6 @@
 */
 
 
-Route::get('/promo/{id}/{user_id}',[
-	'uses' => 'promoController@promo',
-	'as' => 'promo'
-]);
 
 Auth::routes();
 
@@ -34,12 +30,12 @@ Route::get('/flights',[
 	'as' =>'flights'
 ]);
 
-Route::get('flights/search',[
+Route::get('/flights/search',[
 	'uses' => 'flightController@search_flights',
 	'as' => 'search.flights'
 	]);
 
-Route::get('flights/search/s',[
+Route::get('/flights/search/s',[
 	'uses' => 'flightController@search_flights_s',
 	]);
 
@@ -47,9 +43,16 @@ Route::get('/ss',function(){
 	return view('flight.flight-ticket-list');
 });
 
-Route::get('/flight/checkout/{id}/',[
+Route::get('/flight/checkout/{id}/{return_id?}/',[
 	'uses' => 'flightController@flight_checkout',
 	'as' => 'flight_checkout'
+],function($return_id = 0){
+	return $return_id;
+});
+
+Route::get('/flight/checkout/pay/{id}/{return_id}/',[
+	'uses' => 'flightController@flight_checkout_payment',
+	'as' => 'flight_checkout_payment'
 ]);
 //-------END-OF-FLIGHT-ROUTES------------//
 
@@ -72,12 +75,13 @@ Route::get('/hotels/details/{id}/{query}/{hotelid}/{provider}/{roomcount}',[
 ]);
 
 Route::get('/hot',function(Request $request){
-	// return view('hotels.hotels-search-result-list');
-	$val = Session('search_details');
-	$s = Session('airport_data');
-	// dd(substr($s['source'],4));
-	// dd($s[0][substr($val)]);
-	dd(Session('passengers'));
+	$airport_data   = Session('airport_data');
+	$search_details = Session('search_details');
+	$value = $airport_data[substr($search_details['destination'],4)]->City;
+
+	$v = Session('passengers');
+	dd($v);
+
 });
 
 Route::get('/fli',function(){
@@ -88,7 +92,24 @@ Route::get('/fli',function(){
 	$total =json_decode($jsondata,true);
 
 	$totalflight = $total['DomesticOnwardFlights'][0]['FlightSegments'];
+
+	dd(Session('totalfare'));
 	return view('flight.flight-single',['totalflight' => $totalflight]);
 });
 
 //----------END-OF-HOTEL-ROUTES----------//
+
+
+//--------------payments--routes--------//
+
+Route::get('/flights/payments/pay/{ref_no}/',[
+	'uses' => 'paymentController@authorize_payment',
+	'as'   => 'payment.user.form'
+]);
+
+Route::POST('/flights/payments/pay/{ref_no}/verify',[
+	'uses' => 'paymentController@verify_payment',
+	'as'   => 'verify.payment.form'
+]);
+
+//--------------END-OF-PAYMENT-ROUTE----//
