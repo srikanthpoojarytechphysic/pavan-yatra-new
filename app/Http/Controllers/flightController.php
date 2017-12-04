@@ -565,6 +565,8 @@ class flightController extends Controller
 
 		$value   = Session('flightdetails');
 
+		$request->session()->put('contact_details',['0' => $request->input('email'),'1' => $request->input('mobile')]);
+
 		$headers = ['ConsumerKey' => '694AAB059FCA4A401220610E8602F10C',
         			'ConsumerSecret' => '1ED23A714D0386CE96EB16977416C7F2',
         			'Content-Type' =>'application/json',
@@ -731,8 +733,7 @@ class flightController extends Controller
 			];
 
 		}
-		// return response()->json($json_dat_return_flight);
-		// exit;
+
 		try
 		{
 			if(Session('passengers')['tripType'] == 2)
@@ -774,7 +775,7 @@ class flightController extends Controller
 
 			$reference_no = $faredetails['ReferenceNo'];
 
-			// return view('payments.payment-form',['reference_no' => $reference_no]);
+				return redirect()->route('payment.user.form',['ref_no' => $reference_no,'id' => $id,'return_id' => $return_id]);
 		}
 		else
 		{
@@ -782,7 +783,8 @@ class flightController extends Controller
 
 			$reference_no  = $faredetails_1['ReferenceNo'];
 
-			return redirect()->route('payment.user.form',['ref_no' => $reference_no]);
+
+			return redirect()->route('payment.user.form',['ref_no' => $reference_no,'id' => $id,'return_id' => $return_id]);
 
 			// return view('payments.payment-form',['reference_no' => $reference_no]);
 		}
