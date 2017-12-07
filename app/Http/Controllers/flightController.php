@@ -120,19 +120,20 @@ class flightController extends Controller
 			'headers' => $headers,
 		]);
 
+
 		if($request->has('return-date'))
 		{
-			$get_date = DateTime::createFromFormat('Y-m-d', $request->input('return-date'))->format('d-m-Y');
+			$get_date = DateTime::createFromFormat('M jS,Y', $request->input('return-date'))->format('d-m-Y');
 		}
 		else
 		{
-			$get_date = DateTime::createFromFormat('Y-m-d', $request->input('depart-date'))->format('d-m-Y');
+			$get_date = DateTime::createFromFormat('M jS,Y', $request->input('depart-date'))->format('d-m-Y');
 		}
 
     	$query_params =[
     		'source' => substr($request->input('departure'),0,3),
     		'destination' => substr($request->input('destination'),0,3),
-    		'journeyDate' => DateTime::createFromFormat('Y-m-d', $request->input('depart-date'))->format('d-m-Y'),
+    		'journeyDate' => DateTime::createFromFormat('M jS,Y', $request->input('depart-date'))->format('d-m-Y'),
     		'tripType' => $request->input('trip-type'),
     		'flightType' => 1,
     		'adults' => (int)$request->input('adults'),

@@ -1,9 +1,15 @@
 @extends('layouts.app')
 
+@section('styles')
+<link rel="stylesheet" href="{{URL::asset('css/plugins/custom_css.css')}}">
+@endsection
+<link rel="stylesheet" href="{{URL::asset('css/depart-date.css')}}">
 @section('content')
     <div class="row">
-        <div class="loader">
+        <div class="loading">
             <img src="{{URL::asset('/images/loader.gif')}}">
+            <span class="loading_span">Please Wait!</span>
+            <span class="loading_span">Searching For Flight</span>
         </div>
         <div class="clearfix"></div>
             <!-- Header Container / End -->
@@ -120,12 +126,13 @@
                             </div>
                             <div id="depart-date" class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" name="depart-date" onfocus="(this.type='date')" class="datepicker" placeholder="Depart Date" name="return-date" value=""/>
+                                <!-- <input type="text" name="depart-date" onfocus="(this.type='date')" class="datepicker" placeholder="Depart Date" name="return-date" value=""/> -->
+                                <input type="text" name="depart-date" id="depart-date-date" data-large-mode="true" placeholder="Depart Date" data-init-set="false" data-format="M S,Y" data-lock="from"  data-theme="depart-date"/>
                             </div>
 
                             <div id="flight-return" class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" name="return-date" onfocus="(this.type='date')" class="datepicker" placeholder="Return Date" value=""/>
+                                <input type="text" name="return-date" id="return-date-date" data-large-mode="true" data-format="M S,Y" placeholder="Return Date" data-lock="from" data-init-set="false" data-theme="depart-date"/>
                             </div>
 
 
@@ -537,4 +544,15 @@
 </section>
     </div>
     </div>
+@endsection
+@section('scripts')
+<script type="text/javascript">
+    $(document).ready(function(){
+      $(".flightloader").click(function(){
+        $(".loading").fadeIn(1500);
+      });
+      $('#depart-date-date').dateDropper();
+      $('#return-date-date').dateDropper();
+    });
+</script>
 @endsection
