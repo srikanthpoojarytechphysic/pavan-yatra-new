@@ -20,17 +20,16 @@ class guzzleHelper
   public $try;
   public $result;
 
-  public function __construct($query)
+  public function __construct()
   {
     $this->header = ['ConsumerKey'   => '694AAB059FCA4A401220610E8602F10C',
                      'ConsumerSecret'  => '1ED23A714D0386CE96EB16977416C7F2',
                      'Content-Type'    =>'application/json',
                      'Accept-Encoding' => 'gzip,deflate'
                    ];
-     $this->query  = $query;
   }
 
-  public function cancelTicket()
+  public function cancelTicket($query)
   {
     $client = new Client([
 			'headers' => $this->header
@@ -39,7 +38,7 @@ class guzzleHelper
     try
     {
 			$response = $client->get('http://webapi.i2space.co.in/Flights/CancelFlightTicket?referenceNo',[
-        'query' =>$this->query
+        'query' =>$query
       ]);
 		}
 		catch(ClientException $e)
@@ -48,6 +47,30 @@ class guzzleHelper
 		}
 
     return  json_decode($response->getBody());
+  }
+
+  public function bookingDetails($requestQuery)
+  {
+    $client = new Client([
+     'headers' => $this->header
+   ]);
+
+    try
+    {
+     $response = $client->get('http://webapi.i2space.co.in/Flights/FlightTicketBookingDetails?referenceNo',[
+        'query' =>$requestQuery
+      ]);
+   }
+   catch(ClientException $e)
+    {
+       return Psr7\str($e->getResponse());
+   }
+   catch(RequestException $e)
+    {
+       throw new \Exception("OOPs!something went wrong");
+   }
+
+    return  json_decode($response->getBody(),true);
   }
 
 }
