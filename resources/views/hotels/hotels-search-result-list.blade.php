@@ -112,7 +112,7 @@
 				<!-- Listing Item -->
 				<div class="col-lg-12 col-md-12">
 					<div class="listing-item-container list-layout">
-						<a href="{{route('single.hotel_details',['query' => substr((url()->full()),84),'hotelid' => $items['HotelId'],'provider' => $items['Provider'],'roomcount' => 1])}}" class="listing-item">
+						<a href="{{route('single.hotel_details',['id' => $key,'query' => substr((url()->full()),84),'hotelid' => $items['HotelId'],'roomcount' => 1])}}" class="listing-item">
 
 							<!-- Image -->
 							<div class="listing-item-image">
@@ -133,7 +133,8 @@
 							</div>
 						</a>
 						<div class="choose_room">
-							<a href="{{route('single.hotel_details',['query' => substr((url()->full()),84),'hotelid' => $items['HotelId'],'provider' => $items['Provider'],'roomcount' => 1])}}" class="btn pavan_button">Choose Room</a>
+							<!-- <a href="{{route('single.hotel_details',['id' => $key,'query' => substr((url()->full()),84),'hotelid' => $items['HotelId'],'provider' => $items['Provider'],'roomcount' => 1])}}" class="btn pavan_button">Choose Room</a> -->
+							<a href="{{route('single.hotel_details',['id' => $key,'query' => substr((url()->full()),84),'hotelid' => $items['HotelId'],'roomcount' => 1])}}" class="btn pavan_button">Choose Room</a>
 						</div>
 					</div>
 				</div>

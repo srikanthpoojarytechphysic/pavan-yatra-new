@@ -46,9 +46,11 @@ class hotelController extends Controller
     }
     public function hotels_search(Request $request)
     {
-      $items = [];
-      $i=1;
-      $children =  $request->input('no_of_children');
+      $items    = [];
+      $i=1;$j=1;$k=1;
+      $adults   = [];
+      $children = [];
+      $childrenAges = [];
 
       $headers = ['ConsumerKey' => '694AAB059FCA4A401220610E8602F10C',
                 'ConsumerSecret' => '1ED23A714D0386CE96EB16977416C7F2',
@@ -62,19 +64,25 @@ class hotelController extends Controller
 
       if($request->has('check-in-date') && $request->has('check-out-date'))
   		{
-        $check_in_date= DateTime::createFromFormat('Y-m-d', $request->input('check-in-date'))->format('d-m-Y');
-  			$check_out_date= DateTime::createFromFormat('Y-m-d', $request->input('check-out-date'))->format('d-m-Y');
+        $check_in_date  = DateTime::createFromFormat('Y-m-d', $request->input('check-in-date'))->format('d-m-Y');
+  			$check_out_date = DateTime::createFromFormat('Y-m-d', $request->input('check-out-date'))->format('d-m-Y');
   		}
 
-      if(!$request->input('no_of_children') == 0)
+      $i = 1;
+      while($i <= 4)
       {
-        for ($i=1;$i <= $children;) {
-            $items[] = $request->input('child_age'.$i);
-            $i++;
-        }
-      }else
+        $adults[]   = ($request->input('adults'.$i)) ? $request->input('adults'.$i) : 0;
+        $i++;
+      }
+      while($j <= 4)
       {
-        $items = ['-1'];
+        $children[] = ($request->input('children'.$j)) ? $request->input('children'.$j) : 0;
+        $j++;
+      }
+      while($k <= 8)
+      {
+        $childrenAges[] = -1;
+        $k++;
       }
 
       $request->session()->put('childage',$items);
@@ -83,15 +91,14 @@ class hotelController extends Controller
         'destinationId' => $request->input('hotel'),
         'arrivalDate' => $check_in_date,
         'departureDate' => $check_out_date,
-        'rooms' => 1,
-        'adults' => $request->input('adults'),
-        'children' => $children,
-        'childrenAges' => implode("~",$items),
+        'rooms' => $request->input('rooms'),
+        'adults' =>implode("~",$adults),
+        'children' => implode("~",$children),
+        'childrenAges' => implode("~",$childrenAges),
         'NoOfDays' => 1,
         'userType' => 5,
         'hoteltype' => 1,
       ];
-
 
       $request->Session()->put('request_details',$query_params);
 
@@ -111,8 +118,6 @@ class hotelController extends Controller
       // dd(json_decode($response->getBody(),true));
       $hotel_details = json_decode($response->getBody(),true);
 
-      // dd($hotel_details['AvailableHotels']);
-
       $request->Session()->put('hoteldata',$hotel_details['AvailableHotels']);
 
       return view('hotels.hotels-search-result-list',['hotel_details' => $hotel_details]);
@@ -122,32 +127,28 @@ class hotelController extends Controller
     {
         $getDetails = Session('hoteldata');
 
-        $items = [];
-
-        $userData   = explode("&",$query);
-
-        // dd(substr($userData[0],0));
+        $userData   = Session('request_details');
 
         $init =  new hotelHelper();
 
         $query = [
           'hotelId'       => $getDetails[$id]['HotelId'],
           'webService'    => $getDetails[$id]['WebService'],
-          'cityId'        => substr($userData[4],6),
+          'cityId'        => $userData['destinationId'],
           'provider'      => $getDetails[$id]['Provider'],
-          'adults'        => substr($userData[0],7),
-          'children'      => substr($userData[5],14),
-          'arrivalDate'   => DateTime::createFromFormat('Y-m-d',substr($userData[1],14))->format('d-m-Y'),
-          'departureDate' => DateTime::createFromFormat('Y-m-d',substr($userData[2],15))->format('d-m-Y'),
+          'adults'        => $userData['adults'],
+          'children'      => $userData['children'],
+          'arrivalDate'   => $userData['arrivalDate'],
+          'departureDate' => $userData['departureDate'],
           'noOfDays'      => 1,
-          'childrenAges'  => implode("~",Session('childage')),
+          'childrenAges'  => $userData['childrenAges'],
           'roomscount'    => 1,
           'userType'      => 5,
           'hoteltype'     => 1,
           'user'          => '',
        ];
 
-
+         //
      	   //  $res = 'file:///C:/Users/SRIKLAPWC/Desktop/api/hotel.json';
          //
          // 	$jsondata = file_get_contents($res);
@@ -155,10 +156,26 @@ class hotelController extends Controller
          // 	$total =json_decode($jsondata,true);
          //
          // $sendDetails = $total;
+         //
+         // dd($sendDetails);
+
 
         $sendDetails = $init->getHotelDetails($query);
+
+        dd($sendDetails);
+
+        $request->Session()->put('roomDetails',$sendDetails);
+
         $facilities  = explode(",",$sendDetails['Facilities']);
 
         return view('hotels.hotels-details-single',['hotelDetails' => $sendDetails,'facilities' => $facilities]);
+    }
+    public function block_hotel(Request $request,$id)
+    {
+      $roomDetails     = Session('roomDetails');
+
+      $requestDetails  = Session('request_details');
+
+      return view('hotels.hotel-blocking-form',['roomDetails' => $roomDetails['RoomDetails'][$id - 1],'roomData' => $roomDetails,'requestDetails' => $requestDetails]);
     }
 }

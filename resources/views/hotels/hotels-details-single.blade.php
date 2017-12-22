@@ -82,8 +82,8 @@
               </div>
               <div class="col-lg-4">
                 <span class="small-text"><a href="#" style="margin-bottom:5px;display:block;"data-toggle="modal" data-target="#cancelpolicy-{{$key}}">Cancelation Policy</a></span>
-
-                <button class="btn pavan_button">Book Now</button>
+                <h1>{{$key+1}}</h1>
+                <a href="{{route('block.hotel',['id' => $key])}}" class="btn pavan_button">Book Now</a>
               </div>
 
             </div>
@@ -133,13 +133,13 @@
     			<div class="boxed-widget margin-top-35">
     				<h3><i class="sl sl-icon-pin"></i> Contact</h3>
     				<ul class="listing-details-sidebar">
-    					<li><i class="sl sl-icon-phone"></i> (123) 123-456</li>
-    					<li><i class="sl sl-icon-globe"></i> <a href="#">http://example.com</a></li>
-    					<li><i class="fa fa-envelope-o"></i> <a href="#"><span class="__cf_email__" data-cfemail="721b1c141d32170a131f021e175c111d1f">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></a></li>
+    					<li><i class="sl sl-icon-phone"></i>{{$hotelDetails['PhoneNumber']}}</li>
+    					<li><i class="sl sl-icon-globe"></i> <a href="#">{{$hotelDetails['Website']}}</a></li>
+    					<li><i class="fa fa-envelope-o"></i>{{$hotelDetails['Email']}}</li>
     				</ul>
 
     				<ul class="listing-details-sidebar social-profiles">
-    					<li><a href="#" class="facebook-profile"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+    					<li><a href="{{$hotelDetails['Facebook']}}" class="facebook-profile"><i class="fa fa-facebook-square"></i> Facebook</a></li>
     					<li><a href="#" class="twitter-profile"><i class="fa fa-twitter"></i> Twitter</a></li>
     					<!-- <li><a href="#" class="gplus-profile"><i class="fa fa-google-plus"></i> Google Plus</a></li> -->
     				</ul>

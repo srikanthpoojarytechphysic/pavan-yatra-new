@@ -39,14 +39,14 @@
                             <h4>Tour Packages</h4>
                         </a>
                         </li>
-                        <li>
+                        <li class="active">
                         <!-- Box -->
                         <a data-toggle="tab" href="#hotel" class="category-small-box">
                             <i class="im im-icon-Hotel"></i>
                             <h4>Hotels</h4>
                         </a>
                         </li>
-                        <li class="active">
+                        <li>
                         <!-- Box -->
                         <a data-toggle="tab" href="#flight" class="category-small-box">
                             <i class="im im-icon-On-Air"></i>
@@ -83,15 +83,41 @@
                                 </div>
                                 <div class="main-search-input-item location date1">
                                     <a href="#"><i class="fa fa-calendar"></i></a>
-                                    <input type="text" name="check-out-date" onfocus="(this.type='date')" class="datepicker" placeholder="Check-out Date" value=""/>
+                                    <!-- <input type="text" id="booking-date" name="check-out-date" data-lang="en" data-large-mode="true" data-min-year="2017" data-max-year="2020" placeholder="Check Out Date" value=""> -->
+                                    <input type="text" id="check-out-date" name="check-out-date" onfocus="(this.type='date')" class="datepicker" placeholder="Check-out Date" value=""/>
                                 </div>
-                                <div class="main-search-input-item location">
-                                    <a href="#"><i class="fa fa-user"></i></a>
-                                    <input type="text" name="adults" placeholder="No of Adults" value=""/>
-
+                                <div class="main-search-input-item">
+                                  <select name="rooms" id='room' data-placeholder="No Of Rooms" class="chosen-select">
+                                      <option value="1">1 Room</option>
+                                      <option value="2">2 Room</option>
+                                      <option value="3">3 Room</option>
+                                      <option value="4">4 Room</option>
+                                  </select>
                                 </div>
                                 <div class="main-search-input-item location col-md-3">
-                                    <div class="input-group number-spinner">
+
+                                  <div class="dropdown" id="showdrop">
+                                      <label style="color:black;" id="hotelpass">Adults 1</label>
+                                      <ul class="dropdown-menu select-box-info">
+                                        <div>
+                                        <li>Adults
+                                          <select name="adults">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                          </select>
+                                        </li>
+                                        <li>Children
+                                          <select name="children">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                          </select>
+                                        </li>
+                                        </div>
+                                      </ul>
+                                   </div>
+                                    <!-- <div class="input-group number-spinner">
                                 				<span class="input-group-btn">
                                 					<a class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
                                 				</span>
@@ -101,21 +127,90 @@
                                 				</span>
     			                          </div>
                                     <div class="children_select">
-                                      <select class="child_age1" name="child_age1">
-                                         <option value="1">1</option>
-                                         <option value="2">2</option>
-                                         <option value="3">3</option>
-                                         <option value="4">4</option>
-                                         <option value="5">5</option>
-                                         <option value="6">6</option>
-                                         <option value="7">7</option>
-                                         <option value="8">8</option>
-                                         <option value="9">9</option>
-                                         <option value="10">10</option>
-                                         <option value="11">11</option>
-                                       </select>
-                                    </div>
+                                    <select class="child_age1" name="child_age1">
+                                       <option value="1">1</option>
+                                       <option value="2">2</option>
+                                       <option value="3">3</option>
+                                       <option value="4">4</option>
+                                       <option value="5">5</option>
+                                       <option value="6">6</option>
+                                       <option value="7">7</option>
+                                       <option value="8">8</option>
+                                       <option value="9">9</option>
+                                       <option value="10">10</option>
+                                       <option value="11">11</option>
+                                     </select>
+                                  </div> -->
                                 </div>
+
+                                <!-- <div class="room-select">
+                                  <div class="dropdown">
+
+                                      <button>Navigate</button>
+
+                                      <ul class="dropdown-menu">
+                                        <div class="main-wrapper">
+                                          <div class="sub-wrapper">
+
+                                         <div class="wrap-content">
+                                           <div class="col-2-small">
+                                             <span class="text">Adult 1</span>
+                                           </div>
+                                           <div class="col-1-small">
+                                             <div class="room-div">
+                                              <div class="input-group number-spinner-adult">
+                                                 <span class="input-group-btn">
+                                                   <a class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                                 </span>
+                                                 <input type="text" name="no_of_children" class="form-control text-center" value="0">
+                                                 <span class="input-group-btn">
+                                                   <a class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                                 </span>
+                                             </div>
+                                            </div>
+                                           </div>
+                                         </div>
+                                         <div class="wrap-content">
+                                           <div class="col-2-small">
+                                             <span class="text">Children</span>
+                                           </div>
+                                           <div class="col-1-small">
+                                             <div class="room-div">
+                                              <div class="input-group number-spinner">
+                                                 <span class="input-group-btn">
+                                                   <a class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></a>
+                                                 </span>
+                                                 <input type="text" name="no_of_children" class="form-control text-center" value="0">
+                                                 <span class="input-group-btn">
+                                                   <a class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></a>
+                                                 </span>
+                                             </div>
+                                            </div>
+                                           </div>
+                                         </div>
+                                         <div class="wrap-content">
+                                           <div class="children_select">
+                                           <select class="child_age1" name="child_age1">
+                                              <option value="1">1</option>
+                                              <option value="2">2</option>
+                                              <option value="3">3</option>
+                                              <option value="4">4</option>
+                                              <option value="5">5</option>
+                                              <option value="6">6</option>
+                                              <option value="7">7</option>
+                                              <option value="8">8</option>
+                                              <option value="9">9</option>
+                                              <option value="10">10</option>
+                                              <option value="11">11</option>
+                                            </select>
+                                         </div>
+                                         </div>
+                                       </div>
+                                       </div>
+                                        <label class="ad-room btn btn-default" id="ad-room">Add Room</label>
+                                       </ul>
+                                  </div>
+                                </div> -->
                                 <button  type="submit" class="button">Search</button>
                               </div>
                               </form>
@@ -522,4 +617,43 @@
 </section>
     </div>
     </div>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var inc = 0;
+
+
+        $('#booking-date').dateDropper();
+        $('#time-picker').timeDropper({
+         minutesInterval: '1',
+         autoSwitch: false,
+         meridians: false,
+         format: "h:mm a"
+        });
+
+        $("#room").change(function(e){
+
+          $(".dropdown-menu").empty();
+            for(var i=1;i<=e.target.value;i++)
+            {
+              $(".dropdown-menu").append('<br />'+'<div id="inc'+i+'">'+
+              '<li>Adults'+
+                '<select name="adults'+i+'">'+
+                 '<option value="1">1</option>'+
+                 '<option value="2">2</option>'+
+                  '<option value="3">3</option>'+
+                  '<option value="4">4</option>'+
+                '</select>'+
+              '</li>'+
+              '<li>Children'+
+                '<select name="children'+i+'">'+
+                  '<option value="0">0</option>'+
+                  '<option value="1">1</option>'+
+                  '<option value="2">2</option>'+
+                '</select>'+
+              '</li>'+
+              '</div>');
+            }
+        });
+      });
+    </script>
 @endsection
