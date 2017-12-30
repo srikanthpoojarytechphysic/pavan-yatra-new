@@ -83,7 +83,7 @@
               <div class="col-lg-4">
                 <span class="small-text"><a href="#" style="margin-bottom:5px;display:block;"data-toggle="modal" data-target="#cancelpolicy-{{$key}}">Cancelation Policy</a></span>
                 <h1>{{$key+1}}</h1>
-                <a href="{{route('block.hotel',['id' => $key])}}" class="btn pavan_button">Book Now</a>
+                <a href="{{route('block.hotel',['id' => $key + 1])}}" class="btn pavan_button">Book Now</a>
               </div>
 
             </div>

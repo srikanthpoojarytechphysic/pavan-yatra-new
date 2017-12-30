@@ -115,7 +115,7 @@ class paymentController extends Controller
       $payment        = $api->payment->fetch($razor_pay_id);
       $res            = $payment->capture(array('amount' => $amount));
 
-      
+
       $bookingdetails        = json_decode($response->getBody(),true);
 
       $booking_info          = new flightbooking([
@@ -140,5 +140,16 @@ class paymentController extends Controller
       Session()->flush();
 
        return view('payments.payment-success');
+    }
+    public function hotel_payment_verify()
+    {
+      ini_set('max_execution_time', 300);
+
+      $razor_pay_id   = $request->get('razorpay_payment_id');
+
+      $amount         = Session('totalfare');
+
+      $api            = new Api('rzp_test_pKL2dR77Wf9ipw', 'Uur6mBi48YdqP8DoGjT34GNm');
+
     }
 }

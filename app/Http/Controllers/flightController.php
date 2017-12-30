@@ -76,28 +76,22 @@ class flightController extends Controller
 
     	];
 
-		try{
-			$response = $client->get('http://webapi.i2space.co.in/Flights/AvailableFlights',[
+			$journey_info = ['date' => $query_params['journeyDate'],'source' => $query_params['source'],'destination' => substr($query_params['destination'],4),'tripType' => $query_params['tripType']];
 
-				'query' => $query_params
+			$res = 'file:///C:/Users/SRIKLAPWC/Desktop/api/response.json';
 
-			]);
-		}
-		catch(ClientException $e){
+			$jsondata = file_get_contents($res);
 
-    		echo Psr7\str($e->getResponse());
+			$total =json_decode($jsondata,true);
 
-    		exit();
+			$totalflight = $total['DomesticOnwardFlights'];
+			$returnflight = $total['DomesticReturnFlights'];
 
-		}
+			$test_var = 'BLR-BENGALURU';
 
-		$res = json_decode($response->getBody(),true);
+			dd($returnflight);
 
-		dd($res);
-
-		$totalflight = $res['DomesticOnwardFlights'];
-
-		$returnflight = $res['DomesticReturnFlights'];
+			return view('flight.flight-ticket-list',['returnflight' => $returnflight,'totalflight' => $totalflight,'journey_info' => $journey_info,'test_var' => substr($test_var,4)]);
 
 	}
 	//function for searching available flights on applied filters
@@ -299,16 +293,15 @@ class flightController extends Controller
 			"OnwardFlightSegments" => $value[$id]['FlightSegments'],
 			"ReturnFlightSegments" => null,
 			"FareDetails" => $value[$id]['FareDetails'],
-			"BookingDate" => "16-11-2017",
+			"BookingDate" => date('d-m-y'),
 			 "PromoCode" => null,
 			 "PromoCodeAmount" => 0,
 			 "PostMarkup" => 0,
-			 "IsLCCRet" => null,
 			 "BookedFrom" => null,
 			 "CreatedById" => 0,
 			 "IsWallet" => false,
 			 "IsPartnerAgentDetails" => null,
-			 "OcTax" => 0,
+			 "OcTax" => $value[$id]['FlightSegments'][0]['OcTax'],
 			 "ActualBaseFare" => $value[$id]['FareDetails']['ChargeableFares']['ActualBaseFare'],
 			 "Tax" => $value[$id]['FareDetails']['ChargeableFares']['Tax'],
 			 "STax" => $value[$id]['FareDetails']['ChargeableFares']['STax'],
@@ -367,7 +360,7 @@ class flightController extends Controller
 				"OnwardFlightSegments" => $value[$id]['FlightSegments'],
 				"ReturnFlightSegments" => $return[$return_id]['FlightSegments'],
 				"FareDetails" => $return[$return_id]['FareDetails'],
-				"BookingDate" => "16-11-2017",
+				"BookingDate" => date('d-m-y'),
 				 "PromoCode" => null,
 				 "PromoCodeAmount" => 0,
 				 "PostMarkup" => 0,
@@ -532,10 +525,10 @@ class flightController extends Controller
 			{
 				if($gender_type = $request->input('person-type-children'.$j) == "M")
 				{
-					$gender_type  = "Mr.";
+					$gender_type  = "Mstr.";
 				}
 				else {
-					$gender_type  = "Ms.";
+					$gender_type  = "Mstr.";
 				}
 				$gender[]       = $request->input('person-type-children'.$j);
 				$adults[]       = $gender_type.'|'.$request->input('first-name-children-'.$j).'|'.$request->input('last-name-children-'.$j).'|CHD';
@@ -549,13 +542,12 @@ class flightController extends Controller
 			{
 				if($gender_type = $request->input('person-type-infant'.$l) == "M")
 				{
-					$gender_type  = "Mr.";
+					$gender_type  = "Mstr.";
 				}
 				else {
-					$gender_type  = "Ms.";
+					$gender_type  = "Mstr.";
 				}
 				$gender[]       = $request->input('person-type-infant'.$l);
-				$adults[]       = $request->input('first-name-infant-'.$l);
 				$adults[]       = $gender_type.'|'.$request->input('first-name-infant-'.$l).'|'.$request->input('last-name-infant-'.$l).'|INF';
 				$date_of_birth[]= DateTime::createFromFormat('Y-m-d',$request->input('infant-age-'.$l))->format('d-m-Y');
 				$today          = date("Y-m-d");
@@ -567,6 +559,7 @@ class flightController extends Controller
 		$value   = Session('flightdetails');
 
 		$request->session()->put('contact_details',['0' => $request->input('email'),'1' => $request->input('mobile')]);
+		$request->session()->put('user_details',['adults' => $adults]);
 
 		$headers = ['ConsumerKey' => '694AAB059FCA4A401220610E8602F10C',
         			'ConsumerSecret' => '1ED23A714D0386CE96EB16977416C7F2',
@@ -590,7 +583,7 @@ class flightController extends Controller
 			"EmailId" => $request->input('email'),
 			"dob" => implode("~",$date_of_birth),
 			"psgrtype" => "",
-			"Address" => "INDIA",
+			"Address" => $request->input('address'),
 			"Source" => substr($search_details['source'],0,3),
 			"SourceName" =>  $airport_data[substr($search_details['source'],4)]->City.', '.$airport_data[substr($search_details['source'],4)]->Country.' - '.'('.substr($search_details['source'],0,3).')-'.$airport_data[substr($search_details['source'],4)]->AirportDesc,
 			"Destination" => substr($search_details['destination'],0,3),
@@ -609,7 +602,7 @@ class flightController extends Controller
 			"OnwardFlightSegments" => $value[$id]['FlightSegments'],
 			"ReturnFlightSegments" => null,
 			"FareDetails" => $value[$id]['FareDetails'],
-			"BookingDate" => date("d-m-y"),
+			"BookingDate" => date('d-m-y'),
 			 "PromoCode" => null,
 			 "PromoCodeAmount" => 0,
 			 "PostMarkup" => 0,
@@ -657,7 +650,7 @@ class flightController extends Controller
 		if(Session('passengers')['tripType'] == 2)
 		{
 			$json_dat_return_flight = [
-				"Provider" => $return[$id]['Provider'],
+				"Provider" => $return[$return_id]['Provider'],
 				"Names" => implode("~",$adults),
 				"ages" => implode("~",$age),
 				"Genders" => implode("~",$gender),
@@ -687,7 +680,7 @@ class flightController extends Controller
 				"OnwardFlightSegments" => $value[$id]['FlightSegments'],
 				"ReturnFlightSegments" => $return[$return_id]['FlightSegments'],
 				"FareDetails" => $value[$id]['FareDetails'],
-				"BookingDate" => date("d-m-y"),
+				"BookingDate" => date('d-m-y'),
 				 "PromoCode" => null,
 				 "PromoCodeAmount" => 0,
 				 "PostMarkup" => 0,
@@ -735,6 +728,7 @@ class flightController extends Controller
 
 		}
 
+		// dd($json_dat_return_flight);
 		try
 		{
 			if(Session('passengers')['tripType'] == 2)
@@ -763,33 +757,44 @@ class flightController extends Controller
 		}
 		catch(ServerException $e)
 		{
-			return view('error.500');
+			return view('error.500',['status' => Psr7\str($e->getResponse())]);
 		}
 		catch(ClientException $e){
-    		echo Psr7\str($e->getResponse());
-    		exit();
+
+			return view('error.500',['status' => Psr7\str($e->getResponse())]);
 		}
 
 		if(Session('passengers')['tripType'] == 1)
-		{
-			$faredetails  = json_decode($res->getBody(),true);
+			{
+				$faredetails  = json_decode($res->getBody(),true);
 
-			$reference_no = $faredetails['ReferenceNo'];
+				$reference_no = $faredetails['ReferenceNo'];
+
+				if($faredetails['BookingStatus'] == 16)
+				{
+					return view('error.500',['status' => $faredetails['Message']]);
+					exit;
+				}
+					return redirect()->route('payment.user.form',['ref_no' => $reference_no,'id' => $id,'return_id' => $return_id]);
+			}
+			else
+			{
+				$faredetails_1 = json_decode($return_post->getBody(),true);
+
+
+				$reference_no  = $faredetails_1['ReferenceNo'];
+
+				if($faredetails_1['BookingStatus'] == 16)
+				{
+					return view('error.500',['status' => $faredetails_1['Message']]);
+					exit;
+				}
 
 				return redirect()->route('payment.user.form',['ref_no' => $reference_no,'id' => $id,'return_id' => $return_id]);
-		}
-		else
-		{
-			$faredetails_1 = json_decode($return_post->getBody(),true);
 
-			$reference_no  = $faredetails_1['ReferenceNo'];
-
-
-			return redirect()->route('payment.user.form',['ref_no' => $reference_no,'id' => $id,'return_id' => $return_id]);
-
+				// return view('payments.payment-form',['reference_no' => $reference_no]);
+			}
 			// return view('payments.payment-form',['reference_no' => $reference_no]);
 		}
-
-	}
 
 }

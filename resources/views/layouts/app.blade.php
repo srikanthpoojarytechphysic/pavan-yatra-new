@@ -23,9 +23,11 @@
 <link rel="stylesheet" href="{{URL::asset('css/plugins/datedropper.css')}}">
 <link rel="stylesheet" href="{{URL::asset('css/snappy.css')}}">
 <link rel="stylesheet" href="{{URL::asset('css/selectize.css')}}">
-<link rel="stylesheet" href="{{URL::asset('css/colors/main.css" id="colors')}}">
+<link rel="stylesheet" href="{{URL::asset('css/colors/main.css')}}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.bootstrap3.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{URL::asset('css/custom.css')}}">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
 <link rel="stylesheet" href="{{URL::asset('css/plugins/custom_css.css')}}">
   @yield('styles')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -109,7 +111,7 @@
                                 <li><a href="#.">Vehicle</a></li>
                                 <li><a href="#.">Tour Packages</a></li>
                                 <li><a href="#.">Hotels</a></li>
-                                <li><a href="#.">Flight</a></li>
+                                <li><a href="/flight">Flight</a></li>
                                 <li><a href="#."></a></li>
 
                             </ul>
@@ -124,6 +126,14 @@
                                 <li><a href="#.">Terms and conditions</a></li>
                                 <li><a href="#.">Privacy policy</a></li>
                                 <li><a href="#.">User agreement</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Booking Info</a>
+                            <ul>
+                                <li><a href="{{route('booking-info',['datatype' => 'flight'])}}">Flight Booking</a></li>
+                                <li><a href="#.">Hotel Booking</a></li>
+                                <li><a href="#.">Bus Booking</a></li>
+                                <li><a href="#.">Tour Booking</a></li>
                             </ul>
                         </li>
 
@@ -202,14 +212,14 @@
                             <p class="form-row form-row-wide">
                                 <label for="username2">Username:
                                     <i class="im im-icon-Male"></i>
-                                    <input type="text" class="input-text" name="username" id="username2" value="" />
+                                    <input type="text" class="input-text" name="username2" id="username2" value="" />
                                 </label>
                             </p>
 
                             <p class="form-row form-row-wide">
                                 <label for="email2">Email Address:
                                     <i class="im im-icon-Mail"></i>
-                                    <input type="text" class="input-text" name="email" id="email2" value="" />
+                                    <input type="text" class="input-text" name="email2" id="email2" value="" />
                                 </label>
                             </p>
 
@@ -326,7 +336,10 @@
 <script defer type="text/javascript" src="/scripts/custom.js"></script>
 <script defer type="text/javascript" src="/scripts/timedropper.js"></script>
 <script defer type="text/javascript" src="/scripts/datedropper.js"></script>
+<script defer type="text/javascript" src="/scripts/moment.js"></script>
 <script defer type="text/javascript" src="/scripts/maps.js"></script>
 <script defer type="text/javascript" src="/js/custom.js"></script>
+<script defer type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+@yield('scripts');
 </body>
 </html>

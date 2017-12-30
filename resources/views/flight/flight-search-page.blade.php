@@ -47,14 +47,14 @@
                         </li>
                         <li>
                         <!-- Box -->
-                        <a data-toggle="tab" href="#hotel" class="category-small-box">
+                        <a data-toggle="" href="/hotels" class="category-small-box">
                             <i class="im im-icon-Hotel"></i>
                             <h4>Hotels</h4>
                         </a>
                         </li>
                         <li class="active">
                         <!-- Box -->
-                        <a data-toggle="tab" href="#flight" class="category-small-box">
+                        <a data-toggle="" href="/flights" class="category-small-box">
                             <i class="im im-icon-On-Air"></i>
                             <h4>Flight</h4>
                         </a>
@@ -127,12 +127,12 @@
                             <div id="depart-date" class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
                                 <!-- <input type="text" name="depart-date" onfocus="(this.type='date')" class="datepicker" placeholder="Depart Date" name="return-date" value=""/> -->
-                                <input type="text" name="depart-date" id="depart-date-date" data-large-mode="true" placeholder="Depart Date" data-init-set="false" data-format="M S,Y" data-lock="from"  data-theme="depart-date"/>
+                                <input type="text" name="depart-date" id="depart-date-date" data-large-mode="true" placeholder="Depart Date" data-init-set="false" data-format="M S,Y" data-lock="from"  data-theme="depart-date" data-max-year="2030"/>
                             </div>
 
                             <div id="flight-return" class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" name="return-date" id="return-date-date" data-large-mode="true" data-format="M S,Y" placeholder="Return Date" data-lock="from" data-init-set="false" data-theme="depart-date"/>
+                                <input type="text" name="return-date" id="return-date-date" data-large-mode="true" data-format="M S,Y" placeholder="Return Date" data-lock="from" data-init-set="false" data-theme="depart-date" data-max-year="2030"/>
                             </div>
 
 

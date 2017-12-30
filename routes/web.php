@@ -68,19 +68,32 @@ Route::get('/hotels/search',[
 	'uses' => 'hotelController@hotels_search',
 	'as' => 'search.hotels'
 ]);
-Route::get('/hotels/details/{id}/{query}/{hotelid}/{provider}/{roomcount}',[
+Route::get('/hotels/details/{id}/{query}/{hotelid}/{roomcount}',[
 
 	'uses' => 'hotelController@hotel_single_details',
 	'as' => 'single.hotel_details'
 ]);
 
-Route::get('/hot',function(Request $request){
-	$airport_data   = Session('airport_data');
-	$search_details = Session('search_details');
-	$value = $airport_data[substr($search_details['destination'],4)]->City;
+Route::get('/hotels/book/payment/{id}/',[
+	'uses' => 'hotelController@block_hotel',
+	'as'   => 'block.hotel',
+]);
 
-	$v = Session('passengers');
-	dd($v);
+Route::get('/hotels/book/payment/blocked/{id}/',[
+	'uses' => 'hotelController@hotel_blocked',
+	'as'   => 'hotel.blocked.true',
+]);
+
+Route::get('/hotels/book/payment/blocked/{id}/verify',[
+	'uses' => 'paymentController@hotel_payment_verify',
+	'as'   => 'hotel.payment.verify',
+]);
+
+Route::get('/hot',function(Request $request){
+
+	$value          = Session('hotel_total_fare');
+
+	dd($value);
 
 });
 
@@ -102,14 +115,49 @@ Route::get('/fli',function(){
 
 //--------------payments--routes--------//
 
-Route::get('/flights/payments/pay/{ref_no}/',[
+Route::get('/flights/payments/pay/{id}/{return_id}/{ref_no}',
+[
 	'uses' => 'paymentController@authorize_payment',
 	'as'   => 'payment.user.form'
 ]);
 
-Route::POST('/flights/payments/pay/{ref_no}/verify',[
+Route::POST('/flights/payments/pay/{ref_no}/{id}/{return_id}/verify/',[
 	'uses' => 'paymentController@verify_payment',
 	'as'   => 'verify.payment.form'
 ]);
 
+
+
 //--------------END-OF-PAYMENT-ROUTE----//
+
+
+//--------------ROUTE--FOR--BOOKING--INFO-//
+
+Route::get('/booking/info/{datatype}',[
+	'uses' => 'bookingController@booking',
+	'as'   => 'booking-info'
+]);
+
+Route::get('/booking/info/type/status',[
+	'uses' => 'bookingController@bookingStatus',
+	'as'   => 'booking_status'
+]);
+
+Route::get('/booking/info/type/cancel',[
+	'uses' => 'bookingController@cancelTicket',
+	'as'   => 'cancel_ticket'
+]);
+//--------------END-OF-PAYMENT-ROUTE--------//
+
+//--------------MISC routes-----------------//
+Route::get('/terms',[
+	'uses' => 'miscController@terms',
+	'as'   => 'terms'
+]);
+
+Route::get('/privacy-policy',[
+	'uses' => 'miscController@privacy',
+	'as'   => 'privacy'
+]);
+
+//---------------END-OF-MISC-ROUTES----------//

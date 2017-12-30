@@ -1,3 +1,6 @@
+body,table{
+	font-weight: 500 !important;
+}
 .selectize-control.single .selectize-input, .selectize-control.single .selectize-input input {
 	border:none;
 	background:none;
@@ -18,22 +21,22 @@
 }
 .ticket_route_text{
 	display: inline;
-	font-family: corbel;
+	font-family: inherit;
 }
 .text_center{
 	text-align: center;
 	padding: 30px;
-	font-family: corbel;
+	font-family: inherit;
 }
 .modify_search{
 	float: right;
 	padding: 30px;
-	font-family: corbel;
+	font-family: inherit;
 }
 .flight_count{
 	padding: 30px;
 	display: block;
-	font-family: corbel;
+	font-family: inherit;
 }
 .airline_img{
 	height: 38px !important;
@@ -75,6 +78,24 @@
 .pink-color{
 	background: white;
 	color:black;
+	border-bottom:25px solid #eeeeee;
+	cursor: pointer;
+	text-decoration: none;
+}
+.pink-color td a{
+	position: relative;
+	top:20px;
+}
+@media (min-width: 1200px){
+.container {
+    width: 1239px !important;
+	}
+}
+.no-padding{
+	padding:0px;
+}
+table.dataTable td {
+  	border-bottom:25px solid #eeeeee;
 }
 .pavan_button{
 	background: #f91942 !important;
@@ -172,11 +193,6 @@
 }
 
 /*END OF INCEREMENTAL SELECT BOX CSS*/
-
-.child_age{
-	position: relative;
-	top:20px;
-}
 .children_select{
 	position: relative;
 	display: none;
@@ -189,6 +205,12 @@ a.btn.btn-default{
 	top:20px;
 
 }
+.show-child-box{
+	display: inherit;
+}
+.show-child-box select{
+	border:1px solid black;
+};
 .hotel_booking_info{
 	height: 300px;
 	background:#f9f9f9;
@@ -220,23 +242,27 @@ a.btn.btn-default{
 }
 .ticket_single_border{
 	padding: 10px;
-	background:#fffcfc;
+	background:#ffffff;
 	height:200px;
 	margin:15px;
 }
 .fare_block{
-	background:#fffcfc;
+	background:#f9f9f9;
 	display: block;
 	margin-top:28px;
-	height: 200px;
+	font-weight: 600;
 	-webkit-box-shadow:0px 1px 1px grey;
-	box-shadow:0px 1px 1px grey;
+	box-shadow:0 0px 2px 2px #e4e4e4
 }
 .fare_ul li{
 	display:inline;
 }
 .list-group-item span{
-	float: right;
+	font-size:20px;
+	display: block;
+}
+.list-group li i{
+	margin-right:20px;
 }
 .hor_line{
 	height: 4px;
@@ -244,7 +270,682 @@ a.btn.btn-default{
 	background: red;
 	display: block;
 }
+.sticky_flight{
+	 position: fixed;
+	 display:none;
+	 left: 0px;
+	 bottom: 0px;
+	 padding:30px 100px 0px 100px;
+	 height: 150px;
+	 width: 100%;
+	 background: grey;
+	 z-index:33;
+	 color:white;
+}
+.air_time{
+	display: block;
+}
+.col_divider{
+	display: inline;
+	height: inherit;
+	font-size: 12px;
+	font-kerning: initial;
+	-webkit-transition:all 1s;
+	font-weight:500;
+
+}
+.col_divider_2{
+	display: none;
+	height: inherit;
+	font-size: 12px;
+	font-kerning: initial;
+	-webkit-transition:all 1s;
+	font-weight:500;
+}
+.red{
+	background-color: grey !important;
+	display: block;
+}
+.label_block{
+	position: relative;
+	background: #fafaff;
+	padding: 10px;
+	display: block;
+	WIDTH: 150px;
+	text-align: center;
+	top: 84px;
+	font-size: 25px;
+}
+
+/*//RAZOR PAY BUTTON CSS*/
+
+.razorpay-payment-button{
+	left: 50%;
+	margin-right:-50%;
+	width:200px !important;
+	transform: translate(-50%, -50%);
+	border:1px solid white !important;
+}
+
 
 /*Form css*/
+flight-card {
+  width: 805px;
+  height: 610px;
+  border-radius: 35px;
+  margin: 10px auto;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
 
+.flight-card--header {
+  width: 100%;
+  height: 120px;
+  padding: 20px 55px;
+  border-bottom: 7px solid #6DBE47;
+  position: relative;
+}
+
+.flight-card--header:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.flight-card--header:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(50%);
+}
+
+.flight-card--header-logo {
+  width: 122px;
+  margin: 0 0 20px 0;
+}
+
+.flight-card--header-details {
+  width: 100%;
+  height: auto;
+  border-top: 3px solid rgba(255,255,255,0.3);
+  color: #333;
+}
+
+.details-passenger {
+  width: 50%;
+  float: left;
+}
+
+.details-depart, .details-arrive {
+  width: 25%;
+  float: left;
+}
+
+.detail--title {
+  opacity: 0.5;
+  display: block;
+  margin: 30px 0 0 0;
+}
+
+.detail--text {
+  display: block;
+  margin: 5px 0 0 0;
+}
+
+.flight-card--details {
+  padding: 50px 55px;
+}
+
+.detail-code {
+  color: #002C5F;
+  font-size: 70px;
+  display: block;
+  font-weight: 100;
+}
+
+.detail-city {
+  color: #002C5F;
+
+}
+
+.bc-from {
+  width: 30%;
+  float: left;
+}
+
+.bc-to {
+  width: 30%;
+  float: right;
+  text-align: right;
+}
+
+.bc-plane {
+  width: 40%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+.bc-plane img {
+  width: 20%;
+  margin: 20px auto 0 auto;
+}
+
+.bc-plane:before {
+  content: '';
+  width: 135px;
+  height: 2px;
+  background: #efefef;
+  position: absolute;
+  top: 45px;
+  left: -50px;
+}
+
+.bc-plane:after {
+  content: '';
+  width: 135px;
+  height: 2px;
+  background: #efefef;
+  position: absolute;
+  top: 45px;
+  right: -50px;
+}
+
+.flight-card-details--text {
+  width: 100%;
+  padding: 80px 0 0 0;
+  clear: both;
+  overflow: auto;
+}
+
+.text-left {
+  width: 33%;
+  float: left;
+}
+
+.text-middle {
+  width: 33%;
+  float: left;
+  padding: 0 0 0 80px
+}
+
+.mint {
+  position: relative;
+}
+
+.mint:before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  right: 40px;
+  width: 10px;
+  height: 10px;
+  background: #6DBE47;
+  border-radius: 50%;
+}
+
+.text-right {
+  width: 33%;
+  float: right;
+  text-align: right;
+}
+
+.text-hline {
+  color: #6a8597;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 2px;
+}
+
+.text-actual {
+  color: #002C5F;
+  padding: 10px 0 0 0;
+  display: block;
+}
+
+.flight-card-details--admin {
+  margin: 50px 0 0 0;
+  color: #bdc3c7;
+  letter-spacing: 1px;
+}
+
+.admin-left {
+  width: 50%;
+  float: left;
+}
+
+.admin-right {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+.thank,.thank-sub{
+	text-align:center;
+}
 /*end of form css*/
+.loading{
+  position: fixed;
+	display: none;
+	-webkit-transition:all 1s;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+	background: white;
+  bottom: 0;
+  right: 0;
+}
+.loading img{
+	top:50%;
+	left:40%;
+	position: fixed;
+}
+.loading_span{
+	top:60%;
+	left:40%;
+	position: relative;
+}
+.icon--small{
+	height: 15px;
+	margin-left:10px;
+}
+span.price-desc{
+	display: inline-block;
+	font-size:15px;
+	margin-right:30px;
+}
+
+/*iternary loader*/
+
+.loader_iternary,
+.loader_iternary__figure {
+  position: fixed;
+	z-index:65675;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loader_iternary {
+  overflow: visible;
+  padding-top: 2em;
+	height: 100%;
+	width:100%;
+	display: none;
+	-webkit-transition: all 1s;
+	transition:all 1s;
+	background: white;
+}
+
+.loader_iternary__figure {
+  height: 0;
+  width: 0;
+  box-sizing: border-box;
+  border: 0 solid #f91942;
+  border-radius: 50%;
+  -webkit-animation: loader_iternary-figure 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-animation: loader_iternary-figure 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: loader_iternary-figure 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loader_iternary__label {
+  float: left;
+	position: fixed;
+	top:60%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: 0.5em 0 0 50%;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  color: #f91942;
+  white-space: nowrap;
+  -webkit-animation: loader_iternary-label 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-animation: loader_iternary-label 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: loader_iternary-label 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@-webkit-keyframes loader_iternary-figure {
+  0% {
+    height: 0;
+    width: 0;
+    background-color: #f91942;
+  }
+  29% {
+    background-color: #f91942;
+  }
+  30% {
+    height: 2em;
+    width: 2em;
+    background-color: transparent;
+    border-width: 1em;
+    opacity: 1;
+  }
+  100% {
+    height: 2em;
+    width: 2em;
+    border-width: 0;
+    opacity: 0;
+    background-color: transparent;
+  }
+}
+@-moz-keyframes loader_iternary-figure {
+  0% {
+    height: 0;
+    width: 0;
+    background-color: #f91942;
+  }
+  29% {
+    background-color: #f91942;
+  }
+  30% {
+    height: 2em;
+    width: 2em;
+    background-color: transparent;
+    border-width: 1em;
+    opacity: 1;
+  }
+  100% {
+    height: 2em;
+    width: 2em;
+    border-width: 0;
+    opacity: 0;
+    background-color: transparent;
+  }
+}
+@keyframes loader_iternary-figure {
+  0% {
+    height: 0;
+    width: 0;
+    background-color: #f91942;
+  }
+  29% {
+    background-color: #f91942;
+  }
+  30% {
+    height: 2em;
+    width: 2em;
+    background-color: transparent;
+    border-width: 1em;
+    opacity: 1;
+  }
+  100% {
+    height: 2em;
+    width: 2em;
+    border-width: 0;
+    opacity: 0;
+    background-color: transparent;
+  }
+}
+@-webkit-keyframes loader_iternary-label {
+  0% {
+    opacity: 0.25;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+@-moz-keyframes loader_iternary-label {
+  0% {
+    opacity: 0.25;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+@keyframes loader_iternary-label {
+  0% {
+    opacity: 0.25;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+/*Css for hotel*/
+.room_block{
+	display:flex;
+	display: flex;
+	height: 100px;
+	border-bottom: 1px solid grey;
+	margin-top: 30px;
+}
+.room_style{
+	width:150%;
+}
+.color-camrine{
+	color:#f91942;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .room_style{
+        width: 100%;
+    }
+}
+/*end of hotel section css*/
+
+/* hotel dropdown romm select  css */
+
+.dropdown {
+    position: relative;
+
+    /** Make it fit tightly around it's children */
+    display: inline-block;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+
+    /**
+     * Set the top of the dropdown menu to be positioned 100%
+     * from the top of the container, and aligned to the left.
+     */
+    top: 100%;
+    left: 0;
+
+    /** Allow no empty space between this and .dropdown */
+    margin: 0;
+}
+/**
+ * Apply these styles to .dropdown-menu when user hovers
+ * over .dropdown
+ */
+.drop{
+			display: block;
+			width: 190%;
+			position: relative;
+			height: 200px;
+			top: 20px;
+}
+.dropdown {
+	position: relative;
+	display: block;
+	height: -webkit-fill-available;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+		background: #dddddd;
+    display: none;
+    margin: 0;
+
+    /****************
+     ** NEW STYLES **
+     ****************/
+
+    list-style: none; /** Remove list bullets */
+    width: 100%; /** Set the width to 100% of it's parent */
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	width: 190%;
+	position: relative;
+	min-height: 200px;
+	padding:15px;
+	top: 24px;
+}
+.dropdown-menu li{
+	width:72px;
+	display: inline-block;
+	margin-right:5px;
+}
+/** Button Styles **/
+.dropdown button {
+    color: black;
+		background: white;
+    border: none;
+    margin: 0;
+    padding: 0.4em 0.8em;
+    font-size: 1em;
+		width: 200px;
+		height: 45px;
+}
+
+/** List Item Styles **/
+.dropdown a {
+    display: block;
+    padding: 0.2em 0.8em;
+    text-decoration: none;
+    background: #CCCCCC;
+    color: #333333;
+}
+
+/** List Item Hover Styles **/
+.dropdown a:hover {
+    background: #BBBBBB;
+}
+.light-span{
+	display: block;
+	padding:10px;
+	color:grey;
+}
+.room-select{
+	 position: relative;
+	 display: flex;
+	 width: 300px;
+}
+.room-div{
+	height: 300px;
+}
+.room-div .input-group-btn{
+	position: relative;
+	top:-20px;
+}
+.room-details{
+	display: block;
+	position: relative;
+	margin-top:70px;
+}
+.room-details li{
+	display: inline-block;
+	position: relative;
+	list-style: none;
+	padding:20px;
+	width:100px;
+	border-right:1px solid #ececec;
+}
+/* end of dropdwon */
+
+/* step css         */
+.step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  counter-reset: step;
+  margin: 2em;
+  position: relative;
+}
+.step::before,
+.step::after {
+  content: '';
+  position: absolute;
+  top: 0.75em;
+  bottom: 0.75em;
+  left: 0;
+  right: 0;
+  background: #ccc;
+}
+.step::after {
+  background: #458be3;
+  -webkit-transition: right 0.5s;
+  transition: right 0.5s;
+}
+.step[data-step="0"]::after {
+  right: 100%;
+}
+.step[data-step="1"]::after {
+  right: 50%;
+}
+
+.step p {
+  counter-increment: step;
+  color: inherit;
+  height: 2em;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  margin: 0;
+}
+.step p:first-of-type {
+  background: white;
+  background: linear-gradient(to right, white 50%, transparent 50%);
+}
+.step p:last-of-type {
+  background: white;
+  background: linear-gradient(to right, transparent 50%, white 50%);
+}
+.step p::before {
+  content: counter(step);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 0.5em;
+  height: 2em;
+  width: 2em;
+  border-radius: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ccc;
+}
+
+/* end of step css */

@@ -318,6 +318,7 @@
   <div class="context secondary-text-color">
 
     <p>
+      <strong>{{$status}}</strong>
       Go back to the previous page and try again.
       If you think something is broken, report a problem.
     </p>

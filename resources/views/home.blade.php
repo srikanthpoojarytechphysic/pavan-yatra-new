@@ -15,7 +15,7 @@
                     <h4>Expolore top-rated attractions, activities and more</h4>
                     <div class="categories-boxes-container margin-top-5  ">
                     <ul class="nav nav-tabs search1">
-                        <li class="active">
+                        <li>
                         <!-- Box -->
                         <a data-toggle="tab" href="#bus" class="category-small-box">
                             <i class="im im-icon-Bus"></i>
@@ -38,14 +38,14 @@
                         </li>
                         <li>
                         <!-- Box -->
-                        <a data-toggle="tab" href="#hotel" class="category-small-box">
+                        <a data-toggle="tab" href="/hotels" class="category-small-box">
                             <i class="im im-icon-Hotel"></i>
                             <h4>Hotels</h4>
                         </a>
                         </li>
-                        <li>
+                        <li class="active">
                         <!-- Box -->
-                        <a data-toggle="tab" href="#flight" class="category-small-box">
+                        <a data-toggle="" href="/flights" class="category-small-box">
                             <i class="im im-icon-On-Air"></i>
                             <h4>Flight</h4>
                         </a>
@@ -58,40 +58,40 @@
                         </a>
                         </li>
                     </ul>
-                    
-                </div>  
+
+                </div>
                       <div class="tab-content">
                         <div id="bus" class="tab-pane fade in active">
                             <h3>Bus Booking</h3>
                           <div class="main-search-input">
                             <div class="main-search-input-item">
-                                <select id='purpose' data-placeholder="" class="chosen-select" >                    
+                                <select id='purpose' data-placeholder="" class="chosen-select" >
                                     <option></option>
                                     <option value="one">One Way</option>
-                                    <option value="two">Two Way</option>                                                        
+                                    <option value="two">Two Way</option>
                                 </select>
                             </div>
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-map-marker"></i></a>
                                 <input type="text" placeholder="Source City" value=""/>
-                                
+
                             </div>
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-map-marker"></i></a>
                                 <input type="text" placeholder="Destination City" value=""/>
-                                
+
                             </div>
                             <div class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Departure Date" value=""/>                                                          
+                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Departure Date" value=""/>
                             </div>
 
                             <div id="return" class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Return Date" value=""/>                                                         
+                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Return Date" value=""/>
                             </div>
 
-                            
+
                             <button class="button" href="#.">Search</button>
                           </div>
                         </div>
@@ -99,28 +99,28 @@
                             <h3>Vehicle Booking</h3>
                           <div class="main-search-input">
                             <div class="main-search-input-item">
-                                <select id='vehicle-purpose' data-placeholder="" class="chosen-select" >                    
+                                <select id='vehicle-purpose' data-placeholder="" class="chosen-select" >
                                     <option></option>
                                     <option value="one">One Way</option>
-                                    <option value="two">Round Trip</option>                                                     
+                                    <option value="two">Round Trip</option>
                                 </select>
                             </div>
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-map-marker"></i></a>
                                 <input type="text" placeholder="Source City" value=""/>
-                                
+
                             </div>
                             <div class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Departure Date" value=""/>                                                          
+                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Departure Date" value=""/>
                             </div>
 
                             <div id="vehicle-return" class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Return Date" value=""/>                                                         
+                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Return Date" value=""/>
                             </div>
 
-                            
+
                             <button class="button" href="#.">Search</button>
                           </div>
                         </div>
@@ -129,62 +129,62 @@
                           <div class="main-search-input">
                             <div class="">
                                 <select data-placeholder="Place of Interest?" class="" id="tour-select">
-                                    <option></option>                   
+                                    <option></option>
                                     <option value="South India">South India</option>
                                                         <option value="North India">North India</option>
                                                         <option value="East India">East India</option>
                                                         <option value="West India">West India</option>
                                                         <option value="other">Other</option>
-                                                        
+
                                 </select>
                             </div>
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-map-marker"></i></a>
                                 <input type="text" placeholder="Your City" value=""/>
-                                
+
                             </div>
                             <div class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Preferred Date" value=""/>                                                          
+                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Preferred Date" value=""/>
                             </div>
 
                             <div class="main-search-input-item">
-                                <select  data-placeholder="No of Days" class="chosen-select" >                  
+                                <select  data-placeholder="No of Days" class="chosen-select" >
                                     <option>No of Days</option>
                                     <option>2</option>
-                                    <option>3</option>                                                      
+                                    <option>3</option>
                                     <option>4</option>
                                     <option>5</option>
                                     <option>More</option>
                                 </select>
-                                
-                            </div>                          
+
+                            </div>
                             <button class="button" href="#.">Search</button>
                           </div>
                         </div>
                         <div id="hotel" class="tab-pane fade">
                             <h3>Hotel Booking</h3>
-                          <div class="main-search-input">                           
+                          <div class="main-search-input">
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-map-marker"></i></a>
-                                <input type="text" placeholder="Travelling to" value=""/>                               
+                                <input type="text" placeholder="Travelling to" value=""/>
                             </div>
                             <div class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Check-in Date" value=""/>                                                           
+                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Check-in Date" value=""/>
                             </div>
                             <div class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Check-out Date" value=""/>                                                          
+                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Check-out Date" value=""/>
                             </div>
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-user"></i></a>
-                                <input type="text" placeholder="No of Adults" value=""/>                                
+                                <input type="text" placeholder="No of Adults" value=""/>
                             </div>
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-user"></i></a>
-                                <input type="text" placeholder="No of Children" value=""/>                              
-                            </div>                      
+                                <input type="text" placeholder="No of Children" value=""/>
+                            </div>
                             <button class="button" href="#.">Search</button>
                           </div>
                         </div>
@@ -192,16 +192,16 @@
                             <h3>Flight Booking</h3>
                            <div class="main-search-input">
                             <div class="main-search-input-item">
-                                <select id='flight-purpose' data-placeholder="" class="chosen-select">                  
+                                <select id='flight-purpose' data-placeholder="" class="chosen-select">
                                     <option></option>
                                     <option value="one">One Way</option>
-                                    <option value="two">Round Trip</option>                                                     
+                                    <option value="two">Round Trip</option>
                                 </select>
                             </div>
                             <div class="main-search-input-item">
-                                <select id='purpose' data-placeholder="Cabin Class" class="chosen-select" >                 
+                                <select id='purpose' data-placeholder="Cabin Class" class="chosen-select" >
                                     <option></option>
-                                    <option>Business</option>                                                       
+                                    <option>Business</option>
                                     <option>Economy</option>
                                     <option>Premium Economy</option>
                                     <option>First</option>
@@ -210,14 +210,14 @@
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-user"></i></a>
                                 <input type="text" placeholder="No of Adults" value=""/>
-                                
+
                             </div>
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-user"></i></a>
                                 <input type="text" placeholder="No of Childrens" value=""/>
-                                
+
                             </div>
-                                                    
+
                           </div>
                           <div class="main-search-input">
                                 <select id="departure" data-placeholder="" class="" style="padding-left: 20px;width:200px;">
@@ -228,45 +228,45 @@
                             <div class="main-search-input-item location">
                                 <a href="#"><i class="fa fa-map-marker"></i></a>
                                 <input type="text" placeholder="Destination City" value=""/>
-                                
+
                             </div>
                             <div style="clear: both;"></div>
                             <div class="main-search-input-item location date1">
                                 <i class="fa fa-calendar"></i>
-                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Departure Date" value=""/>                                                          
+                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Departure Date" value=""/>
                             </div>
 
                             <div id="flight-return" class="main-search-input-item location date1">
                                 <a href="#"><i class="fa fa-calendar"></i></a>
-                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Return Date" value=""/>                                                         
+                                <input type="text" onfocus="(this.type='date')" class="datepicker" placeholder="Return Date" value=""/>
                             </div>
 
-                            
+
                             <button class="button" href="#.">Search</button>
                           </div>
-                        </div>                     
+                        </div>
                         <div id="recharge" class="tab-pane fade">
                             <h3>Recharge</h3>
                           <div class="main-search-input">
                             <div class="main-search-input-item">
-                                <select id="recharge" data-placeholder="" class="chosen-select" >                   
+                                <select id="recharge" data-placeholder="" class="chosen-select" >
                                     <option value="mobile">Mobile</option>
-                                    
-                                    <option value="dth">DTH</option>                                                        
+
+                                    <option value="dth">DTH</option>
                                     <option value="datacard">Datacard</option>
                                     <option value="postpaid">Postpaid</option>
                                 </select>
-                            </div>                          
+                            </div>
                                 <div class="main-search-input-item mobile location">
                                 <a href="#"><i class="fa fa-mobile-phone"></i></a>
                                 <input type="text" placeholder="Your Mobile Number" value=""/>
-                                
+
                                 </div>
                                 <div class="main-search-input-item mobile">
-                                    <select id='vehicle-purpose' data-placeholder="Select Operator" class="chosen-select" >                 
+                                    <select id='vehicle-purpose' data-placeholder="Select Operator" class="chosen-select" >
                                         <option></option>
                                         <option value="one">Airtel</option>
-                                        <option value="two">Vodafone</option>                                                       
+                                        <option value="two">Vodafone</option>
                                         <option>BSNL</option>
                                         <option>Reliance</option>
                                         <option>Idea</option>
@@ -274,17 +274,17 @@
                                 </div>
                                 <div class="main-search-input-item location mobile">
                                     <a href="#">&#8377;</a>
-                                    <input type="text" placeholder="Enter Amount" value=""/>                                
-                                </div>                                                                                                                                              
+                                    <input type="text" placeholder="Enter Amount" value=""/>
+                                </div>
                             </div>
-                          <div class="down1">                           
+                          <div class="down1">
                             <a href="#" class="button browse medium border"> Browse Plans</a>
 
-                            
+
                             <a class="button medium " href="#.">Recharge</button></a>
                           </div>
-                        </div>             
-                      </div>                                    
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -429,7 +429,7 @@
                             <img src="images/l1.jpg" alt="">
 
                             <div class="listing-badge now-open">Most Popular</div>
-                            
+
                             <div class="listing-item-content">
                                 <span class="tag">Group Tours</span>
                                 <h3>DUBAI DELIGHT</h3>
@@ -466,7 +466,7 @@
                         </div>
                     </a>
                 </div>
-                <!-- Listing Item / End -->     
+                <!-- Listing Item / End -->
 
                 <!-- Listing Item -->
                 <div class="carousel-item">
@@ -555,7 +555,7 @@
                 </div>
                 <!-- Listing Item / End -->
                 </div>
-                
+
             </div>
 
         </div>

@@ -22,6 +22,13 @@ class CreateFlightbookingsTable extends Migration
             $table->string('EticketNo');
             $table->string('BookingStatus');
             $table->string('TransactionId');
+            $table->string('onwardflightnumber');
+            $table->string('onwardpax');
+            $table->string('returnflightnumber')->nullable();
+            $table->string('returnpax')->nullable();
+            $table->string('email')->nullable();
+            $table->string('mobile')->nullable();
+            $table->string('type')->nullable();
         });
     }
 

@@ -71,11 +71,12 @@
                                        <div class="main-search-input">
                                 <div class="main-search-input-item location">
                                     <i class="fa fa-map-marker"></i></a>
-                                    <select name="hotel" id="hotel" data-placeholder="Departure" class="chosen-select" style="padding-left:20px;width:200px;">
+                                    <select name="hotel" id="hotel_id" data-placeholder="Departure" class="chosen-select" style="padding-left:20px;width:200px;">
                                       @foreach($response as $items)
                                           <option value="{{$items->CityId}}">{{$items->CityName}}</option>
                                       @endforeach
                                     </select>
+                                    <input type="hidden" name="hotel_id_hidden" id="hotel_id_hidden" value="AGRA"/>
                                 </div>
                                 <div class="main-search-input-item location date1">
                                     <a href="#"><i class="fa fa-calendar"></i></a>
@@ -653,6 +654,13 @@
               '</li>'+
               '</div>');
             }
+        });
+
+        $("#hotel_id").change(function(e){
+
+          var n = $("#hotel_id option:selected").text();
+
+          $("#hotel_id_hidden").val(n);
         });
       });
     </script>

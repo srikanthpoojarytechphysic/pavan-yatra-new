@@ -10,18 +10,104 @@
 			<div class="ticket_list">
 				<div class="row">
 					<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-						<span class="flight_count">Found {{count($totalflight)}} Flights</span>
+						<span class="flight_count">Found {{count($totalflight)}} Flights<img class="icon--small" src="/icons/016-airplane.png" /></span>
 					</div>
 					<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 text_center">
 						<h5 class="ticket_route_text">manglore</h5>
-							<span>--------></span>
-						<h5 class="ticket_route_text">Banglore</h5><br>
-						<span style="padding: 10px;display: block;">{{$journey_info['date']}}</span>
+							<i class="fa fa-arrow-right" aria-hidden="true"></i>
+						<h5 class="ticket_route_text">Banglore</h5><img class="icon--small" src="/icons/003-placeholder.png" /><br>
+						<span style="padding: 10px;display: block;" id="date" data-date="{{$journey_info['date']}}"></span>
 
 					</div>
 					<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
 						<div class="modify_search">
-							<button class="btn btn-default">Modify Search</button>
+							<button class="btn btn-default" data-toggle="modal" data-target="#modifysearch">Modify Search</button>
+						</div>
+						<div id="modifysearch" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg" style="width:100%;">
+
+								<!-- Modal content-->
+								<div class="modal-content" st>
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Modal Header</h4>
+									</div>
+									<div class="modal-body">
+										<form method="GET" action="{{Route('search.flights')}}" role="form">
+
+                        {{ csrf_field() }}
+                           <div class="main-search-input">
+                            <div class="main-search-input-item">
+                                <select id="flight-type" name="trip-type" data-placeholder="" class="chosen-select">
+                                    <option></option>
+                                    <option value="1">One Way</option>
+                                    <option value="2">Round Trip</option>
+                                </select>
+                            </div>
+                            <div class="main-search-input-item">
+                                <select name="air-class" id='purpose' data-placeholder="Cabin Class" class="chosen-select">
+                                    <option></option>
+                                    <option value="B">Business</option>
+                                    <option value="E">Economy</option>
+                                    <option value="ER">Premium Economy</option>
+                                    <option value="B">First</option>
+                                </select>
+                            </div>
+                            <div class="main-search-input-item location">
+                                <a href="#"><i class="fa fa-user"></i></a>
+                                <input type="text" placeholder="No of Adults" name="adults" value=""/>
+
+                            </div>
+                            <div class="main-search-input-item location">
+                                <a href="#"><i class="fa fa-user"></i></a>
+                                <input type="text" placeholder="No of Childrens" name="children" value=""/>
+
+                            </div>
+                            <div class="main-search-input-item location">
+                                <a href="#"><i class="fa fa-user"></i></a>
+                                <input type="text" placeholder="No of infants" name="infants" value=""/>
+
+                            </div>
+
+                          </div>
+                          <div class="main-search-input">
+                            <div class="main-search-input-item">
+                                <select name="departure" id="departure" data-placeholder="Departure" class="chosen-select" style="padding-left: 20px;width:200px;">
+                                    @foreach(Session('airport_data') as $key => $items)
+                                        <option value="{{$items->AirportCode}}-{{$key}}">{{$items->City}}<em>    </em>{{$items->AirportCode}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div class="main-search-input-item">
+                               <select name="destination" id="destination" data-placeholder="Destination" class="chosen-select" style="padding-left: 20px;width:200px;">
+                                    @foreach(Session('airport_data') as $key => $items)
+                                        <option value="{{$items->AirportCode}}-{{$key}}">{{$items->City}}<em>    </em>{{$items->AirportCode}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <div id="depart-date" class="main-search-input-item location date1">
+                                <a href="#"><i class="fa fa-calendar"></i></a>
+                                <!-- <input type="text" name="depart-date" onfocus="(this.type='date')" class="datepicker" placeholder="Depart Date" name="return-date" value=""/> -->
+                                <input type="text" name="depart-date" id="depart-date-date" data-large-mode="true" placeholder="Depart Date" data-init-set="false" data-format="M S,Y" data-lock="from"  data-theme="depart-date"/>
+                            </div>
+
+                            <div id="flight-return" class="main-search-input-item location date1">
+                                <a href="#"><i class="fa fa-calendar"></i></a>
+                                <input type="text" name="return-date" id="return-date-date" data-large-mode="true" data-format="M S,Y" placeholder="Return Date" data-lock="from" data-init-set="false" data-theme="depart-date"/>
+                            </div>
+
+
+                            <button class="button flightloader" type="submit">Search</button>
+                          </div>
+                        </div>
+                		</form>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+
+							</div>
 						</div>
 					</div>
 				</div>
@@ -31,14 +117,15 @@
 					@else
 					col-lg-6
 					@endif">
-						<table class="table type_1">
+						<table class="table type_1" id="type_1">
 						    <thead>
 						      <tr>
 						        <th style="padding-left:50px;">Airline</th>
 						        <th>Depart</th>
 						        <th>Arrive</th>
-						        <th>Duration</th>
-						        <th>Price</th>
+						        <th style="text-align:center;">Duration</th>
+										<th>Price</th>
+						        <th>Details</th>
 						      </tr>
 						    </thead>
 						    <tbody>
@@ -50,7 +137,7 @@
 		                            <td style="padding-top: 10px;width:200px;">
 		                                <img class="img-responsive airline_img" src="/images/{{$value['FlightSegments'][0]['ImageFileName']}}.png">
 		                                <span class="airline_name">
-		                                    {{$val['AirLineName']}} <h5>{{$key}}</h5>
+		                                    {{$val['AirLineName']}}
 		                                </span>
 		                                <span class="airline_code">
 																			@foreach($value['FlightSegments'] as $r => $s)
@@ -111,13 +198,16 @@
 																		@endif
 																	@endforeach
 		                            </td>
-		                        </tr>
-		                        <tr>
-		                            <td colspan="2" class="bot">hekko</td>
-		                            <td colspan="3" class="bot"><i class="fa fa-plane"></i><a data-toggle="modal" data-target="#flightInfo{{$key}}">Flight Details</a></td>
-		                        </tr>
-		                        <tr>
-		                            <td colspan="5" class="spacer"></td>
+																<td>
+																	<a style="
+																	@if($journey_info['tripType']==2)
+																	font-size:11px;
+																	@else
+																	''
+																	@endif
+																	"
+																	data-toggle="modal" data-target="#flightInfo{{$key}}" class="align-middle">Flight Details<img class="icon--small" src="/icons/013-luggage.png" /></a>
+																</td>
 		                        </tr>
 												@endif
 
@@ -148,7 +238,7 @@
                                         <div class="modal-body">
                                             <div class="journey-details">
                                                 <span class="inline bold">{{$val['IntDepartureAirportName']}}<i style="margin:0px 10px 0px 10px;" class="fa fa-arrow-right"></i>
-																									{{$test_var}}
+																									{{$val['IntArrivalAirportName']}}
 																								</span>
                                                 <span class="inline">Thu, 2 Nov
 
@@ -309,14 +399,15 @@
                 <!--     //end of for each loop -->
 					@if($journey_info['tripType'] == 2 )
 					<div class="col-lg-6">
-						<table class="table type_2">
+						<table class="table type_2" id="type_2">
 						    <thead>
 						      <tr>
 						        <th style="padding-left:50px;">Airline</th>
 						        <th>Depart</th>
 						        <th>Arrive</th>
 						        <th>Duration</th>
-						        <th>Price</th>
+										<th>Price</th>
+						        <th>Details</th>
 						      </tr>
 						    </thead>
 						    <tbody>
@@ -329,7 +420,7 @@
 																	<img class="img-responsive airline_img" src="/images/{{$value['FlightSegments'][0]['ImageFileName']}}.png">
 
 		                                <span class="airline_name">
-		                                    {{$val['AirLineName']}} <h5>{{$key}}</h5>
+		                                    {{$val['AirLineName']}}
 		                                </span>
 		                                <span class="airline_code">
 																			@foreach($value['FlightSegments'] as $r => $s)
@@ -384,14 +475,17 @@
 																		@endif
 																	@endforeach
 		                            </td>
+																<td>
+																	<a style="
+																	@if($journey_info['tripType']==2)
+																	font-size:11px;
+																	@else
+																	''
+																	@endif
+																	"data-toggle="modal" data-target="#flightInfo-return{{$key}}">Flight Details<img class="icon--small" src="/icons/013-luggage.png" /></a>
+																</td>
 		                        </tr>
-		                        <tr>
-		                            <td colspan="2" class="bot">hekko</td>
-		                            <td colspan="3" class="bot"><i class="fa fa-plane"></i><a data-toggle="modal" data-target="#flightInfo{{$key}}">Flight Details</a></td>
-		                        </tr>
-		                        <tr>
-		                            <td colspan="5" class="spacer"></td>
-		                        </tr>
+
 												@endif
 
 						         @endforeach
@@ -409,7 +503,7 @@
 
 										@if($loop->first)
 
-                          <div id="flightInfo{{$key}}" class="modal fade" role="dialog">
+                          <div id="flightInfo-return{{$key}}" class="modal fade" role="dialog">
                                 <div class="modal-dialog" id="flightInfoModal">
 
                                     <!-- Modal content-->
@@ -421,7 +515,7 @@
                                         <div class="modal-body">
                                             <div class="journey-details">
                                                 <span class="inline bold">{{$val['IntDepartureAirportName']}}<i style="margin:0px 10px 0px 10px;" class="fa fa-arrow-right"></i>
-																									{{$test_var}}
+																									{{$val['IntArrivalAirportName']}}
 																								</span>
                                                 <span class="inline">Thu, 2 Nov
 
@@ -449,11 +543,11 @@
                                             </div>
                                             <div class="flighttabs">
                                                 <ul class="nav nav-tabs">
-                                                    <li class=""><a href="#tab-1{{$key}}" role="tab" data-toggle="tab">Iternary</a></li>
-                                                    <li><a href="#tab-2{{$key}}" role="tab" data-toggle="tab">Fare Details</a></li>
+                                                    <li class=""><a href="#tab-1-return{{$key}}" role="tab" data-toggle="tab">Iternary</a></li>
+                                                    <li><a href="#tab-2-return{{$key}}" role="tab" data-toggle="tab">Fare Details</a></li>
                                                 </ul>
                                                 <div class="tab-content clearfix">
-                                                    <div class="tab-pane active" id="tab-1{{$key}}">
+                                                    <div class="tab-pane active" id="tab-1-return{{$key}}">
                                                         <div class="display_block">
                                                             <span class="label label-default">DEPARTURE <i class="glyphicon glyphicon-plane"></i></span>
                                                         </div>
@@ -511,7 +605,7 @@
                                                         </div>
 																											@endforeach
                                                     </div>
-                                                    <div class="tab-pane" id="tab-2{{$key}}">
+                                                    <div class="tab-pane" id="tab-2-return{{$key}}">
                                                         <div class="col-md-12">
                                                             <table class="table fare_table">
                                                                 <thead>
@@ -635,4 +729,31 @@
 		</div>
 	</div>
 </div>
+@endsection
+
+@section('scripts')
+<script type="text/javascript">
+$(document).ready(function(){
+	var now = moment();
+	var departDate = $("#date").attr("date");
+	var date = moment(departDate).format('MMM D, YYYY');
+	$("#date").html(date);
+
+	$('#type_1').DataTable( {
+			 "paging":   false,
+			 "info":     false,
+			 "searching" :false,
+	 } );
+
+	 $('#type_2').DataTable( {
+ 			 "paging":   false,
+ 			 "info":     false,
+ 			 "searching" :false,
+ 	 } );
+
+	 $('#depart-date-date').dateDropper();
+	 $('#return-date-date').dateDropper();
+});
+</script>
+
 @endsection
