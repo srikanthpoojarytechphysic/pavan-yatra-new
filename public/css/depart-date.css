@@ -1,0 +1,68 @@
+/*
+
+	INSTRUCTIONS ---------------------------------------------------------------------------------
+
+  1. link this stylesheet in the head of your HTML
+  	 <link href="YOUR PATH/depart-date.css" rel="stylesheet" type="text/css" />
+
+  2. Set the file name as data-theme attribute on your input
+  	 <input data-theme="depart-date" />
+
+  3. That's it!
+
+  When you run script the style will be automatically applied.
+
+*/
+div.datedropper.depart-date {
+  border-radius: 10px;
+  width: 180px;
+}
+div.datedropper.depart-date .picker {
+  border-radius: 10px;
+  box-shadow: 0 0 49px 0px rgba(0, 0, 0, 0.45);
+}
+div.datedropper.depart-date .pick-l {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+div.datedropper.depart-date:before,
+div.datedropper.depart-date .pick-submit,
+div.datedropper.depart-date .pick-lg-b .pick-sl:before,
+div.datedropper.depart-date .pick-m,
+div.datedropper.depart-date .pick-lg-h {
+  background-color: #F91941;
+}
+div.datedropper.depart-date .pick-y.pick-jump,
+div.datedropper.depart-date .pick li span,
+div.datedropper.depart-date .pick-lg-b .pick-wke,
+div.datedropper.depart-date .pick-btn {
+  color: #F91941;
+}
+div.datedropper.depart-date .picker,
+div.datedropper.depart-date .pick-l {
+  background-color: #FFF;
+}
+div.datedropper.depart-date .picker,
+div.datedropper.depart-date .pick-arw,
+div.datedropper.depart-date .pick-l {
+  color: #4D4D4D;
+}
+div.datedropper.depart-date .pick-m,
+div.datedropper.depart-date .pick-m .pick-arw,
+div.datedropper.depart-date .pick-lg-h,
+div.datedropper.depart-date .pick-lg-b .pick-sl,
+div.datedropper.depart-date .pick-submit {
+  color: #FFF;
+}
+div.datedropper.depart-date.picker-tiny:before,
+div.datedropper.depart-date.picker-tiny .pick-m {
+  background-color: #FFF;
+}
+div.datedropper.depart-date.picker-tiny .pick-m,
+div.datedropper.depart-date.picker-tiny .pick-m .pick-arw {
+  color: #4D4D4D;
+}
+div.datedropper.depart-date.picker-lkd .pick-submit {
+  background-color: #FFF;
+  color: #4D4D4D;
+}
