@@ -75,4 +75,28 @@ class hotelHelper
     return  json_decode($response->getBody(),true);
   }
 
+  public function bookHotelRoom($query)
+  {
+    $client = new Client([
+     'headers' => $this->header
+   ]);
+
+    try
+    {
+     $response = $client->get('http://webapi.i2space.co.in/Hotels/BookHotelRoom',[
+        'query' =>$query
+      ]);
+    }
+   catch(ClientException $e)
+    {
+       return Psr7\str($e->getResponse());
+    }
+    catch(RequestException $e)
+    {
+       return Psr7\str($e->getResponse());
+    }
+
+    return  json_decode($response->getBody(),true);
+  }
+
 }

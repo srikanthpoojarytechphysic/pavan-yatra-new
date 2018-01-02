@@ -223,7 +223,7 @@ class hotelController extends Controller
     public function hotel_blocked($id,Request $request)
     {
       ini_set('max_execution_time', 300);
-      
+
       $adults = [];
 
       $i = 0;
@@ -342,8 +342,8 @@ class hotelController extends Controller
         $json_body = [
           'Adults'           => Session('request_details')['adults'],
           'Ages'             => implode("~",$age),
-          'ArrivalDate'       => Session('request_details')['arrivalDate'],
-          'DepartureDate'    => Session('request_details')['departureDate'],
+          'ArrivalDate'       => Session('request_details')['arrivalDate'], //info in session has been mixed up
+          'DepartureDate'    => Session('request_details')['departureDate'],     // so here were are using alternate dates
           'Children'         => Session('request_details')['children'],
           'ChildrenAges'     => Session('request_details')['childrenAges'],
           'CityName'         => Session('city_name'),
@@ -389,7 +389,7 @@ class hotelController extends Controller
 
         if($blockingInfo['BookingStatus'] == 1)
         {
-          $request->session()->put('refernce_no');
+          $request->session()->put('refernce_no',$reference_no);
           $request->session()->put('hotel_total_fare',$hotel_total_price);
 
           return redirect()->back()->with('status',1);

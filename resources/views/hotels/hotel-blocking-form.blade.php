@@ -391,7 +391,7 @@
    <div class="row">
      <div class="container">
        <div class="col-lg-12">
-         @if(1)
+         @if(Session('status'))
 
          <div class="overlay overlay-hugeinc open" style="z-index:65785687 !important;">
            <center>
@@ -412,7 +412,7 @@
            </div>
            <div style="text-align:auto;">
              <div style="margin-right:auto;margin-left:auto;">
-             <form action="{{route('verify.payment.form',['id' => Request::segment(4),'return_id' => Request::segment(5),'ref_no' => Request::segment(6)])}}" method="POST">
+             <form action="{{route('verify.payment.hotel',['id' => Request::segment(4)])}}" method="POST">
              <!-- Note that the amount is in paise = 50 INR -->
              <script
                  src="https://checkout.razorpay.com/v1/checkout.js"
@@ -420,7 +420,7 @@
                  data-amount="{{Session('hotel_total_fare',0)}}"
                  data-buttontext="Pay Now"
                  data-name="Pavan Yatra"
-                 data-description="Flight Booking"
+                 data-description="Hotel Booking"
                  data-image="/images/logo.jpg"
                  data-prefill.name=""
                  data-prefill.email=""

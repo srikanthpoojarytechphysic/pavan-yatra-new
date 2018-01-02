@@ -17,6 +17,8 @@ use GuzzleHttp\Psr7;
 
 use App\flightbooking;
 
+use App\hotelHelper;
+
 class paymentController extends Controller
 {
     public function authorize_payment(Request $request,$id,$return_id,$ref_no= null)
@@ -141,15 +143,28 @@ class paymentController extends Controller
 
        return view('payments.payment-success');
     }
-    public function hotel_payment_verify()
+    public function verify_payment_hotel($id,Request $request)
     {
       ini_set('max_execution_time', 300);
 
+      $bookhotel = new hotelHelper();
+
       $razor_pay_id   = $request->get('razorpay_payment_id');
 
-      $amount         = Session('totalfare');
+      $amount         = Session('hotel_total_fare');
+
+      $ref_no         = ['referenceNo' => Session('refernce_no')];
+      //
 
       $api            = new Api('rzp_test_pKL2dR77Wf9ipw', 'Uur6mBi48YdqP8DoGjT34GNm');
+
+      $payment        = $api->payment->fetch($razor_pay_id);
+
+      $isBooking      = $bookhotel->bookHotelRoom($ref_no);
+
+      $res            = $payment->capture(array('amount' => $amount));
+
+      dd($isBooking);
 
     }
 }

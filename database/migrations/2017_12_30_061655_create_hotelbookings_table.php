@@ -16,6 +16,8 @@ class CreateHotelbookingsTable extends Migration
         Schema::create('hotelbookings', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->string('name');
+            $table->string('ref_no'); 
         });
     }
 
