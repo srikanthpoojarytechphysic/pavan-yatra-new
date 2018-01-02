@@ -84,10 +84,6 @@ Route::get('/hotels/book/payment/blocked/{id}/',[
 	'as'   => 'hotel.blocked.true',
 ]);
 
-Route::get('/hotels/book/payment/blocked/{id}/verify',[
-	'uses' => 'paymentController@hotel_payment_verify',
-	'as'   => 'hotel.payment.verify',
-]);
 
 Route::get('/hot',function(Request $request){
 
@@ -126,6 +122,11 @@ Route::POST('/flights/payments/pay/{ref_no}/{id}/{return_id}/verify/',[
 	'as'   => 'verify.payment.form'
 ]);
 
+Route::POST('/hotel/payement/pay/{id}/',[
+	'uses' => 'paymentController@verify_payment_hotel',
+	'as'   => 'verify.payment.hotel'
+]);
+
 
 
 //--------------END-OF-PAYMENT-ROUTE----//
@@ -161,3 +162,19 @@ Route::get('/privacy-policy',[
 ]);
 
 //---------------END-OF-MISC-ROUTES----------//
+
+
+
+//----------------RECHARGE-ROUTES------------//
+Route::get('/recharge',[
+	'uses' => 'rechargeController@index',
+	'as'   => 'recharge.home'
+]);
+
+
+
+
+
+
+
+//----------------END-OF-RECHARGE-ROUTES-----//
